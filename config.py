@@ -243,7 +243,7 @@ API_CONFIG = {
 
 # OpenAI Labeling Configuration
 OPENAI_LABELING_CONFIG = {
-    "model": "gpt-4o-mini",  # Most cost-effective model
+    "model": "gpt-4.1-mini-2025-04-14",  # Most cost-effective model
     "batch_size": 50,  # Requests per batch
     "max_tokens": 50,  # Short responses for efficiency
     "temperature": 0.2,  # Low temperature for consistent labeling

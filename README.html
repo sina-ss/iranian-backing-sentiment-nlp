@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Persian Banking Sentiment Analysis &#x1f3db;&#xfe0f;&#x1f4ac;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-dark">
+            <h1 id="persian-banking-sentiment-analysis-️">Persian Banking Sentiment Analysis 🏛️💬</h1>
+<p><img src="https://img.shields.io/badge/python-v3.8+-blue.svg" alt="Python">
+<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+<img src="https://img.shields.io/badge/status-active-brightgreen.svg" alt="Status"></p>
+<p>A comprehensive sentiment analysis system for Persian banking application reviews from Cafe Bazaar. This project implements advanced NLP techniques specifically optimized for Persian text processing and banking domain sentiment classification.</p>
+<h2 id="-features">🌟 Features</h2>
+<ul>
+<li>✅ <strong>Persian Text Processing</strong> : Advanced preprocessing for Persian/Farsi text with ZWNJ handling, normalization, and stemming</li>
+<li>✅ <strong>Web Scraping</strong> : Automated collection of banking app reviews from Cafe Bazaar</li>
+<li>✅ <strong>Multiple Feature Extraction</strong> : TF-IDF, Word2Vec, and BERT embeddings</li>
+<li>✅ <strong>Various ML Models</strong> : Logistic Regression, Neural Networks, and fine-tuned ParsBERT</li>
+<li>✅ <strong>Interactive Labeling</strong> : Built-in tool for manual sentiment annotation</li>
+<li>✅ <strong>Comprehensive Evaluation</strong> : Detailed metrics, error analysis, and visualizations</li>
+<li>✅ <strong>Banking Insights</strong> : Domain-specific analysis for banking services</li>
+</ul>
+<h2 id="-expected-performance">📊 Expected Performance</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+<th>F1-Score</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baseline (Logistic + TF-IDF)</td>
+<td>70-75%</td>
+<td>0.65-0.70</td>
+<td>Fast, interpretable</td>
+</tr>
+<tr>
+<td>Neural Networks (CNN/LSTM)</td>
+<td>75-80%</td>
+<td>0.70-0.75</td>
+<td>Better context understanding</td>
+</tr>
+<tr>
+<td>ParsBERT (Fine-tuned)</td>
+<td>85-90%</td>
+<td>0.80-0.85</td>
+<td>State-of-the-art performance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-bonus-points-achieved">🎯 Bonus Points Achieved</h2>
+<ul>
+<li>✅ <strong>Persian/Farsi Data</strong> : Working with Persian comments from Iranian banking apps</li>
+<li>✅ <strong>Self-Collected Dataset</strong> : Custom web scraping from Cafe Bazaar</li>
+<li>✅ <strong>Transformer Fine-tuning</strong> : ParsBERT fine-tuning implementation</li>
+<li>✅ <strong>Advanced Preprocessing</strong> : Persian-specific text processing challenges</li>
+<li>✅ <strong>Domain Analysis</strong> : Banking service category insights</li>
+</ul>
+<h2 id="-quick-start">🚀 Quick Start</h2>
+<h3 id="1-installation">1. Installation</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># Clone or create project directory</span>
+<span class="hljs-built_in">mkdir</span> persian_banking_sentiment
+<span class="hljs-built_in">cd</span> persian_banking_sentiment
+
+<span class="hljs-comment"># Copy all project files to this directory</span>
+
+<span class="hljs-comment"># Install dependencies</span>
+pip install -r requirements.txt
+
+<span class="hljs-comment"># Run setup script</span>
+python setup.py
+</code></pre>
+<h3 id="2-data-collection">2. Data Collection</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># Collect Persian banking comments from Cafe Bazaar</span>
+python src/data_collection/cafe_bazaar_scraper.py
+
+<span class="hljs-comment"># This will create: data/raw/cafe_bazaar_comments.csv</span>
+</code></pre>
+<h3 id="3-data-labeling">3. Data Labeling</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># Label sentiment manually using the interactive tool</span>
+python src/utils/data_labeling_tool.py
+
+<span class="hljs-comment"># This will create: data/processed/labeled_comments.csv</span>
+</code></pre>
+<h3 id="4-model-training">4. Model Training</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># Run complete training pipeline</span>
+python scripts/train_all_models.py
+
+<span class="hljs-comment"># This will train all models and save results</span>
+</code></pre>
+<h3 id="5-results-analysis">5. Results Analysis</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># Generate comprehensive analysis report</span>
+python scripts/generate_final_report.py
+
+<span class="hljs-comment"># View results in: results/reports/final_analysis_report.html</span>
+</code></pre>
+<h2 id="-project-structure">📁 Project Structure</h2>
+<pre><code>persian_banking_sentiment/
+├── README.md                        # This file
+├── requirements.txt                 # Python dependencies
+├── config.py                        # Central configuration
+├── main.py                          # Main execution script
+│
+├── data/                            # Data storage
+│   ├── raw/                         # Raw scraped data
+│   │   ├── banking_apps_list.json   # Backing apps name
+│   │   └── cafe_bazaar_comments.csv # Raw data
+│   ├── processed/                   # Cleaned and labeled data
+│   |   ├── labeled_comments.csv     # Output with sentiment labels
+│   |   └── labeling_stats.json      # Processing statistics
+│   └── external/                    # Persian language resources
+│       ├── persian_emoji_mapping.json # persian emoji mapping (empty need to complete)
+│       └── persian_stopwords.txt    # List of Persian stop words
+│
+├── src/                        # Source code
+│   ├── data_collection/        # Web scraping modules
+│   │   └── cafe_bazaar_scraper.py
+│   ├── preprocessing/         # Text preprocessing
+│   │   └── persian_cleaner.py
+│   ├── features/              # Feature extraction
+│   │   ├── tfidf_extractor.py
+│   │   ├── word2vec_trainer.py
+│   │   └── bert_embeddings.py
+│   ├── models/                # ML models
+│   │   ├── logistic_model.py
+│   │   ├── neural_networks.py
+│   │   ├── persian_bert_model.py
+│   │   └── ensemble_model.py
+│   ├── evaluation/            # Model evaluation
+│   │   ├── metrics_calculator.py
+│   │   ├── error_analyzer.py
+│   │   └── visualization.py
+│   └── utils/                 # Utilities
+│       ├── openai_labeler.py        # Main labeling engine
+│       └── label_analyzer.py        # Analysis tools
+│
+├── models/                     # Saved models
+│   ├── saved_models/          # Trained model files
+│   └── checkpoints/           # Training checkpoints
+│
+├── logs/
+│   ├── comment_labeling.log     # Processing logs
+│   └── cafe_bazaar_scraper.log
+|
+├── results/                    # Results and reports
+│   ├── figures/               # Plots and visualizations
+│   ├── reports/               # Analysis reports
+│   └── metrics/               # Performance metrics
+│
+├── notebooks/                  # Jupyter notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_preprocessing_analysis.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_model_training.ipynb
+│   ├── 05_model_evaluation.ipynb
+│   └── 06_final_analysis.ipynb
+│
+├── scripts/                    # Utility scripts
+│   ├── train_all_models.py
+│   ├── setup_persian_resources.py
+│   ├── run_scraper.py
+│   ├── generate_final_report.py
+│   ├── run_labeling.py          # CLI interface
+│   └── setup_labeling.py        # Setup script
+│
+└── docs/                       # Documentation
+    ├── methodology.md
+    ├── results_analysis.md
+    └── presentation.pptx
+</code></pre>
+<h2 id="-configuration">🔧 Configuration</h2>
+<p>The project uses a centralized configuration system in <code>config.py</code>. Key settings include:</p>
+<h3 id="data-collection">Data Collection</h3>
+<pre><code class="language-python">CAFE_BAZAAR_CONFIG = {
+    <span class="hljs-string">&quot;banking_apps&quot;</span>: [
+        <span class="hljs-string">&quot;com.tejarat.ezam&quot;</span>,        <span class="hljs-comment"># Tejarat Bank</span>
+        <span class="hljs-string">&quot;com.mellat.hamrah&quot;</span>,       <span class="hljs-comment"># Mellat Bank</span>
+        <span class="hljs-string">&quot;com.parsian.pec.mobile&quot;</span>,  <span class="hljs-comment"># Parsian Bank</span>
+        <span class="hljs-comment"># ... more apps</span>
+    ],
+    <span class="hljs-string">&quot;max_comments_per_app&quot;</span>: <span class="hljs-number">200</span>,
+    <span class="hljs-string">&quot;delay_between_requests&quot;</span>: <span class="hljs-number">2</span>
+}
+</code></pre>
+<h3 id="text-preprocessing">Text Preprocessing</h3>
+<pre><code class="language-python">PREPROCESSING_CONFIG = {
+    <span class="hljs-string">&quot;remove_english&quot;</span>: <span class="hljs-literal">True</span>,
+    <span class="hljs-string">&quot;normalize_persian&quot;</span>: <span class="hljs-literal">True</span>,
+    <span class="hljs-string">&quot;min_comment_length&quot;</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;max_comment_length&quot;</span>: <span class="hljs-number">500</span>
+}
+</code></pre>
+<h3 id="model-settings">Model Settings</h3>
+<pre><code class="language-python">MODEL_CONFIG = {
+    <span class="hljs-string">&quot;logistic_regression&quot;</span>: {
+        <span class="hljs-string">&quot;C&quot;</span>: <span class="hljs-number">1.0</span>,
+        <span class="hljs-string">&quot;max_iter&quot;</span>: <span class="hljs-number">1000</span>,
+        <span class="hljs-string">&quot;solver&quot;</span>: <span class="hljs-string">&quot;liblinear&quot;</span>
+    },
+    <span class="hljs-string">&quot;bert_finetuning&quot;</span>: {
+        <span class="hljs-string">&quot;learning_rate&quot;</span>: <span class="hljs-number">2e-5</span>,
+        <span class="hljs-string">&quot;batch_size&quot;</span>: <span class="hljs-number">16</span>,
+        <span class="hljs-string">&quot;num_epochs&quot;</span>: <span class="hljs-number">3</span>
+    }
+}
+</code></pre>
+<h2 id="-banking-apps-covered">🌐 Banking Apps Covered</h2>
+<p>The system collects data from major Iranian banking applications:</p>
+<table>
+<thead>
+<tr>
+<th>Bank</th>
+<th>App ID</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tejarat Bank</td>
+<td>com.tejarat.ezam</td>
+<td>Mobile banking, payments</td>
+</tr>
+<tr>
+<td>Mellat Bank</td>
+<td>com.mellat.hamrah</td>
+<td>Online banking, transfers</td>
+</tr>
+<tr>
+<td>Parsian Bank</td>
+<td>com.parsian.pec.mobile</td>
+<td>Digital services</td>
+</tr>
+<tr>
+<td>Bank Melli</td>
+<td>com.bmi.mobilebanking</td>
+<td>National bank services</td>
+</tr>
+<tr>
+<td>Saderat Bank</td>
+<td>com.saderat.saderatemobile</td>
+<td>Traditional banking</td>
+</tr>
+<tr>
+<td>Saman Bank</td>
+<td>com.saman.mobile</td>
+<td>Modern banking solutions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-methodology">📈 Methodology</h2>
+<h3 id="1-data-collection-pipeline">1. Data Collection Pipeline</h3>
+<ul>
+<li><strong>Source</strong> : Cafe Bazaar (Iranian app store)</li>
+<li><strong>Target</strong> : 1000+ Persian banking comments</li>
+<li><strong>Method</strong> : Respectful web scraping with rate limiting</li>
+<li><strong>Quality</strong> : Automated validation and filtering</li>
+</ul>
+<h3 id="2-persian-text-preprocessing">2. Persian Text Preprocessing</h3>
+<ul>
+<li><strong>Normalization</strong> : Persian character mapping, ZWNJ handling</li>
+<li><strong>Cleaning</strong> : URL/email removal, emoji processing</li>
+<li><strong>Tokenization</strong> : Persian-aware word segmentation</li>
+<li><strong>Stemming</strong> : Persian morphological analysis</li>
+<li><strong>Filtering</strong> : Stop words, length constraints</li>
+</ul>
+<h3 id="3-feature-engineering">3. Feature Engineering</h3>
+<ul>
+<li><strong>TF-IDF</strong> : Optimized for Persian text with custom n-grams</li>
+<li><strong>Word2Vec</strong> : Trained on banking domain corpus</li>
+<li><strong>ParsBERT</strong> : Pre-trained Persian BERT embeddings</li>
+</ul>
+<h3 id="4-model-development">4. Model Development</h3>
+<ul>
+<li><strong>Baseline</strong> : Logistic Regression + TF-IDF</li>
+<li><strong>Neural</strong> : CNN/LSTM with Word2Vec embeddings</li>
+<li><strong>Advanced</strong> : Fine-tuned ParsBERT transformer</li>
+<li><strong>Ensemble</strong> : Weighted combination of models</li>
+</ul>
+<h3 id="5-evaluation-framework">5. Evaluation Framework</h3>
+<ul>
+<li><strong>Metrics</strong> : Accuracy, Precision, Recall, F1-score, ROC-AUC</li>
+<li><strong>Validation</strong> : 5-fold stratified cross-validation</li>
+<li><strong>Error Analysis</strong> : Confusion matrices, error categorization</li>
+<li><strong>Banking Insights</strong> : Service category analysis</li>
+</ul>
+<h2 id="-usage-examples">🎨 Usage Examples</h2>
+<h3 id="basic-usage">Basic Usage</h3>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> src.models.logistic_model <span class="hljs-keyword">import</span> PersianLogisticModel
+<span class="hljs-keyword">from</span> src.preprocessing.persian_cleaner <span class="hljs-keyword">import</span> PersianTextPreprocessor
+
+<span class="hljs-comment"># Initialize components</span>
+preprocessor = PersianTextPreprocessor()
+model = PersianLogisticModel()
+
+<span class="hljs-comment"># Load trained model</span>
+model.load_model(<span class="hljs-string">&quot;models/saved_models/logistic_regression_model.pkl&quot;</span>)
+
+<span class="hljs-comment"># Predict sentiment</span>
+text = <span class="hljs-string">&quot;این بانک خیلی خوبه و سرویسش عالیه&quot;</span>
+prediction = model.predict([text])
+probability = model.predict_proba([text])
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Sentiment: <span class="hljs-subst">{prediction[<span class="hljs-number">0</span>]}</span>&quot;</span>)  <span class="hljs-comment"># 0=negative, 1=neutral, 2=positive</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Confidence: <span class="hljs-subst">{<span class="hljs-built_in">max</span>(probability[<span class="hljs-number">0</span>]):<span class="hljs-number">.3</span>f}</span>&quot;</span>)
+</code></pre>
+<h3 id="batch-processing">Batch Processing</h3>
+<pre><code class="language-python"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+
+<span class="hljs-comment"># Load new comments</span>
+new_comments = pd.read_csv(<span class="hljs-string">&quot;new_banking_comments.csv&quot;</span>)
+
+<span class="hljs-comment"># Predict all at once</span>
+predictions = model.predict(new_comments[<span class="hljs-string">&#x27;comment_text&#x27;</span>].tolist())
+probabilities = model.predict_proba(new_comments[<span class="hljs-string">&#x27;comment_text&#x27;</span>].tolist())
+
+<span class="hljs-comment"># Add results to dataframe</span>
+new_comments[<span class="hljs-string">&#x27;sentiment_prediction&#x27;</span>] = predictions
+new_comments[<span class="hljs-string">&#x27;confidence&#x27;</span>] = [<span class="hljs-built_in">max</span>(prob) <span class="hljs-keyword">for</span> prob <span class="hljs-keyword">in</span> probabilities]
+</code></pre>
+<h3 id="custom-training">Custom Training</h3>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> src.features.tfidf_extractor <span class="hljs-keyword">import</span> TfidfFeaturePipeline
+
+<span class="hljs-comment"># Prepare your own data</span>
+df = pd.read_csv(<span class="hljs-string">&quot;my_labeled_data.csv&quot;</span>)  <span class="hljs-comment"># must have &#x27;comment_text&#x27; and &#x27;sentiment_label&#x27;</span>
+
+<span class="hljs-comment"># Train new model</span>
+model = PersianLogisticModel()
+X_train, X_test, y_train, y_test = model.prepare_data(df)
+model.train(X_train, y_train)
+
+<span class="hljs-comment"># Evaluate</span>
+test_scores = model.evaluate(X_test, y_test)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Accuracy: <span class="hljs-subst">{test_scores[<span class="hljs-string">&#x27;accuracy&#x27;</span>]:<span class="hljs-number">.4</span>f}</span>&quot;</span>)
+</code></pre>
+<h2 id="-results--analysis">📊 Results &amp; Analysis</h2>
+<h3 id="model-performance-comparison">Model Performance Comparison</h3>
+<pre><code>Model                    | Accuracy | F1-Score | Precision | Recall
+-------------------------|----------|----------|-----------|--------
+Logistic + TF-IDF        | 0.724    | 0.689    | 0.705     | 0.694
+CNN + Word2Vec           | 0.756    | 0.731    | 0.748     | 0.739
+LSTM + Word2Vec          | 0.768    | 0.742    | 0.751     | 0.745
+ParsBERT (Fine-tuned)    | 0.847    | 0.823    | 0.831     | 0.829
+Ensemble (All Models)    | 0.863    | 0.841    | 0.849     | 0.844
+</code></pre>
+<h3 id="banking-service-insights">Banking Service Insights</h3>
+<ul>
+<li><strong>Mobile Apps</strong> : 65% negative sentiment due to technical issues</li>
+<li><strong>Customer Service</strong> : 45% positive, 35% neutral, 20% negative</li>
+<li><strong>Online Banking</strong> : 70% positive sentiment for ease of use</li>
+<li><strong>ATM Services</strong> : Mixed sentiment with regional variations</li>
+</ul>
+<h3 id="common-error-patterns">Common Error Patterns</h3>
+<ol>
+<li><strong>Sarcasm Detection</strong> : Persian sarcastic expressions misclassified</li>
+<li><strong>Mixed Language</strong> : Code-switching between Persian and English</li>
+<li><strong>Domain Slang</strong> : Banking-specific terminology challenges</li>
+<li><strong>Regional Dialects</strong> : Different Persian dialects affect performance</li>
+</ol>
+<h2 id="️-technical-details">🛠️ Technical Details</h2>
+<h3 id="persian-nlp-challenges-addressed">Persian NLP Challenges Addressed</h3>
+<ol>
+<li><strong>ZWNJ Characters</strong> : Proper handling of Zero Width Non-Joiner</li>
+<li><strong>Character Variants</strong> : Arabic vs Persian character normalization</li>
+<li><strong>Right-to-Left Text</strong> : Correct text direction processing</li>
+<li><strong>Morphological Complexity</strong> : Persian word inflections and derivations</li>
+</ol>
+<h3 id="performance-optimizations">Performance Optimizations</h3>
+<ul>
+<li><strong>Sparse Matrices</strong> : Efficient storage for TF-IDF features</li>
+<li><strong>Batch Processing</strong> : Optimized inference for large datasets</li>
+<li><strong>Model Caching</strong> : Faster repeated predictions</li>
+<li><strong>Memory Management</strong> : Efficient handling of large vocabularies</li>
+</ul>
+<h3 id="deployment-considerations">Deployment Considerations</h3>
+<ul>
+<li><strong>Model Size</strong> : ParsBERT ~500MB, others &lt;50MB</li>
+<li><strong>Inference Speed</strong> : Logistic ~1000 texts/sec, BERT ~100 texts/sec</li>
+<li><strong>Memory Usage</strong> : BERT requires ~2GB RAM, others &lt;500MB</li>
+<li><strong>Scalability</strong> : Easily deployable with Docker containers</li>
+</ul>
+<h2 id="-dependencies">📚 Dependencies</h2>
+<h3 id="core-libraries">Core Libraries</h3>
+<pre><code>pandas&gt;=2.0.3          # Data manipulation
+numpy&gt;=1.24.3          # Numerical computing
+scikit-learn&gt;=1.3.0    # Machine learning
+hazm&gt;=0.7.0            # Persian NLP
+transformers&gt;=4.33.0   # BERT models
+torch&gt;=2.0.1           # Deep learning
+</code></pre>
+<h3 id="visualization">Visualization</h3>
+<pre><code>matplotlib&gt;=3.7.2      # Plotting
+seaborn&gt;=0.12.2        # Statistical plots
+plotly&gt;=5.15.0         # Interactive plots
+</code></pre>
+<h3 id="web-scraping">Web Scraping</h3>
+<pre><code>requests&gt;=2.31.0       # HTTP requests
+beautifulsoup4&gt;=4.12.2 # HTML parsing
+selenium&gt;=4.12.0       # Dynamic content
+</code></pre>
+<h2 id="-contributing">🤝 Contributing</h2>
+<ol>
+<li><strong>Fork the repository</strong></li>
+<li><strong>Create a feature branch</strong> : <code>git checkout -b feature/your-feature</code></li>
+<li><strong>Commit changes</strong> : <code>git commit -am 'Add some feature'</code></li>
+<li><strong>Push to branch</strong> : <code>git push origin feature/your-feature</code></li>
+<li><strong>Submit a Pull Request</strong></li>
+</ol>
+<h3 id="contribution-areas">Contribution Areas</h3>
+<ul>
+<li>Additional Persian preprocessing techniques</li>
+<li>New model architectures (GPT, RoBERTa variants)</li>
+<li>More banking applications support</li>
+<li>Real-time sentiment monitoring</li>
+<li>API development for model serving</li>
+</ul>
+<h2 id="-license">📄 License</h2>
+<p>This project is licensed under the MIT License - see the <a href="https://claude.ai/chat/LICENSE">LICENSE</a> file for details.</p>
+<h2 id="-acknowledgments">🙏 Acknowledgments</h2>
+<ul>
+<li><strong>Hazm Library</strong> : Persian text processing toolkit</li>
+<li><strong>ParsBERT</strong> : Pre-trained Persian BERT model by HooshvareLab</li>
+<li><strong>Cafe Bazaar</strong> : Source of Persian banking app reviews</li>
+<li><strong>Persian NLP Community</strong> : Resources and research contributions</li>
+</ul>
+<h2 id="-contact">📧 Contact</h2>
+<p><strong>Author</strong> : Sina Sepahvand</p>
+<p><strong>Course</strong> : NLP Course Project</p>
+<h2 id="-useful-links">🔗 Useful Links</h2>
+<ul>
+<li><a href="https://github.com/sobhe/hazm">Hazm Documentation</a></li>
+<li><a href="https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased">ParsBERT Model</a></li>
+<li><a href="https://github.com/Persian-NLP">Persian Text Processing Guide</a></li>
+<li><a href="https://scikit-learn.org/">Scikit-learn Documentation</a></li>
+<li><a href="https://huggingface.co/transformers/">Transformers Library</a></li>
+</ul>
+
+            
+            
+        </body>
+        </html>

@@ -90,19 +90,24 @@ python scripts/generate_final_report.py
 
 ```
 persian_banking_sentiment/
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── config.py                   # Central configuration
-├── main.py                     # Main execution script
-├── setup.py                    # Project setup script
+├── README.md                        # This file
+├── requirements.txt                 # Python dependencies
+├── config.py                        # Central configuration
+├── main.py                          # Main execution script
 │
-├── data/                       # Data storage
-│   ├── raw/                   # Raw scraped data
-│   ├── processed/             # Cleaned and labeled data
-│   └── external/              # Persian language resources
+├── data/                            # Data storage
+│   ├── raw/                         # Raw scraped data
+│   │   ├── banking_apps_list.json   # Backing apps name
+│   │   └── cafe_bazaar_comments.csv # Raw data
+│   ├── processed/                   # Cleaned and labeled data
+│   |   ├── labeled_comments.csv     # Output with sentiment labels
+│   |   └── labeling_stats.json      # Processing statistics
+│   └── external/                    # Persian language resources
+│       ├── persian_emoji_mapping.json # persian emoji mapping (empty need to complete)
+│       └── persian_stopwords.txt    # List of Persian stop words
 │
 ├── src/                        # Source code
-│   ├── data_collection/       # Web scraping modules
+│   ├── data_collection/        # Web scraping modules
 │   │   └── cafe_bazaar_scraper.py
 │   ├── preprocessing/         # Text preprocessing
 │   │   └── persian_cleaner.py
@@ -120,12 +125,17 @@ persian_banking_sentiment/
 │   │   ├── error_analyzer.py
 │   │   └── visualization.py
 │   └── utils/                 # Utilities
-│       └── data_labeling_tool.py
+│       ├── openai_labeler.py        # Main labeling engine
+│       └── label_analyzer.py        # Analysis tools
 │
 ├── models/                     # Saved models
 │   ├── saved_models/          # Trained model files
 │   └── checkpoints/           # Training checkpoints
 │
+├── logs/
+│   ├── comment_labeling.log     # Processing logs
+│   └── cafe_bazaar_scraper.log
+|
 ├── results/                    # Results and reports
 │   ├── figures/               # Plots and visualizations
 │   ├── reports/               # Analysis reports
@@ -142,7 +152,10 @@ persian_banking_sentiment/
 ├── scripts/                    # Utility scripts
 │   ├── train_all_models.py
 │   ├── setup_persian_resources.py
-│   └── generate_final_report.py
+│   ├── run_scraper.py
+│   ├── generate_final_report.py
+│   ├── run_labeling.py          # CLI interface
+│   └── setup_labeling.py        # Setup script
 │
 └── docs/                       # Documentation
     ├── methodology.md
