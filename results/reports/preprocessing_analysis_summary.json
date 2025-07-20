@@ -1,0 +1,64 @@
+{
+  "analysis_timestamp": "2025-07-21T02:38:33.160265",
+  "versions_analyzed": [
+    "light",
+    "medium",
+    "heavy_stem",
+    "heavy_lemma"
+  ],
+  "version_statistics": {
+    "light": {
+      "total_comments": 2200,
+      "avg_length": 78.41,
+      "median_length": 51.0,
+      "min_length": "2",
+      "max_length": "363",
+      "std_length": 81.06519190620817,
+      "avg_words": 15.3,
+      "unique_comments": 1791,
+      "duplicate_rate": 0.1859090909090909
+    },
+    "medium": {
+      "total_comments": 1497,
+      "avg_length": 60.403473613894455,
+      "median_length": 46.0,
+      "min_length": "10",
+      "max_length": "277",
+      "std_length": 45.75842096849736,
+      "avg_words": 10.832999331997328,
+      "unique_comments": 1484,
+      "duplicate_rate": 0.00868403473613899
+    },
+    "heavy_stem": {
+      "total_comments": 1458,
+      "avg_length": 55.45061728395062,
+      "median_length": 42.0,
+      "min_length": "10",
+      "max_length": "252",
+      "std_length": 41.1239062513551,
+      "avg_words": 11.023319615912209,
+      "unique_comments": 1445,
+      "duplicate_rate": 0.008916323731138598
+    },
+    "heavy_lemma": {
+      "total_comments": 1487,
+      "avg_length": 59.913920645595155,
+      "median_length": 45.0,
+      "min_length": "10",
+      "max_length": "275",
+      "std_length": 45.07764336401645,
+      "avg_words": 10.86348352387357,
+      "unique_comments": 1472,
+      "duplicate_rate": 0.01008742434431742
+    }
+  },
+  "sentiment_impact": {},
+  "recommendations": {
+    "best_version_for_modeling": "medium",
+    "reasons": [
+      "Good balance between noise removal and information retention",
+      "Maintains semantic meaning while removing irrelevant content",
+      "Suitable tokenization for feature extraction"
+    ]
+  }
+}

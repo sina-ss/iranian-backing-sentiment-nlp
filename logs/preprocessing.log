@@ -1,0 +1,89 @@
+2025-07-21 02:00:03,678 - src.preprocessing.persian_cleaner - INFO - Loaded 2446 stopwords and 297 emoji mappings
+2025-07-21 02:00:03,679 - src.preprocessing.persian_cleaner - WARNING - Hazm not available. Using basic text processing.
+2025-07-21 02:00:03,679 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\raw\cafe_bazaar_comments.csv
+2025-07-21 02:00:03,691 - __main__ - INFO - Loaded 2200 records
+2025-07-21 02:00:03,693 - __main__ - INFO - Analyzing input data characteristics...
+2025-07-21 02:00:03,700 - __main__ - INFO - Analysis complete. Persian text ratio: 99.50%
+2025-07-21 02:00:03,700 - __main__ - INFO - Creating multiple preprocessing versions...
+2025-07-21 02:00:03,700 - __main__ - INFO - Creating version 1: Light cleaning
+2025-07-21 02:00:03,747 - __main__ - INFO - Creating version 2: Medium cleaning + tokenization
+2025-07-21 02:00:03,747 - __main__ - INFO - Starting text preprocessing with level: medium
+2025-07-21 02:00:03,747 - __main__ - INFO - Stage 1: Basic text cleaning...
+2025-07-21 02:00:03,804 - __main__ - INFO - Stage 2: Tokenization and advanced processing...
+2025-07-21 02:00:03,868 - __main__ - INFO - Removed 728 comments below minimum length
+2025-07-21 02:00:03,869 - __main__ - INFO - Preprocessing complete. 1472 comments remain.
+2025-07-21 02:00:03,869 - __main__ - INFO - Creating version 3: Heavy cleaning + stemming
+2025-07-21 02:00:03,869 - __main__ - INFO - Starting text preprocessing with level: heavy
+2025-07-21 02:00:03,869 - __main__ - INFO - Stage 1: Basic text cleaning...
+2025-07-21 02:00:03,926 - __main__ - INFO - Removed 7 empty comments after cleaning
+2025-07-21 02:00:03,926 - __main__ - INFO - Stage 2: Tokenization and advanced processing...
+2025-07-21 02:00:03,992 - __main__ - INFO - Removed 724 comments below minimum length
+2025-07-21 02:00:03,993 - __main__ - INFO - Preprocessing complete. 1469 comments remain.
+2025-07-21 02:00:03,993 - __main__ - INFO - Creating version 4: Heavy cleaning + lemmatization
+2025-07-21 02:00:03,993 - __main__ - INFO - Starting text preprocessing with level: heavy
+2025-07-21 02:00:03,993 - __main__ - INFO - Stage 1: Basic text cleaning...
+2025-07-21 02:00:04,052 - __main__ - INFO - Removed 7 empty comments after cleaning
+2025-07-21 02:00:04,052 - __main__ - INFO - Stage 2: Tokenization and advanced processing...
+2025-07-21 02:00:04,119 - __main__ - INFO - Removed 724 comments below minimum length
+2025-07-21 02:00:04,119 - __main__ - INFO - Preprocessing complete. 1469 comments remain.
+2025-07-21 02:00:04,120 - __main__ - INFO - Version 'light': 2200 comments
+2025-07-21 02:00:04,120 - __main__ - INFO - Version 'medium': 1472 comments
+2025-07-21 02:00:04,120 - __main__ - INFO - Version 'heavy_stem': 1469 comments
+2025-07-21 02:00:04,120 - __main__ - INFO - Version 'heavy_lemma': 1469 comments
+2025-07-21 02:00:04,137 - __main__ - INFO - Saved light version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_light_processed.csv
+2025-07-21 02:00:04,149 - __main__ - INFO - Saved medium version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 02:00:04,161 - __main__ - INFO - Saved heavy_stem version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 02:00:04,172 - __main__ - INFO - Saved heavy_lemma version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_lemma_processed.csv
+2025-07-21 02:00:04,177 - __main__ - INFO - Processing report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\preprocessing_report.json
+2025-07-21 02:00:04,177 - __main__ - INFO - Preprocessing pipeline completed successfully!
+
+✅ Preprocessing completed successfully!
+
+📊 Results Summary:
+  Input comments: 2200
+  Output comments: 1469
+  Success rate: 66.77%
+  Duration: 0.49 seconds
+
+📁 Created versions:
+  light: 2200 comments (comments_light_processed.csv)
+  medium: 1472 comments (comments_medium_processed.csv)
+  heavy_stem: 1469 comments (comments_heavy_stem_processed.csv)
+  heavy_lemma: 1469 comments (comments_heavy_lemma_processed.csv)2025-07-21 02:37:19,243 - src.preprocessing.persian_cleaner - INFO - Loaded 2446 stopwords and 297 emoji mappings
+2025-07-21 02:37:23,483 - src.preprocessing.persian_cleaner - INFO - Hazm components initialized successfully
+2025-07-21 02:37:23,505 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\raw\cafe_bazaar_comments.csv
+2025-07-21 02:37:23,553 - __main__ - INFO - Loaded 2200 records
+2025-07-21 02:37:23,560 - __main__ - INFO - Analyzing input data characteristics...
+2025-07-21 02:37:23,585 - __main__ - INFO - Analysis complete. Persian text ratio: 99.50%
+2025-07-21 02:37:23,586 - __main__ - INFO - Creating multiple preprocessing versions...
+2025-07-21 02:37:23,586 - __main__ - INFO - Creating version 1: Light cleaning
+2025-07-21 02:37:25,159 - __main__ - INFO - Creating version 2: Medium cleaning + tokenization
+2025-07-21 02:37:25,160 - __main__ - INFO - Starting text preprocessing with level: medium
+2025-07-21 02:37:25,161 - __main__ - INFO - Stage 1: Basic text cleaning...
+2025-07-21 02:37:26,711 - __main__ - INFO - Stage 2: Tokenization and advanced processing...
+2025-07-21 02:37:28,491 - __main__ - INFO - Removed 703 comments below minimum length
+2025-07-21 02:37:28,492 - __main__ - INFO - Preprocessing complete. 1497 comments remain.
+2025-07-21 02:37:28,492 - __main__ - INFO - Creating version 3: Heavy cleaning + stemming
+2025-07-21 02:37:28,493 - __main__ - INFO - Starting text preprocessing with level: heavy
+2025-07-21 02:37:28,493 - __main__ - INFO - Stage 1: Basic text cleaning...
+2025-07-21 02:37:30,109 - __main__ - INFO - Removed 7 empty comments after cleaning
+2025-07-21 02:37:30,110 - __main__ - INFO - Stage 2: Tokenization and advanced processing...
+2025-07-21 02:37:32,124 - __main__ - INFO - Removed 735 comments below minimum length
+2025-07-21 02:37:32,124 - __main__ - INFO - Preprocessing complete. 1458 comments remain.
+2025-07-21 02:37:32,125 - __main__ - INFO - Creating version 4: Heavy cleaning + lemmatization
+2025-07-21 02:37:32,126 - __main__ - INFO - Starting text preprocessing with level: heavy
+2025-07-21 02:37:32,126 - __main__ - INFO - Stage 1: Basic text cleaning...
+2025-07-21 02:37:34,143 - __main__ - INFO - Removed 7 empty comments after cleaning
+2025-07-21 02:37:34,147 - __main__ - INFO - Stage 2: Tokenization and advanced processing...
+2025-07-21 02:37:36,166 - __main__ - INFO - Removed 706 comments below minimum length
+2025-07-21 02:37:36,167 - __main__ - INFO - Preprocessing complete. 1487 comments remain.
+2025-07-21 02:37:36,168 - __main__ - INFO - Version 'light': 2200 comments
+2025-07-21 02:37:36,169 - __main__ - INFO - Version 'medium': 1497 comments
+2025-07-21 02:37:36,169 - __main__ - INFO - Version 'heavy_stem': 1458 comments
+2025-07-21 02:37:36,169 - __main__ - INFO - Version 'heavy_lemma': 1487 comments
+2025-07-21 02:37:36,259 - __main__ - INFO - Saved light version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_light_processed.csv
+2025-07-21 02:37:36,326 - __main__ - INFO - Saved medium version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 02:37:36,396 - __main__ - INFO - Saved heavy_stem version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 02:37:36,498 - __main__ - INFO - Saved heavy_lemma version to C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_lemma_processed.csv
+2025-07-21 02:37:36,508 - __main__ - INFO - Processing report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\preprocessing_report.json
+2025-07-21 02:37:36,516 - __main__ - INFO - Preprocessing pipeline completed successfully!
