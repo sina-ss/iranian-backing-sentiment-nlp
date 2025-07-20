@@ -1,0 +1,95 @@
+{
+  "preprocessing_summary": {
+    "start_time": "2025-07-21T02:00:03.679917",
+    "end_time": "2025-07-21T02:00:04.172502",
+    "duration_seconds": 0.492585,
+    "input_comments": 2200,
+    "output_comments": 1469,
+    "filtered_comments": 724,
+    "success_rate": 0.6677272727272727
+  },
+  "input_analysis": {
+    "total_comments": 2200,
+    "comment_length_stats": {
+      "mean": 77.91954545454546,
+      "median": 50.0,
+      "min": "2",
+      "max": "300",
+      "std": 80.73651067657083
+    },
+    "unique_comments": 1799,
+    "duplicate_comments": 401,
+    "apps_count": 11,
+    "comments_per_app": {
+      "Tejarat Bank": 200,
+      "Mellat Bank": 200,
+      "ًRefah Bank": 200,
+      "Parsian Bank": 200,
+      "Eghtesad Novin Bank": 200,
+      "Melli Bank": 200,
+      "Saderat Bank": 200,
+      "Dey Bank": 200,
+      "Resalat Bank": 200,
+      "Saman Bank": 200,
+      "Blu Bank": 200
+    },
+    "rating_distribution": {
+      "1": 705,
+      "2": 145,
+      "3": 163,
+      "4": 146,
+      "5": 1041
+    },
+    "average_rating": 3.305909090909091,
+    "persian_text_ratio": 0.995
+  },
+  "processing_configuration": {
+    "remove_english": true,
+    "remove_urls": true,
+    "remove_emails": true,
+    "remove_phone_numbers": true,
+    "remove_emojis": false,
+    "normalize_persian": true,
+    "remove_diacritics": true,
+    "min_word_length": 2,
+    "max_word_length": 50,
+    "min_comment_length": 10,
+    "max_comment_length": 500
+  },
+  "cleaner_statistics": {
+    "processing_stats": {
+      "processed_texts": 400,
+      "removed_urls": 0,
+      "removed_emails": 0,
+      "removed_phone_numbers": 0,
+      "converted_emojis": 110,
+      "removed_stopwords": 19190,
+      "normalized_texts": 0,
+      "stemmed_words": 0
+    },
+    "configuration": {
+      "remove_urls": true,
+      "remove_emails": true,
+      "remove_emojis": false,
+      "normalize_persian": true,
+      "remove_diacritics": true,
+      "hazm_available": false
+    },
+    "resources": {
+      "stopwords_count": 2446,
+      "emoji_mappings_count": 297
+    }
+  },
+  "output_files": {
+    "light": "C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\data\\processed\\comments_light_processed.csv",
+    "medium": "C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\data\\processed\\comments_medium_processed.csv",
+    "heavy_stem": "C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\data\\processed\\comments_heavy_stem_processed.csv",
+    "heavy_lemma": "C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\data\\processed\\comments_heavy_lemma_processed.csv"
+  },
+  "versions_created": [
+    "light",
+    "medium",
+    "heavy_stem",
+    "heavy_lemma"
+  ]
+}

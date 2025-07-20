@@ -3,7 +3,6 @@ Label Analysis Utility
 Analyzes the results of OpenAI comment labeling and generates insights
 """
 
-from config import FILE_PATHS, RESULTS_DIR, FIGURES_DIR
 import pandas as pd
 import json
 import matplotlib.pyplot as plt
@@ -13,10 +12,19 @@ import sys
 from typing import Dict, List, Tuple
 from collections import Counter
 import re
+import os
 
 # Add project root to path
-project_root = Path(__file__).parent.parent
-sys.path.append(str(project_root))
+import sys
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
+try:
+    from config import FILE_PATHS, RESULTS_DIR, FIGURES_DIR
+except ImportError as e:
+    print(f"Import error: {e}")
+    print(f"Current working directory: {os.getcwd()}")
+    print(f"Python path: {sys.path}")
+    print(f"Project root: {Path(__file__).parent.parent.parent}")
 
 
 class LabelAnalyzer:
