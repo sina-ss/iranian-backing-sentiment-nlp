@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Script to run Cafe Bazaar scraper with different options
 """

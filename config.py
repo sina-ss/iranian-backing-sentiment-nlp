@@ -230,7 +230,8 @@ FILE_PATHS = {
     "scraping_log": RAW_DATA_DIR / "scraping_log.json",
     "failed_apps": RAW_DATA_DIR / "failed_apps.json",
     "labeling_stats": PROCESSED_DATA_DIR / "labeling_stats.json",
-    "label_analysis_report": REPORTS_DIR / "label_analysis_report.json"
+    "label_analysis_report": REPORTS_DIR / "label_analysis_report.json",
+    "results": RESULTS_DIR  # Add this missing key
 }
 
 # API Keys and External Services (if needed)
