@@ -11,6 +11,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 MODELS_DIR = PROJECT_ROOT / "models"
 RESULTS_DIR = PROJECT_ROOT / "results"
 NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
+SRC_DIR = PROJECT_ROOT / "src"
 
 # Data Directories
 RAW_DATA_DIR = DATA_DIR / "raw"
@@ -29,26 +30,40 @@ METRICS_DIR = RESULTS_DIR / "metrics"
 # Create directories if they don't exist
 for directory in [DATA_DIR, MODELS_DIR, RESULTS_DIR, RAW_DATA_DIR,
                   PROCESSED_DATA_DIR, EXTERNAL_DATA_DIR, SAVED_MODELS_DIR,
-                  CHECKPOINTS_DIR, FIGURES_DIR, REPORTS_DIR, METRICS_DIR]:
+                  CHECKPOINTS_DIR, FIGURES_DIR, REPORTS_DIR, METRICS_DIR,
+                  SRC_DIR, SRC_DIR / "data_collection"]:
     directory.mkdir(parents=True, exist_ok=True)
 
 # Data Collection Configuration
 CAFE_BAZAAR_CONFIG = {
+    "api_url": "https://api.cafebazaar.ir/rest-v1/process/ReviewRequest",
     "base_url": "https://cafebazaar.ir",
-    "banking_apps": [
-        "com.tejarat.ezam",           # Tejarat Bank
-        "com.mellat.hamrah",          # Mellat Bank
-        "com.parsian.pec.mobile",     # Parsian Bank
-        "com.eghtesadnovin.enhbank",  # Eghtesad Novin
-        "com.bmi.mobilebanking",      # Melli Bank
-        "com.saderat.saderatemobile",  # Saderat Bank
-        "com.dey.mobile",             # Dey Bank
-        "com.resalat.mobile",         # Resalat Bank
-        "com.karafarin.mobile",       # Karafarin Bank
-        "com.saman.mobile"            # Saman Bank
-    ],
+    "headers": {
+        "accept": "application/json, text/plain, */*",
+        "accept-language": "en-US,en;q=0.9,ar;q=0.8",
+        "cache-control": "no-cache",
+        "content-type": "application/json",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
+        "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Microsoft Edge\";v=\"138\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "Referer": "https://cafebazaar.ir/"
+    },
+    "properties": {
+        "language": 2,
+        "clientID": "0uwr1yvjwxo03deuxy5szdub4i68nrnn",
+        "deviceID": "0uwr1yvjwxo03deuxy5szdub4i68nrnn",
+        "clientVersion": "web"
+    },
     "max_comments_per_app": 200,
+    "comments_per_request": 10,  # API limitation
     "delay_between_requests": 2,
+    "max_retries": 3,
+    "timeout": 30,
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 }
 
@@ -202,14 +217,20 @@ BANKING_CATEGORIES = {
 
 # File Paths
 FILE_PATHS = {
+    "banking_apps_list": RAW_DATA_DIR / "banking_apps_list.json",
     "raw_comments": RAW_DATA_DIR / "cafe_bazaar_comments.csv",
     "processed_comments": PROCESSED_DATA_DIR / "cleaned_comments.csv",
+    "labeled_comments": PROCESSED_DATA_DIR / "labeled_comments.csv",
     "train_data": PROCESSED_DATA_DIR / "train_data.csv",
     "test_data": PROCESSED_DATA_DIR / "test_data.csv",
     "validation_data": PROCESSED_DATA_DIR / "validation_data.csv",
     "persian_stopwords": EXTERNAL_DATA_DIR / "persian_stopwords.txt",
     "model_scores": METRICS_DIR / "model_scores.json",
-    "final_report": REPORTS_DIR / "final_analysis_report.html"
+    "final_report": REPORTS_DIR / "final_analysis_report.html",
+    "scraping_log": RAW_DATA_DIR / "scraping_log.json",
+    "failed_apps": RAW_DATA_DIR / "failed_apps.json",
+    "labeling_stats": PROCESSED_DATA_DIR / "labeling_stats.json",
+    "label_analysis_report": REPORTS_DIR / "label_analysis_report.json"
 }
 
 # API Keys and External Services (if needed)
@@ -217,6 +238,47 @@ API_CONFIG = {
     "huggingface_token": os.getenv("HUGGINGFACE_TOKEN", ""),
     "openai_api_key": os.getenv("OPENAI_API_KEY", ""),
     "google_translate_key": os.getenv("GOOGLE_TRANSLATE_KEY", "")
+}
+
+# OpenAI Labeling Configuration
+OPENAI_LABELING_CONFIG = {
+    "model": "gpt-4o-mini",  # Most cost-effective model
+    "batch_size": 50,  # Requests per batch
+    "max_tokens": 50,  # Short responses for efficiency
+    "temperature": 0.2,  # Low temperature for consistent labeling
+    "timeout": 300,  # 5 minutes timeout
+    "max_retries": 3,
+    "retry_delay": 2,
+    "use_batch_api": True,  # Use OpenAI Batch API for cost savings
+    "batch_description": "Persian Banking Sentiment Labeling",
+    "cost_per_1k_tokens": {
+        "input": 0.000150,  # GPT-4o-mini input cost per 1K tokens
+        "output": 0.000600   # GPT-4o-mini output cost per 1K tokens
+    }
+}
+
+# Sentiment Labeling Prompts
+LABELING_PROMPTS = {
+    "system_prompt": """شما یک متخصص تحلیل احساسات متن فارسی هستید. وظیفه شما تعیین احساس کاربران در نظرات درباره اپلیکیشن‌های بانکی است.
+
+برای هر نظر، دقیقاً یکی از این سه برچسب را انتخاب کنید:
+- positive: نظر مثبت، رضایت، تعریف
+- negative: نظر منفی، انتقاد، شکایت  
+- neutral: نظر خنثی، توضیح ساده، سؤال
+
+فقط یک کلمه پاسخ دهید: positive، negative، یا neutral""",
+
+    "user_prompt_template": """لطفاً احساس این نظر درباره اپلیکیشن بانکی را تعیین کنید:
+
+نظر: "{comment}"
+
+احساس:""",
+
+    "batch_prompt_template": """لطفاً احساس هر یک از این نظرات درباره اپلیکیشن‌های بانکی را تعیین کنید. برای هر نظر فقط یک کلمه پاسخ دهید: positive، negative، یا neutral
+
+{comments_list}
+
+پاسخ‌ها (هر خط یک برچسب):"""
 }
 
 # Persian Text Processing Patterns

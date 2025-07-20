@@ -1,0 +1,65 @@
+{
+  "start_time": "2025-07-20T17:30:52.178807",
+  "end_time": "2025-07-20T17:41:49.486864",
+  "total_apps": 11,
+  "successful_apps": 11,
+  "failed_apps": 0,
+  "total_comments": 2200,
+  "apps_stats": {
+    "Tejarat Bank": {
+      "package_name": "ir.tejaratbank.tata.mobile.android.tejarat",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Mellat Bank": {
+      "package_name": "com.pmb.mobile",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "ًRefah Bank": {
+      "package_name": "com.refahbank.dpi.android",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Parsian Bank": {
+      "package_name": "com.parsmobapp",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Eghtesad Novin Bank": {
+      "package_name": "com.farazpardazan.enbank",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Melli Bank": {
+      "package_name": "ir.bmi.bam.nativeweb",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Saderat Bank": {
+      "package_name": "com.isc.bsinew",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Dey Bank": {
+      "package_name": "com.tosan.dara.day",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Resalat Bank": {
+      "package_name": "mob.banking.android.resalat",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Saman Bank": {
+      "package_name": "ir.mobillet.app",
+      "comments_collected": 200,
+      "status": "success"
+    },
+    "Blu Bank": {
+      "package_name": "com.samanpr.blu",
+      "comments_collected": 200,
+      "status": "success"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "properties": {
+        "language": 2,
+        "clientID": "0uwr1yvjwxo03deuxy5szdub4i68nrnn",
+        "deviceID": "0uwr1yvjwxo03deuxy5szdub4i68nrnn",
+        "clientVersion": "web"
+    },
+    "singleRequest": {
+        "reviewRequest": {
+            "packageName": "com.parsmobapp",
+            "start": 3,
+            "end": 13
+        }
+    }
+}

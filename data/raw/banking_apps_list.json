@@ -1,12 +1,46 @@
-{
-  "com.tejarat.ezam": "Tejarat Bank",
-  "com.mellat.hamrah": "Mellat Bank",
-  "com.parsian.pec.mobile": "Parsian Bank",
-  "com.eghtesadnovin.enhbank": "Eghtesad Novin Bank",
-  "com.bmi.mobilebanking": "Melli Bank",
-  "com.saderat.saderatemobile": "Saderat Bank",
-  "com.dey.mobile": "Dey Bank",
-  "com.resalat.mobile": "Resalat Bank",
-  "com.karafarin.mobile": "Karafarin Bank",
-  "com.saman.mobile": "Saman Bank"
-}
+[
+    {
+        "package_name": "ir.tejaratbank.tata.mobile.android.tejarat",
+        "app_name": "Tejarat Bank"
+    },
+    {
+        "package_name": "com.pmb.mobile",
+        "app_name": "Mellat Bank"
+    },
+    {
+        "package_name": "com.refahbank.dpi.android",
+        "app_name": "ًRefah Bank"
+    },
+    {
+        "package_name": "com.parsmobapp",
+        "app_name": "Parsian Bank"
+    },
+    {
+        "package_name": "com.farazpardazan.enbank",
+        "app_name": "Eghtesad Novin Bank"
+    },
+    {
+        "package_name": "ir.bmi.bam.nativeweb",
+        "app_name": "Melli Bank"
+    },
+    {
+        "package_name": "com.isc.bsinew",
+        "app_name": "Saderat Bank"
+    },
+    {
+        "package_name": "com.tosan.dara.day",
+        "app_name": "Dey Bank"
+    },
+    {
+        "package_name": "mob.banking.android.resalat",
+        "app_name": "Resalat Bank"
+    },
+    {
+        "package_name": "ir.mobillet.app",
+        "app_name": "Saman Bank"
+    },
+    {
+        "package_name": "com.samanpr.blu",
+        "app_name": "Blu Bank"
+    }
+]
