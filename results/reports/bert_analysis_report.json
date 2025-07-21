@@ -1,0 +1,89 @@
+{
+  "extraction_summary": {
+    "timestamp": "2025-07-21T10:50:55.482658",
+    "model_name": "HooshvareLab/bert-base-parsbert-uncased",
+    "documents_processed": 2200,
+    "embedding_dimension": 768,
+    "processing_time_seconds": 59.745797,
+    "memory_usage_mb": 0.29296875,
+    "device_used": "cpu"
+  },
+  "configuration": {
+    "model_name": "HooshvareLab/bert-base-parsbert-uncased",
+    "max_length": 128,
+    "padding": "max_length",
+    "truncation": true,
+    "return_attention_mask": true
+  },
+  "embedding_analysis": {
+    "basic_stats": {
+      "shape": [
+        100,
+        768
+      ],
+      "mean": 0.004002377390861511,
+      "std": 0.8538320064544678,
+      "min": -11.326175689697266,
+      "max": 6.09696626663208,
+      "norm_mean": 23.658180236816406,
+      "norm_std": 0.44375455379486084
+    },
+    "dimension_analysis": {
+      "total_dimensions": 768,
+      "effective_dimensions_95": 62,
+      "explained_variance_top10": [
+        0.19564217329025269,
+        0.06756743043661118,
+        0.05629971995949745,
+        0.05251925438642502,
+        0.04014386981725693,
+        0.03377458080649376,
+        0.031054891645908356,
+        0.027101073414087296,
+        0.02600562572479248,
+        0.023548347875475883
+      ],
+      "cumulative_variance_top10": [
+        0.19564217329025269,
+        0.26320961117744446,
+        0.3195093274116516,
+        0.3720285892486572,
+        0.41217246651649475,
+        0.4459470510482788,
+        0.47700193524360657,
+        0.5041030049324036,
+        0.530108630657196,
+        0.5536569952964783
+      ]
+    },
+    "similarity_analysis": {
+      "mean_similarity": 0.6683465242385864,
+      "std_similarity": 0.09910356253385544,
+      "min_similarity": 0.37551820278167725,
+      "max_similarity": 1.000000238418579,
+      "sample_size": 100
+    },
+    "clustering_analysis": {
+      "n_clusters": 5,
+      "silhouette_score": 0.07627212256193161,
+      "cluster_sizes": {
+        "0": 12,
+        "1": 26,
+        "2": 5,
+        "3": 13,
+        "4": 44
+      },
+      "inertia": 13910.0859375
+    }
+  },
+  "model_info": {
+    "available_models": [
+      "parsbert",
+      "parsbert-large",
+      "distilbert-persian",
+      "electra-persian",
+      "albert-persian"
+    ],
+    "used_model": "HooshvareLab/bert-base-parsbert-uncased"
+  }
+}

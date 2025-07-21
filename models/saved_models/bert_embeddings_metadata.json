@@ -1,0 +1,24 @@
+{
+  "config": {
+    "model_name": "HooshvareLab/bert-base-parsbert-uncased",
+    "max_length": 128,
+    "padding": "max_length",
+    "truncation": true,
+    "return_attention_mask": true
+  },
+  "stats": {
+    "model_name": "HooshvareLab/bert-base-parsbert-uncased",
+    "documents_processed": 2200,
+    "embedding_dimension": 768,
+    "processing_time": 59.745797,
+    "device_used": "cpu",
+    "memory_usage_mb": 0.29296875,
+    "timestamp": "2025-07-21T10:50:55.482658"
+  },
+  "embedding_shape": [
+    100,
+    768
+  ],
+  "model_name": "HooshvareLab/bert-base-parsbert-uncased",
+  "extraction_timestamp": "2025-07-21T10:50:55.482658"
+}

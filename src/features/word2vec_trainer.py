@@ -3,6 +3,7 @@ Word2Vec Trainer for Persian Banking Comments
 Advanced word embedding training with visualization and analysis capabilities
 """
 
+import os
 import sys
 import multiprocessing
 from gensim.models.callbacks import CallbackAny2Vec

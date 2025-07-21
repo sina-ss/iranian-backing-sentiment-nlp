@@ -1,0 +1,2 @@
+2025-07-21 10:52:17,151 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 10:52:17,201 - __main__ - ERROR - Error loading data: Label column 'sentiment_label' not found

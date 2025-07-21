@@ -1,0 +1,40 @@
+2025-07-21 09:57:11,942 - __main__ - INFO - Using device: cpu
+2025-07-21 09:57:11,947 - __main__ - INFO - Loading BERT model: HooshvareLab/bert-base-parsbert-uncased
+2025-07-21 10:12:14,428 - __main__ - INFO - Model loaded successfully
+2025-07-21 10:12:14,429 - __main__ - INFO - Hidden size: 768, Layers: 12
+2025-07-21 10:12:14,478 - __main__ - INFO - Vocabulary size: 100000
+2025-07-21 10:12:14,479 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_light_processed.csv
+2025-07-21 10:12:14,591 - __main__ - INFO - Loaded 2200 documents
+2025-07-21 10:12:14,595 - __main__ - INFO - Text length stats - Mean: 78.4, Max: 363, Min: 2
+2025-07-21 10:12:14,595 - __main__ - INFO - Extracting BERT embeddings for 100 documents
+2025-07-21 10:12:14,596 - __main__ - INFO - Batch size: 8, Pooling: cls, Layer: -1
+2025-07-21 10:12:14,627 - __main__ - INFO - Processing batch 1/13
+2025-07-21 10:12:38,166 - huggingface_hub.file_download - WARNING - Error while downloading from https://cdn-lfs.hf.co/HooshvareLab/bert-base-parsbert-uncased/93eef5df5b0cec6e542cb87fd49de8d181521fdaaf304b0e0e6d902552f4fa3a?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1753083734&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc1MzA4MzczNH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9Ib29zaHZhcmVMYWIvYmVydC1iYXNlLXBhcnNiZXJ0LXVuY2FzZWQvOTNlZWY1ZGY1YjBjZWM2ZTU0MmNiODdmZDQ5ZGU4ZDE4MTUyMWZkYWFmMzA0YjBlMGU2ZDkwMjU1MmY0ZmEzYT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=ABbZq9vmb3JBRhvdDCth4DuQHsnTCSNv8iAk3WZy0RJzEft-iLqaj5SyijjKLgSqSYvzyHnv-T4eyV2W7W68M-Hkk7DJSE10TzIdc9DpcbR6X8zgvaXJ8BunZw2wgcdyqOh2ugsykTKoPT6bJBom3D7r9gHgFFBK610VhaKkd5jraz-CbajUTufpK0T6oX7YsB3KwN10m6huXgGkCFS4KSKvtSzcFHm%7EAXfVan3CfRi1FVDPJLkyLxoFP0Vgn-cOHasF1rTRh3iC9%7EkUmnwrwI49W6HPbuq0M9MMtnsa%7Eih7Fn%7ExMIUGRyyPi8G8DCpo%7EEWJfa63tjRwgdggennA7Q__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-07-21 10:13:22,586 - __main__ - INFO - Processing batch 11/13
+2025-07-21 10:13:40,073 - __main__ - INFO - Embedding extraction completed in 85.48 seconds
+2025-07-21 10:13:40,083 - __main__ - INFO - Embeddings shape: (100, 768)
+2025-07-21 10:13:40,087 - __main__ - INFO - Analyzing BERT embeddings...
+2025-07-21 10:14:43,490 - __main__ - INFO - BERT embeddings saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\bert_embeddings.npz
+2025-07-21 10:14:43,508 - __main__ - INFO - Metadata saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\bert_embeddings_metadata.json
+2025-07-21 10:14:43,539 - __main__ - INFO - Analyzing BERT embeddings...
+2025-07-21 10:14:49,976 - __main__ - INFO - BERT analysis report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\bert_analysis_report.json
+2025-07-21 10:49:38,486 - __main__ - INFO - Using device: cpu
+2025-07-21 10:49:38,494 - __main__ - INFO - Loading BERT model: HooshvareLab/bert-base-parsbert-uncased
+2025-07-21 10:49:55,593 - __main__ - INFO - Model loaded successfully
+2025-07-21 10:49:55,594 - __main__ - INFO - Hidden size: 768, Layers: 12
+2025-07-21 10:49:55,645 - __main__ - INFO - Vocabulary size: 100000
+2025-07-21 10:49:55,646 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_light_processed.csv
+2025-07-21 10:49:55,733 - __main__ - INFO - Loaded 2200 documents
+2025-07-21 10:49:55,735 - __main__ - INFO - Text length stats - Mean: 78.4, Max: 363, Min: 2
+2025-07-21 10:49:55,736 - __main__ - INFO - Extracting BERT embeddings for 100 documents
+2025-07-21 10:49:55,736 - __main__ - INFO - Batch size: 8, Pooling: cls, Layer: -1
+2025-07-21 10:49:55,751 - __main__ - INFO - Processing batch 1/13
+2025-07-21 10:50:43,521 - __main__ - INFO - Processing batch 11/13
+2025-07-21 10:50:55,482 - __main__ - INFO - Embedding extraction completed in 59.75 seconds
+2025-07-21 10:50:55,483 - __main__ - INFO - Embeddings shape: (100, 768)
+2025-07-21 10:50:55,484 - __main__ - INFO - Analyzing BERT embeddings...
+2025-07-21 10:51:21,279 - __main__ - INFO - BERT embeddings saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\bert_embeddings.npz
+2025-07-21 10:51:21,282 - __main__ - INFO - Metadata saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\bert_embeddings_metadata.json
+2025-07-21 10:51:21,285 - __main__ - INFO - Analyzing BERT embeddings...
+2025-07-21 10:51:27,344 - __main__ - INFO - BERT analysis report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\bert_analysis_report.json
