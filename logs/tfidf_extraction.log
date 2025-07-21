@@ -1,0 +1,18 @@
+2025-07-21 03:27:29,402 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 03:27:29,421 - __main__ - INFO - Loaded 1497 documents
+2025-07-21 03:27:29,424 - __main__ - INFO - Starting TF-IDF fitting and transformation...
+2025-07-21 03:27:29,426 - __main__ - INFO - Created TF-IDF vectorizer with config: {'max_features': 10000, 'min_df': 2, 'max_df': 0.8, 'ngram_range': (1, 2), 'use_idf': True, 'smooth_idf': True}
+2025-07-21 03:27:29,443 - __main__ - INFO - TF-IDF extraction completed in 0.02 seconds
+2025-07-21 03:27:29,447 - __main__ - INFO - Feature matrix shape: (1497, 1381)
+2025-07-21 03:27:29,449 - __main__ - INFO - Vocabulary size: 1381
+2025-07-21 03:27:29,451 - __main__ - INFO - Matrix sparsity: 99.48%
+2025-07-21 03:30:54,952 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 03:30:54,970 - __main__ - INFO - Loaded 1497 documents
+2025-07-21 03:30:54,972 - __main__ - INFO - Starting TF-IDF fitting and transformation...
+2025-07-21 03:30:54,974 - __main__ - INFO - Created TF-IDF vectorizer with config: {'max_features': 10000, 'min_df': 2, 'max_df': 0.8, 'ngram_range': (1, 2), 'use_idf': True, 'smooth_idf': True}
+2025-07-21 03:30:54,987 - __main__ - INFO - TF-IDF extraction completed in 0.01 seconds
+2025-07-21 03:30:54,994 - __main__ - INFO - Feature matrix shape: (1497, 1381)
+2025-07-21 03:30:54,996 - __main__ - INFO - Vocabulary size: 1381
+2025-07-21 03:30:54,996 - __main__ - INFO - Matrix sparsity: 99.48%
+2025-07-21 03:30:56,403 - __main__ - INFO - TF-IDF model saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\tfidf_vectorizer.pkl
+2025-07-21 03:30:56,405 - __main__ - INFO - TF-IDF analysis report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\tfidf_analysis_report.json
