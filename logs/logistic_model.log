@@ -1,2 +1,66 @@
 2025-07-21 10:52:17,151 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
 2025-07-21 10:52:17,201 - __main__ - ERROR - Error loading data: Label column 'sentiment_label' not found
+2025-07-21 11:11:52,973 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 11:11:52,989 - __main__ - ERROR - Error loading data: Label column 'sentiment_label' not found
+2025-07-21 11:20:48,334 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 11:20:48,361 - __main__ - INFO - Loaded 1487 samples
+2025-07-21 11:20:48,367 - __main__ - INFO - Label distribution: {'negative': 1009, 'positive': 345, 'neutral': 133}
+2025-07-21 11:20:48,371 - __main__ - INFO - Features shape: (1487, 1)
+2025-07-21 11:20:48,373 - __main__ - INFO - Starting logistic regression training...
+2025-07-21 11:20:48,377 - __main__ - INFO - Preparing features: ['tfidf', 'text_length', 'sentiment_lexicon']
+2025-07-21 11:20:48,461 - __main__ - INFO - TF-IDF features: (1487, 2363)
+2025-07-21 11:20:48,473 - __main__ - INFO - Text length features: (1487, 4)
+2025-07-21 11:20:48,476 - __main__ - INFO - Sentiment lexicon features: (1487, 3)
+2025-07-21 11:20:48,478 - __main__ - INFO - Combined features shape: (1487, 2370)
+2025-07-21 11:20:48,480 - __main__ - INFO - Created logistic regression model with config: {'C': 1.0, 'max_iter': 1000, 'random_state': 42, 'solver': 'liblinear'}
+2025-07-21 11:20:48,495 - __main__ - INFO - Training completed in 0.12 seconds
+2025-07-21 11:20:48,497 - __main__ - INFO - Train accuracy: 0.9235
+2025-07-21 11:20:48,499 - __main__ - INFO - Test accuracy: 0.8020
+2025-07-21 11:20:48,500 - __main__ - INFO - Performing 5-fold cross-validation...
+2025-07-21 11:20:48,731 - __main__ - INFO - CV Results:
+2025-07-21 11:20:48,734 - __main__ - INFO -   accuracy: 0.8103 ± 0.0118
+2025-07-21 11:20:48,739 - __main__ - INFO -   precision: 0.7939 ± 0.0125
+2025-07-21 11:20:48,745 - __main__ - INFO -   recall: 0.8103 ± 0.0118
+2025-07-21 11:20:48,750 - __main__ - INFO -   f1: 0.7913 ± 0.0096
+2025-07-21 11:20:48,757 - __main__ - INFO - Evaluating model performance...
+2025-07-21 11:20:48,790 - __main__ - INFO - Model evaluation completed
+2025-07-21 11:20:48,792 - __main__ - INFO - Test accuracy: 0.8020
+2025-07-21 11:20:48,794 - __main__ - INFO - Test F1-score: 0.7844
+2025-07-21 11:20:50,570 - __main__ - INFO - Model saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\logistic_regression_model.pkl
+2025-07-21 11:20:50,573 - __main__ - INFO - Model size: 0.20 MB
+2025-07-21 11:20:50,579 - __main__ - INFO - Model report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\logistic_regression_report.json
+2025-07-21 11:20:50,608 - __main__ - INFO - Preparing features: ['tfidf']
+2025-07-21 11:20:50,610 - __main__ - INFO - TF-IDF features: (3, 2363)
+2025-07-21 11:20:50,611 - __main__ - INFO - Combined features shape: (3, 2363)
+2025-07-21 11:31:39,867 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_medium_processed.csv
+2025-07-21 11:31:39,890 - __main__ - INFO - Loaded 1487 samples
+2025-07-21 11:31:39,891 - __main__ - INFO - Label distribution: {'negative': 1009, 'positive': 345, 'neutral': 133}
+2025-07-21 11:31:39,893 - __main__ - INFO - Features shape: (1487, 1)
+2025-07-21 11:31:39,894 - __main__ - INFO - Starting logistic regression training...
+2025-07-21 11:31:39,895 - __main__ - INFO - Preparing features: ['tfidf', 'text_length', 'sentiment_lexicon']
+2025-07-21 11:31:39,966 - __main__ - INFO - TF-IDF features: (1487, 2363)
+2025-07-21 11:31:39,979 - __main__ - INFO - Text length features: (1487, 4)
+2025-07-21 11:31:39,990 - __main__ - INFO - Sentiment lexicon features: (1487, 3)
+2025-07-21 11:31:39,996 - __main__ - INFO - Combined features shape: (1487, 2370)
+2025-07-21 11:31:40,001 - __main__ - INFO - Created logistic regression model with config: {'C': 1.0, 'max_iter': 1000, 'random_state': 42, 'solver': 'liblinear'}
+2025-07-21 11:31:40,017 - __main__ - INFO - Training completed in 0.12 seconds
+2025-07-21 11:31:40,018 - __main__ - INFO - Train accuracy: 0.9235
+2025-07-21 11:31:40,019 - __main__ - INFO - Test accuracy: 0.8020
+2025-07-21 11:31:40,020 - __main__ - INFO - Performing 5-fold cross-validation...
+2025-07-21 11:31:40,248 - __main__ - INFO - CV Results:
+2025-07-21 11:31:40,250 - __main__ - INFO -   accuracy: 0.8103 ± 0.0118
+2025-07-21 11:31:40,250 - __main__ - INFO -   precision: 0.7939 ± 0.0125
+2025-07-21 11:31:40,252 - __main__ - INFO -   recall: 0.8103 ± 0.0118
+2025-07-21 11:31:40,256 - __main__ - INFO -   f1: 0.7913 ± 0.0096
+2025-07-21 11:31:40,258 - __main__ - INFO - Evaluating model performance...
+2025-07-21 11:31:40,286 - __main__ - INFO - Model evaluation completed
+2025-07-21 11:31:40,287 - __main__ - INFO - Test accuracy: 0.8020
+2025-07-21 11:31:40,287 - __main__ - INFO - Test F1-score: 0.7844
+2025-07-21 11:31:42,049 - __main__ - INFO - Model saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\logistic_regression_model.pkl
+2025-07-21 11:31:42,050 - __main__ - INFO - Model size: 0.20 MB
+2025-07-21 11:31:42,053 - __main__ - INFO - Model report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\logistic_regression_report.json
+2025-07-21 11:31:42,066 - __main__ - INFO - Preparing features: ['tfidf', 'text_length', 'sentiment_lexicon']
+2025-07-21 11:31:42,069 - __main__ - INFO - TF-IDF features: (3, 2363)
+2025-07-21 11:31:42,071 - __main__ - INFO - Text length features: (3, 4)
+2025-07-21 11:31:42,077 - __main__ - INFO - Sentiment lexicon features: (3, 3)
+2025-07-21 11:31:42,086 - __main__ - INFO - Combined features shape: (3, 2370)

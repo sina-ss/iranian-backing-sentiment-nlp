@@ -1,47 +1,47 @@
 {
   "preprocessing_summary": {
-    "start_time": "2025-07-21T02:37:23.505152",
-    "end_time": "2025-07-21T02:37:36.506054",
-    "duration_seconds": 13.000902,
-    "input_comments": 2200,
-    "output_comments": 1487,
-    "filtered_comments": 706,
-    "success_rate": 0.6759090909090909
+    "start_time": "2025-07-21T11:19:57.315710",
+    "end_time": "2025-07-21T11:20:15.842464",
+    "duration_seconds": 18.526754,
+    "input_comments": 1688,
+    "output_comments": 1477,
+    "filtered_comments": 211,
+    "success_rate": 0.875
   },
   "input_analysis": {
-    "total_comments": 2200,
+    "total_comments": 1688,
     "comment_length_stats": {
-      "mean": 77.91954545454546,
-      "median": 50.0,
-      "min": "2",
+      "mean": 99.87381516587678,
+      "median": 70.5,
+      "min": "11",
       "max": "300",
-      "std": 80.73651067657083
+      "std": 80.14267110133568
     },
-    "unique_comments": 1799,
-    "duplicate_comments": 401,
+    "unique_comments": 1671,
+    "duplicate_comments": 17,
     "apps_count": 11,
     "comments_per_app": {
-      "Tejarat Bank": 200,
-      "Mellat Bank": 200,
-      "ًRefah Bank": 200,
-      "Parsian Bank": 200,
-      "Eghtesad Novin Bank": 200,
-      "Melli Bank": 200,
-      "Saderat Bank": 200,
-      "Dey Bank": 200,
-      "Resalat Bank": 200,
-      "Saman Bank": 200,
-      "Blu Bank": 200
+      "Resalat Bank": 183,
+      "Dey Bank": 181,
+      "Eghtesad Novin Bank": 180,
+      "Tejarat Bank": 173,
+      "Saman Bank": 170,
+      "Saderat Bank": 159,
+      "ًRefah Bank": 151,
+      "Mellat Bank": 140,
+      "Parsian Bank": 134,
+      "Blu Bank": 112,
+      "Melli Bank": 105
     },
     "rating_distribution": {
-      "1": 705,
-      "2": 145,
-      "3": 163,
-      "4": 146,
-      "5": 1041
+      "1": 685,
+      "2": 136,
+      "3": 153,
+      "4": 120,
+      "5": 594
     },
-    "average_rating": 3.305909090909091,
-    "persian_text_ratio": 0.995
+    "average_rating": 2.882701421800948,
+    "persian_text_ratio": 1.0
   },
   "processing_configuration": {
     "remove_english": true,
@@ -58,13 +58,13 @@
   },
   "cleaner_statistics": {
     "processing_stats": {
-      "processed_texts": 962,
+      "processed_texts": 922,
       "removed_urls": 0,
       "removed_emails": 0,
       "removed_phone_numbers": 0,
-      "converted_emojis": 110,
-      "removed_stopwords": 18661,
-      "normalized_texts": 4393,
+      "converted_emojis": 95,
+      "removed_stopwords": 18178,
+      "normalized_texts": 3376,
       "stemmed_words": 0
     },
     "configuration": {
