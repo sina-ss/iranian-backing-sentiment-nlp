@@ -1,0 +1,1167 @@
+2025-07-21 03:33:02,542 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 03:33:02,565 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 03:33:02,571 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 03:33:02,576 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 03:33:02,578 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 03:33:02,607 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T03:33:02.581949', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 03:33:02,610 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 03:33:02,611 - __main__ - INFO - Building vocabulary...
+2025-07-21 03:33:02,613 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 03:33:02,613 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 03:33:02,617 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 03:33:02,618 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 03:33:02,622 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T03:33:02.622713', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:33:02,623 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T03:33:02.623726', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:33:02,627 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 03:33:02,628 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 03:33:02,629 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T03:33:02.629744', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:33:02,635 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 03:33:02,638 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 03:33:02,641 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T03:33:02.641735', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 03:33:02,642 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 03:33:02,643 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 03:33:02,645 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T03:33:02.645255', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 03:33:02,670 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.0s, 608723 effective words/s
+2025-07-21 03:33:02,698 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.0s, 672190 effective words/s
+2025-07-21 03:33:02,727 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.0s, 680018 effective words/s
+2025-07-21 03:33:02,758 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.0s, 624806 effective words/s
+2025-07-21 03:33:02,785 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.0s, 677380 effective words/s
+2025-07-21 03:33:02,815 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.0s, 613225 effective words/s
+2025-07-21 03:33:02,842 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.0s, 625490 effective words/s
+2025-07-21 03:33:02,871 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.0s, 718658 effective words/s
+2025-07-21 03:33:02,895 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.0s, 623270 effective words/s
+2025-07-21 03:33:02,936 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.0s, 596417 effective words/s
+2025-07-21 03:33:02,970 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.0s, 621406 effective words/s
+2025-07-21 03:33:03,010 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.0s, 622691 effective words/s
+2025-07-21 03:33:03,036 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.0s, 607868 effective words/s
+2025-07-21 03:33:03,084 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.0s, 619174 effective words/s
+2025-07-21 03:33:03,111 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.0s, 608822 effective words/s
+2025-07-21 03:33:03,159 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.0s, 274525 effective words/s
+2025-07-21 03:33:03,325 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.1s, 93040 effective words/s
+2025-07-21 03:33:03,480 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.1s, 97112 effective words/s
+2025-07-21 03:33:03,613 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.1s, 110300 effective words/s
+2025-07-21 03:33:03,758 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 101641 effective words/s
+2025-07-21 03:33:03,892 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.1s, 112884 effective words/s
+2025-07-21 03:33:04,045 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.1s, 93012 effective words/s
+2025-07-21 03:33:04,213 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 97282 effective words/s
+2025-07-21 03:33:04,391 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 86543 effective words/s
+2025-07-21 03:33:04,525 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.1s, 104510 effective words/s
+2025-07-21 03:33:04,676 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.1s, 93002 effective words/s
+2025-07-21 03:33:04,806 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.1s, 108861 effective words/s
+2025-07-21 03:33:04,929 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.1s, 116534 effective words/s
+2025-07-21 03:33:05,074 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.1s, 117209 effective words/s
+2025-07-21 03:33:05,233 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 83425 effective words/s
+2025-07-21 03:33:05,367 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 104206 effective words/s
+2025-07-21 03:33:05,538 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 101481 effective words/s
+2025-07-21 03:33:05,666 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 107590 effective words/s
+2025-07-21 03:33:05,808 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.1s, 108037 effective words/s
+2025-07-21 03:33:05,948 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 101070 effective words/s
+2025-07-21 03:33:06,079 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 118163 effective words/s
+2025-07-21 03:33:06,252 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.1s, 76013 effective words/s
+2025-07-21 03:33:06,390 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 107847 effective words/s
+2025-07-21 03:33:06,522 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10691 effective words) took 0.1s, 109999 effective words/s
+2025-07-21 03:33:06,662 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10649 effective words) took 0.1s, 113968 effective words/s
+2025-07-21 03:33:06,792 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10669 effective words) took 0.1s, 118430 effective words/s
+2025-07-21 03:33:06,923 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10685 effective words) took 0.1s, 115415 effective words/s
+2025-07-21 03:33:07,040 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10697 effective words) took 0.1s, 120921 effective words/s
+2025-07-21 03:33:07,180 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10655 effective words) took 0.1s, 97906 effective words/s
+2025-07-21 03:33:07,339 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10667 effective words) took 0.1s, 86518 effective words/s
+2025-07-21 03:33:07,470 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10680 effective words) took 0.1s, 113457 effective words/s
+2025-07-21 03:33:07,595 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10671 effective words) took 0.1s, 111611 effective words/s
+2025-07-21 03:33:07,732 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10713 effective words) took 0.1s, 105726 effective words/s
+2025-07-21 03:33:07,883 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10704 effective words) took 0.1s, 97679 effective words/s
+2025-07-21 03:33:08,011 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10744 effective words) took 0.1s, 111442 effective words/s
+2025-07-21 03:33:08,140 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10668 effective words) took 0.1s, 112616 effective words/s
+2025-07-21 03:33:08,269 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10737 effective words) took 0.1s, 108370 effective words/s
+2025-07-21 03:33:08,417 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10721 effective words) took 0.1s, 90781 effective words/s
+2025-07-21 03:33:08,553 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10640 effective words) took 0.1s, 102337 effective words/s
+2025-07-21 03:33:08,686 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10653 effective words) took 0.1s, 110662 effective words/s
+2025-07-21 03:33:08,836 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10678 effective words) took 0.1s, 113639 effective words/s
+2025-07-21 03:33:08,990 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10658 effective words) took 0.1s, 104839 effective words/s
+2025-07-21 03:33:09,126 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10684 effective words) took 0.1s, 104223 effective words/s
+2025-07-21 03:33:09,249 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10737 effective words) took 0.1s, 114041 effective words/s
+2025-07-21 03:33:09,369 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10612 effective words) took 0.1s, 122299 effective words/s
+2025-07-21 03:33:09,531 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10720 effective words) took 0.1s, 109137 effective words/s
+2025-07-21 03:33:09,658 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10665 effective words) took 0.1s, 123223 effective words/s
+2025-07-21 03:33:09,799 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10674 effective words) took 0.1s, 103366 effective words/s
+2025-07-21 03:33:09,951 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10668 effective words) took 0.1s, 92065 effective words/s
+2025-07-21 03:33:10,101 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10688 effective words) took 0.1s, 112715 effective words/s
+2025-07-21 03:33:10,241 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10641 effective words) took 0.1s, 101913 effective words/s
+2025-07-21 03:33:10,371 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10698 effective words) took 0.1s, 107770 effective words/s
+2025-07-21 03:33:10,531 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10642 effective words) took 0.1s, 88537 effective words/s
+2025-07-21 03:33:10,678 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10726 effective words) took 0.1s, 95679 effective words/s
+2025-07-21 03:33:10,819 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10663 effective words) took 0.1s, 101850 effective words/s
+2025-07-21 03:33:10,961 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10657 effective words) took 0.1s, 104009 effective words/s
+2025-07-21 03:33:11,106 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10705 effective words) took 0.1s, 106607 effective words/s
+2025-07-21 03:33:11,246 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10746 effective words) took 0.1s, 110057 effective words/s
+2025-07-21 03:33:11,379 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10742 effective words) took 0.1s, 117737 effective words/s
+2025-07-21 03:33:11,532 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10686 effective words) took 0.1s, 87793 effective words/s
+2025-07-21 03:33:11,668 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10667 effective words) took 0.1s, 102668 effective words/s
+2025-07-21 03:33:11,805 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10655 effective words) took 0.1s, 107389 effective words/s
+2025-07-21 03:33:11,941 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10669 effective words) took 0.1s, 101554 effective words/s
+2025-07-21 03:33:12,104 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10720 effective words) took 0.1s, 88566 effective words/s
+2025-07-21 03:33:12,231 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10764 effective words) took 0.1s, 115923 effective words/s
+2025-07-21 03:33:12,365 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10720 effective words) took 0.1s, 113033 effective words/s
+2025-07-21 03:33:12,491 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10656 effective words) took 0.1s, 134993 effective words/s
+2025-07-21 03:33:12,649 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10678 effective words) took 0.1s, 86036 effective words/s
+2025-07-21 03:33:12,780 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10693 effective words) took 0.1s, 113123 effective words/s
+2025-07-21 03:33:12,938 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10704 effective words) took 0.1s, 93496 effective words/s
+2025-07-21 03:33:13,092 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10691 effective words) took 0.1s, 97924 effective words/s
+2025-07-21 03:33:13,230 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10700 effective words) took 0.1s, 106987 effective words/s
+2025-07-21 03:33:13,399 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10704 effective words) took 0.1s, 95549 effective words/s
+2025-07-21 03:33:13,543 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10700 effective words) took 0.1s, 93413 effective words/s
+2025-07-21 03:33:13,700 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10714 effective words) took 0.1s, 91764 effective words/s
+2025-07-21 03:33:13,862 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10680 effective words) took 0.1s, 82890 effective words/s
+2025-07-21 03:33:13,997 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10733 effective words) took 0.1s, 107298 effective words/s
+2025-07-21 03:33:14,144 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10710 effective words) took 0.1s, 98767 effective words/s
+2025-07-21 03:33:14,292 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10634 effective words) took 0.1s, 93080 effective words/s
+2025-07-21 03:33:14,407 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10692 effective words) took 0.1s, 123808 effective words/s
+2025-07-21 03:33:14,537 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10705 effective words) took 0.1s, 111040 effective words/s
+2025-07-21 03:33:14,718 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10705 effective words) took 0.1s, 79827 effective words/s
+2025-07-21 03:33:14,846 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10732 effective words) took 0.1s, 114750 effective words/s
+2025-07-21 03:33:14,967 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10701 effective words) took 0.1s, 118630 effective words/s
+2025-07-21 03:33:15,106 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10695 effective words) took 0.1s, 107991 effective words/s
+2025-07-21 03:33:15,112 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1069060 effective words) took 12.5s, 85756 effective words/s', 'datetime': '2025-07-21T03:33:15.112139', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 03:33:15,113 - __main__ - INFO - Training completed in 12.53 seconds
+2025-07-21 03:33:15,114 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 03:33:15,118 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 03:33:48,981 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T03:33:48.981164', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 03:33:48,995 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 03:38:23,548 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 03:38:23,574 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 03:38:23,578 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 03:38:23,584 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 03:38:23,590 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 03:38:23,636 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T03:38:23.595369', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 03:38:23,640 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 03:38:23,645 - __main__ - INFO - Building vocabulary...
+2025-07-21 03:38:23,649 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 03:38:23,654 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 03:38:23,661 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 03:38:23,664 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 03:38:23,667 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T03:38:23.667893', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:38:23,668 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T03:38:23.668899', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:38:23,674 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 03:38:23,675 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 03:38:23,677 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T03:38:23.677896', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:38:23,682 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 03:38:23,683 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 03:38:23,686 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T03:38:23.686902', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 03:38:23,687 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 03:38:23,688 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 03:38:23,689 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T03:38:23.689900', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 03:38:23,719 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.0s, 600145 effective words/s
+2025-07-21 03:38:23,750 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.0s, 667514 effective words/s
+2025-07-21 03:38:23,776 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.0s, 611624 effective words/s
+2025-07-21 03:38:23,804 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.0s, 654434 effective words/s
+2025-07-21 03:38:23,837 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.0s, 615512 effective words/s
+2025-07-21 03:38:23,866 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.0s, 618236 effective words/s
+2025-07-21 03:38:23,899 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.0s, 584015 effective words/s
+2025-07-21 03:38:23,950 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.0s, 314330 effective words/s
+2025-07-21 03:38:24,140 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.1s, 72295 effective words/s
+2025-07-21 03:38:24,290 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.1s, 95136 effective words/s
+2025-07-21 03:38:24,440 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.1s, 97009 effective words/s
+2025-07-21 03:38:24,590 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.1s, 93826 effective words/s
+2025-07-21 03:38:24,738 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.1s, 98848 effective words/s
+2025-07-21 03:38:24,890 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.1s, 102011 effective words/s
+2025-07-21 03:38:25,048 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.1s, 86096 effective words/s
+2025-07-21 03:38:25,228 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.1s, 72585 effective words/s
+2025-07-21 03:38:25,369 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.1s, 98092 effective words/s
+2025-07-21 03:38:25,505 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.1s, 104048 effective words/s
+2025-07-21 03:38:25,687 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.1s, 80534 effective words/s
+2025-07-21 03:38:25,843 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 102624 effective words/s
+2025-07-21 03:38:26,000 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.1s, 90717 effective words/s
+2025-07-21 03:38:26,129 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.1s, 107611 effective words/s
+2025-07-21 03:38:26,321 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 72517 effective words/s
+2025-07-21 03:38:26,479 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 88188 effective words/s
+2025-07-21 03:38:26,710 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.2s, 69888 effective words/s
+2025-07-21 03:38:26,898 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.1s, 102831 effective words/s
+2025-07-21 03:38:27,032 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.1s, 101790 effective words/s
+2025-07-21 03:38:27,189 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.1s, 90823 effective words/s
+2025-07-21 03:38:27,386 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.2s, 64949 effective words/s
+2025-07-21 03:38:27,560 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 80851 effective words/s
+2025-07-21 03:38:27,726 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 83912 effective words/s
+2025-07-21 03:38:27,880 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 88497 effective words/s
+2025-07-21 03:38:28,025 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 94884 effective words/s
+2025-07-21 03:38:28,171 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.1s, 100734 effective words/s
+2025-07-21 03:38:28,352 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 73776 effective words/s
+2025-07-21 03:38:28,519 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 88199 effective words/s
+2025-07-21 03:38:28,711 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.2s, 67441 effective words/s
+2025-07-21 03:38:28,870 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 89066 effective words/s
+2025-07-21 03:38:29,129 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10691 effective words) took 0.2s, 59469 effective words/s
+2025-07-21 03:38:29,369 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10649 effective words) took 0.2s, 62648 effective words/s
+2025-07-21 03:38:29,595 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10669 effective words) took 0.1s, 77634 effective words/s
+2025-07-21 03:38:29,774 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10685 effective words) took 0.1s, 74752 effective words/s
+2025-07-21 03:38:29,989 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10697 effective words) took 0.1s, 71725 effective words/s
+2025-07-21 03:38:30,150 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10655 effective words) took 0.1s, 96440 effective words/s
+2025-07-21 03:38:30,301 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10667 effective words) took 0.1s, 87824 effective words/s
+2025-07-21 03:38:30,493 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10680 effective words) took 0.1s, 75459 effective words/s
+2025-07-21 03:38:30,730 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10671 effective words) took 0.1s, 83162 effective words/s
+2025-07-21 03:38:30,944 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10713 effective words) took 0.1s, 72257 effective words/s
+2025-07-21 03:38:31,214 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10704 effective words) took 0.2s, 59942 effective words/s
+2025-07-21 03:38:31,473 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10744 effective words) took 0.2s, 55942 effective words/s
+2025-07-21 03:38:31,903 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10668 effective words) took 0.3s, 40676 effective words/s
+2025-07-21 03:38:32,083 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10737 effective words) took 0.1s, 94782 effective words/s
+2025-07-21 03:38:32,240 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10721 effective words) took 0.1s, 101700 effective words/s
+2025-07-21 03:38:32,464 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10640 effective words) took 0.1s, 96175 effective words/s
+2025-07-21 03:38:32,678 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10653 effective words) took 0.1s, 72471 effective words/s
+2025-07-21 03:38:32,814 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10678 effective words) took 0.1s, 108269 effective words/s
+2025-07-21 03:38:33,013 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10658 effective words) took 0.1s, 78281 effective words/s
+2025-07-21 03:38:33,234 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10684 effective words) took 0.2s, 69310 effective words/s
+2025-07-21 03:38:33,441 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10737 effective words) took 0.1s, 71694 effective words/s
+2025-07-21 03:38:33,620 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10612 effective words) took 0.1s, 91568 effective words/s
+2025-07-21 03:38:33,823 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10720 effective words) took 0.1s, 100127 effective words/s
+2025-07-21 03:38:33,984 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10665 effective words) took 0.1s, 91993 effective words/s
+2025-07-21 03:38:34,121 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10674 effective words) took 0.1s, 107740 effective words/s
+2025-07-21 03:38:34,275 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10668 effective words) took 0.1s, 89725 effective words/s
+2025-07-21 03:38:34,554 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10688 effective words) took 0.2s, 44791 effective words/s
+2025-07-21 03:38:34,959 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10641 effective words) took 0.1s, 92521 effective words/s
+2025-07-21 03:38:35,095 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10698 effective words) took 0.1s, 102532 effective words/s
+2025-07-21 03:38:35,249 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10642 effective words) took 0.1s, 86926 effective words/s
+2025-07-21 03:38:35,608 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10726 effective words) took 0.2s, 52111 effective words/s
+2025-07-21 03:38:36,046 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10663 effective words) took 0.3s, 41624 effective words/s
+2025-07-21 03:38:36,497 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10657 effective words) took 0.3s, 35858 effective words/s
+2025-07-21 03:38:36,827 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10705 effective words) took 0.1s, 83052 effective words/s
+2025-07-21 03:38:37,093 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10746 effective words) took 0.1s, 94115 effective words/s
+2025-07-21 03:38:37,333 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10742 effective words) took 0.1s, 86607 effective words/s
+2025-07-21 03:38:37,483 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10686 effective words) took 0.1s, 102236 effective words/s
+2025-07-21 03:38:37,623 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10667 effective words) took 0.1s, 96475 effective words/s
+2025-07-21 03:38:37,753 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10655 effective words) took 0.1s, 108467 effective words/s
+2025-07-21 03:38:37,973 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10669 effective words) took 0.2s, 68649 effective words/s
+2025-07-21 03:38:38,160 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10720 effective words) took 0.1s, 79249 effective words/s
+2025-07-21 03:38:38,343 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10764 effective words) took 0.1s, 79880 effective words/s
+2025-07-21 03:38:38,582 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10720 effective words) took 0.1s, 82843 effective words/s
+2025-07-21 03:38:39,002 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10656 effective words) took 0.2s, 58349 effective words/s
+2025-07-21 03:38:39,189 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10678 effective words) took 0.1s, 85750 effective words/s
+2025-07-21 03:38:39,338 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10693 effective words) took 0.1s, 93950 effective words/s
+2025-07-21 03:38:39,488 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10704 effective words) took 0.1s, 91990 effective words/s
+2025-07-21 03:38:39,627 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10691 effective words) took 0.1s, 108839 effective words/s
+2025-07-21 03:38:39,774 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10700 effective words) took 0.1s, 94469 effective words/s
+2025-07-21 03:38:39,927 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10704 effective words) took 0.1s, 95599 effective words/s
+2025-07-21 03:38:40,119 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10700 effective words) took 0.2s, 71158 effective words/s
+2025-07-21 03:38:40,279 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10714 effective words) took 0.1s, 100954 effective words/s
+2025-07-21 03:38:40,455 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10680 effective words) took 0.1s, 75292 effective words/s
+2025-07-21 03:38:40,708 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10733 effective words) took 0.2s, 62359 effective words/s
+2025-07-21 03:38:40,957 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10710 effective words) took 0.2s, 62749 effective words/s
+2025-07-21 03:38:41,124 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10634 effective words) took 0.1s, 90425 effective words/s
+2025-07-21 03:38:41,501 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10692 effective words) took 0.3s, 40049 effective words/s
+2025-07-21 03:38:41,659 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10705 effective words) took 0.1s, 104115 effective words/s
+2025-07-21 03:38:41,887 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10705 effective words) took 0.1s, 79455 effective words/s
+2025-07-21 03:38:42,101 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10732 effective words) took 0.1s, 79202 effective words/s
+2025-07-21 03:38:42,363 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10701 effective words) took 0.2s, 65799 effective words/s
+2025-07-21 03:38:42,591 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10695 effective words) took 0.1s, 82666 effective words/s
+2025-07-21 03:38:42,598 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1069060 effective words) took 18.9s, 56546 effective words/s', 'datetime': '2025-07-21T03:38:42.598902', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 03:38:42,599 - __main__ - INFO - Training completed in 19.01 seconds
+2025-07-21 03:38:42,601 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 03:38:42,605 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 03:39:18,280 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T03:39:18.280308', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 03:39:18,284 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 03:42:12,229 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 03:42:12,252 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 03:42:12,254 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 03:42:12,257 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 03:42:12,258 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 03:42:12,272 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T03:42:12.262577', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 03:42:12,272 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 03:42:12,272 - __main__ - INFO - Building vocabulary...
+2025-07-21 03:42:12,273 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 03:42:12,273 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 03:42:12,274 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 03:42:12,275 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 03:42:12,277 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T03:42:12.277577', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:42:12,277 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T03:42:12.277577', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:42:12,280 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 03:42:12,280 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 03:42:12,281 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T03:42:12.281575', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 03:42:12,285 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 03:42:12,285 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 03:42:12,286 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T03:42:12.286575', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 03:42:12,287 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 03:42:12,287 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 03:42:12,287 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T03:42:12.287574', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 03:42:12,309 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.0s, 560860 effective words/s
+2025-07-21 03:42:12,343 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.0s, 527595 effective words/s
+2025-07-21 03:42:12,379 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.0s, 569419 effective words/s
+2025-07-21 03:42:12,408 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.0s, 580654 effective words/s
+2025-07-21 03:42:12,443 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.0s, 592244 effective words/s
+2025-07-21 03:42:12,513 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.1s, 180126 effective words/s
+2025-07-21 03:42:12,691 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.1s, 74941 effective words/s
+2025-07-21 03:42:12,897 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.2s, 70305 effective words/s
+2025-07-21 03:42:13,044 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.1s, 95769 effective words/s
+2025-07-21 03:42:13,201 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.1s, 83989 effective words/s
+2025-07-21 03:42:13,358 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.1s, 102068 effective words/s
+2025-07-21 03:42:13,502 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.1s, 97496 effective words/s
+2025-07-21 03:42:13,653 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.1s, 92464 effective words/s
+2025-07-21 03:42:13,832 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.1s, 77161 effective words/s
+2025-07-21 03:42:14,025 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.1s, 75718 effective words/s
+2025-07-21 03:42:14,259 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.2s, 56227 effective words/s
+2025-07-21 03:42:14,431 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.1s, 90179 effective words/s
+2025-07-21 03:42:14,584 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.1s, 92551 effective words/s
+2025-07-21 03:42:14,740 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.1s, 89746 effective words/s
+2025-07-21 03:42:14,924 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 79304 effective words/s
+2025-07-21 03:42:15,159 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.2s, 64086 effective words/s
+2025-07-21 03:42:15,355 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.1s, 72368 effective words/s
+2025-07-21 03:42:15,511 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 89909 effective words/s
+2025-07-21 03:42:15,665 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 94942 effective words/s
+2025-07-21 03:42:15,817 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.1s, 93235 effective words/s
+2025-07-21 03:42:15,988 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.1s, 81355 effective words/s
+2025-07-21 03:42:16,201 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.2s, 62809 effective words/s
+2025-07-21 03:42:16,441 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.2s, 68237 effective words/s
+2025-07-21 03:42:16,599 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.1s, 89752 effective words/s
+2025-07-21 03:42:16,755 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 92594 effective words/s
+2025-07-21 03:42:16,916 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 90651 effective words/s
+2025-07-21 03:42:17,080 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 87731 effective words/s
+2025-07-21 03:42:17,258 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 77279 effective words/s
+2025-07-21 03:42:17,462 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.2s, 67662 effective words/s
+2025-07-21 03:42:17,594 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 105612 effective words/s
+2025-07-21 03:42:17,746 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 89440 effective words/s
+2025-07-21 03:42:17,901 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.1s, 87242 effective words/s
+2025-07-21 03:42:18,046 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 93538 effective words/s
+2025-07-21 03:42:18,229 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10691 effective words) took 0.1s, 77503 effective words/s
+2025-07-21 03:42:18,392 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10649 effective words) took 0.1s, 100463 effective words/s
+2025-07-21 03:42:18,579 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10669 effective words) took 0.1s, 72236 effective words/s
+2025-07-21 03:42:18,748 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10685 effective words) took 0.1s, 84920 effective words/s
+2025-07-21 03:42:19,373 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10697 effective words) took 0.5s, 19843 effective words/s
+2025-07-21 03:42:20,393 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10655 effective words) took 0.6s, 19047 effective words/s
+2025-07-21 03:42:21,596 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10674 effective words) took 0.8s, 12968 effective words/s
+2025-07-21 03:42:22,495 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10666 effective words) took 0.5s, 20533 effective words/s
+2025-07-21 03:42:23,114 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10690 effective words) took 0.3s, 42147 effective words/s
+2025-07-21 03:42:23,279 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10685 effective words) took 0.1s, 94973 effective words/s
+2025-07-21 03:42:23,421 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10701 effective words) took 0.1s, 100105 effective words/s
+2025-07-21 03:42:23,596 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10743 effective words) took 0.1s, 87667 effective words/s
+2025-07-21 03:42:23,747 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10712 effective words) took 0.1s, 101713 effective words/s
+2025-07-21 03:42:23,959 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10719 effective words) took 0.2s, 67489 effective words/s
+2025-07-21 03:42:24,171 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10728 effective words) took 0.1s, 71537 effective words/s
+2025-07-21 03:42:24,320 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10689 effective words) took 0.1s, 96845 effective words/s
+2025-07-21 03:42:24,457 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10712 effective words) took 0.1s, 101370 effective words/s
+2025-07-21 03:42:24,610 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10735 effective words) took 0.1s, 93767 effective words/s
+2025-07-21 03:42:24,784 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10693 effective words) took 0.1s, 80406 effective words/s
+2025-07-21 03:42:24,964 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10691 effective words) took 0.1s, 78833 effective words/s
+2025-07-21 03:42:25,224 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10736 effective words) took 0.2s, 55918 effective words/s
+2025-07-21 03:42:25,419 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10665 effective words) took 0.1s, 79571 effective words/s
+2025-07-21 03:42:25,623 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10619 effective words) took 0.1s, 78711 effective words/s
+2025-07-21 03:42:25,872 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10699 effective words) took 0.2s, 60434 effective words/s
+2025-07-21 03:42:26,133 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10607 effective words) took 0.1s, 80831 effective words/s
+2025-07-21 03:42:26,432 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10688 effective words) took 0.2s, 61804 effective words/s
+2025-07-21 03:42:26,726 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10669 effective words) took 0.2s, 67521 effective words/s
+2025-07-21 03:42:26,920 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10720 effective words) took 0.1s, 83124 effective words/s
+2025-07-21 03:42:27,234 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10669 effective words) took 0.2s, 52143 effective words/s
+2025-07-21 03:42:27,526 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10699 effective words) took 0.2s, 63620 effective words/s
+2025-07-21 03:42:27,737 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10721 effective words) took 0.1s, 72600 effective words/s
+2025-07-21 03:42:27,949 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10689 effective words) took 0.1s, 74086 effective words/s
+2025-07-21 03:42:28,333 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10675 effective words) took 0.3s, 37562 effective words/s
+2025-07-21 03:42:28,602 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10630 effective words) took 0.2s, 66651 effective words/s
+2025-07-21 03:42:28,788 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10607 effective words) took 0.1s, 76815 effective words/s
+2025-07-21 03:42:28,940 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10615 effective words) took 0.1s, 104800 effective words/s
+2025-07-21 03:42:29,174 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10695 effective words) took 0.2s, 55581 effective words/s
+2025-07-21 03:42:29,381 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10671 effective words) took 0.1s, 81543 effective words/s
+2025-07-21 03:42:29,554 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10645 effective words) took 0.1s, 97560 effective words/s
+2025-07-21 03:42:29,708 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10690 effective words) took 0.1s, 103925 effective words/s
+2025-07-21 03:42:29,886 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10687 effective words) took 0.1s, 80879 effective words/s
+2025-07-21 03:42:30,328 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10757 effective words) took 0.2s, 48889 effective words/s
+2025-07-21 03:42:30,631 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10665 effective words) took 0.2s, 56940 effective words/s
+2025-07-21 03:42:30,833 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10720 effective words) took 0.1s, 75450 effective words/s
+2025-07-21 03:42:31,027 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10714 effective words) took 0.1s, 81278 effective words/s
+2025-07-21 03:42:31,220 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10675 effective words) took 0.1s, 76032 effective words/s
+2025-07-21 03:42:31,430 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10683 effective words) took 0.2s, 69794 effective words/s
+2025-07-21 03:42:31,655 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10658 effective words) took 0.2s, 68188 effective words/s
+2025-07-21 03:42:31,857 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10667 effective words) took 0.1s, 85074 effective words/s
+2025-07-21 03:42:32,004 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10650 effective words) took 0.1s, 98714 effective words/s
+2025-07-21 03:42:32,146 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10665 effective words) took 0.1s, 96537 effective words/s
+2025-07-21 03:42:32,306 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10741 effective words) took 0.1s, 84086 effective words/s
+2025-07-21 03:42:32,459 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10703 effective words) took 0.1s, 110425 effective words/s
+2025-07-21 03:42:32,614 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10658 effective words) took 0.1s, 108061 effective words/s
+2025-07-21 03:42:32,764 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10728 effective words) took 0.1s, 103333 effective words/s
+2025-07-21 03:42:32,909 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10667 effective words) took 0.1s, 92312 effective words/s
+2025-07-21 03:42:33,060 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10731 effective words) took 0.1s, 98207 effective words/s
+2025-07-21 03:42:33,211 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10694 effective words) took 0.1s, 93771 effective words/s
+2025-07-21 03:42:33,385 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10703 effective words) took 0.1s, 79467 effective words/s
+2025-07-21 03:42:33,529 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10710 effective words) took 0.1s, 104197 effective words/s
+2025-07-21 03:42:33,707 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10659 effective words) took 0.1s, 77367 effective words/s
+2025-07-21 03:42:33,858 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10687 effective words) took 0.1s, 94564 effective words/s
+2025-07-21 03:42:33,868 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1068819 effective words) took 21.6s, 49527 effective words/s', 'datetime': '2025-07-21T03:42:33.868246', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 03:42:33,874 - __main__ - INFO - Training completed in 21.62 seconds
+2025-07-21 03:42:33,886 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 03:42:33,894 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 03:43:15,853 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T03:43:15.853047', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 03:43:15,862 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 03:43:15,866 - __main__ - INFO - Word2Vec model saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 03:43:15,866 - __main__ - INFO - Metadata saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors_metadata.json
+2025-07-21 04:10:47,596 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 04:10:47,635 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 04:10:47,647 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 04:10:47,658 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 04:10:47,673 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 04:10:47,797 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T04:10:47.698725', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 04:10:47,802 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 04:10:47,806 - __main__ - INFO - Building vocabulary...
+2025-07-21 04:10:47,809 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 04:10:47,813 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 04:10:47,819 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 04:10:47,820 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 04:10:47,826 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T04:10:47.826300', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 04:10:47,831 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T04:10:47.830301', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 04:10:47,840 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 04:10:47,841 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 04:10:47,844 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T04:10:47.844617', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 04:10:47,852 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 04:10:47,853 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 04:10:47,858 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T04:10:47.858625', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 04:10:47,861 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 04:10:47,865 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 04:10:47,870 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T04:10:47.869357', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 04:10:48,099 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.2s, 64334 effective words/s
+2025-07-21 04:10:48,300 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.1s, 75689 effective words/s
+2025-07-21 04:10:48,489 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.1s, 79729 effective words/s
+2025-07-21 04:10:48,683 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.1s, 79751 effective words/s
+2025-07-21 04:10:48,881 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.1s, 73191 effective words/s
+2025-07-21 04:10:49,075 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.1s, 75394 effective words/s
+2025-07-21 04:10:49,324 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.1s, 81252 effective words/s
+2025-07-21 04:10:49,508 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.1s, 84019 effective words/s
+2025-07-21 04:10:49,707 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.2s, 69657 effective words/s
+2025-07-21 04:10:49,937 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.2s, 60340 effective words/s
+2025-07-21 04:10:50,112 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.1s, 84173 effective words/s
+2025-07-21 04:10:50,281 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.1s, 86642 effective words/s
+2025-07-21 04:10:50,441 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.1s, 95977 effective words/s
+2025-07-21 04:10:50,619 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.1s, 76990 effective words/s
+2025-07-21 04:10:50,788 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.1s, 88916 effective words/s
+2025-07-21 04:10:50,987 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.2s, 70046 effective words/s
+2025-07-21 04:10:51,138 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.1s, 94413 effective words/s
+2025-07-21 04:10:51,286 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.1s, 88513 effective words/s
+2025-07-21 04:10:51,448 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.1s, 94482 effective words/s
+2025-07-21 04:10:51,577 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 107748 effective words/s
+2025-07-21 04:10:51,722 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.1s, 97505 effective words/s
+2025-07-21 04:10:51,885 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.1s, 91176 effective words/s
+2025-07-21 04:10:52,056 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 79832 effective words/s
+2025-07-21 04:10:52,224 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 97176 effective words/s
+2025-07-21 04:10:52,407 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.1s, 86578 effective words/s
+2025-07-21 04:10:52,556 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.1s, 95711 effective words/s
+2025-07-21 04:10:52,704 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.1s, 100649 effective words/s
+2025-07-21 04:10:52,849 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.1s, 99305 effective words/s
+2025-07-21 04:10:52,982 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.1s, 117021 effective words/s
+2025-07-21 04:10:53,161 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 79162 effective words/s
+2025-07-21 04:10:53,329 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 86145 effective words/s
+2025-07-21 04:10:53,492 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 88481 effective words/s
+2025-07-21 04:10:53,630 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 106884 effective words/s
+2025-07-21 04:10:53,784 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.1s, 95080 effective words/s
+2025-07-21 04:10:53,976 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 74369 effective words/s
+2025-07-21 04:10:54,131 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 84004 effective words/s
+2025-07-21 04:10:54,325 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.1s, 76391 effective words/s
+2025-07-21 04:10:54,503 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 86674 effective words/s
+2025-07-21 04:10:54,654 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10691 effective words) took 0.1s, 95228 effective words/s
+2025-07-21 04:10:54,795 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10649 effective words) took 0.1s, 98487 effective words/s
+2025-07-21 04:10:54,992 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10669 effective words) took 0.1s, 73700 effective words/s
+2025-07-21 04:10:55,186 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10685 effective words) took 0.1s, 75846 effective words/s
+2025-07-21 04:10:55,353 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10697 effective words) took 0.1s, 87098 effective words/s
+2025-07-21 04:10:55,510 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10655 effective words) took 0.1s, 91882 effective words/s
+2025-07-21 04:10:55,653 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10667 effective words) took 0.1s, 101334 effective words/s
+2025-07-21 04:10:55,810 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10680 effective words) took 0.1s, 92593 effective words/s
+2025-07-21 04:10:55,967 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10671 effective words) took 0.1s, 91438 effective words/s
+2025-07-21 04:10:56,118 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10713 effective words) took 0.1s, 98175 effective words/s
+2025-07-21 04:10:56,308 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10704 effective words) took 0.2s, 71268 effective words/s
+2025-07-21 04:10:56,878 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10744 effective words) took 0.5s, 20670 effective words/s
+2025-07-21 04:10:58,636 - gensim.models.word2vec - INFO - EPOCH 50 - PROGRESS: at 100.00% examples, 9998 words/s, in_qsize 0, out_qsize 1
+2025-07-21 04:10:58,705 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10668 effective words) took 1.1s, 9387 effective words/s
+2025-07-21 04:11:00,287 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10737 effective words) took 0.7s, 15025 effective words/s
+2025-07-21 04:11:00,686 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10721 effective words) took 0.1s, 78478 effective words/s
+2025-07-21 04:11:00,839 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10640 effective words) took 0.1s, 88756 effective words/s
+2025-07-21 04:11:00,981 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10653 effective words) took 0.1s, 105004 effective words/s
+2025-07-21 04:11:01,132 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10678 effective words) took 0.1s, 98200 effective words/s
+2025-07-21 04:11:01,317 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10658 effective words) took 0.1s, 91515 effective words/s
+2025-07-21 04:11:01,464 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10684 effective words) took 0.1s, 97660 effective words/s
+2025-07-21 04:11:01,619 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10737 effective words) took 0.1s, 89012 effective words/s
+2025-07-21 04:11:01,782 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10612 effective words) took 0.1s, 89064 effective words/s
+2025-07-21 04:11:01,975 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10720 effective words) took 0.1s, 88650 effective words/s
+2025-07-21 04:11:02,143 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10665 effective words) took 0.1s, 85267 effective words/s
+2025-07-21 04:11:02,473 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10684 effective words) took 0.2s, 46947 effective words/s
+2025-07-21 04:11:02,650 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10715 effective words) took 0.1s, 109470 effective words/s
+2025-07-21 04:11:02,797 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10597 effective words) took 0.1s, 106024 effective words/s
+2025-07-21 04:11:02,938 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10726 effective words) took 0.1s, 101557 effective words/s
+2025-07-21 04:11:03,075 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10641 effective words) took 0.1s, 119925 effective words/s
+2025-07-21 04:11:03,253 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10748 effective words) took 0.1s, 82821 effective words/s
+2025-07-21 04:11:03,436 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10707 effective words) took 0.1s, 96254 effective words/s
+2025-07-21 04:11:03,639 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10669 effective words) took 0.1s, 78217 effective words/s
+2025-07-21 04:11:03,823 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10738 effective words) took 0.1s, 93114 effective words/s
+2025-07-21 04:11:03,980 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10684 effective words) took 0.1s, 87478 effective words/s
+2025-07-21 04:11:04,156 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10718 effective words) took 0.1s, 77395 effective words/s
+2025-07-21 04:11:04,323 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10761 effective words) took 0.1s, 85626 effective words/s
+2025-07-21 04:11:04,509 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10688 effective words) took 0.1s, 86699 effective words/s
+2025-07-21 04:11:04,676 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10714 effective words) took 0.1s, 90132 effective words/s
+2025-07-21 04:11:04,830 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10618 effective words) took 0.1s, 97123 effective words/s
+2025-07-21 04:11:04,972 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10713 effective words) took 0.1s, 97183 effective words/s
+2025-07-21 04:11:05,133 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10675 effective words) took 0.1s, 94691 effective words/s
+2025-07-21 04:11:05,294 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10669 effective words) took 0.1s, 89302 effective words/s
+2025-07-21 04:11:05,494 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10720 effective words) took 0.1s, 76100 effective words/s
+2025-07-21 04:11:05,648 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10719 effective words) took 0.1s, 88335 effective words/s
+2025-07-21 04:11:05,810 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10668 effective words) took 0.1s, 91845 effective words/s
+2025-07-21 04:11:05,991 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10621 effective words) took 0.1s, 81006 effective words/s
+2025-07-21 04:11:06,145 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10653 effective words) took 0.1s, 101298 effective words/s
+2025-07-21 04:11:06,308 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10690 effective words) took 0.1s, 90405 effective words/s
+2025-07-21 04:11:06,517 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10705 effective words) took 0.1s, 74718 effective words/s
+2025-07-21 04:11:06,673 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10669 effective words) took 0.1s, 96000 effective words/s
+2025-07-21 04:11:06,829 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10682 effective words) took 0.1s, 95800 effective words/s
+2025-07-21 04:11:06,977 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10714 effective words) took 0.1s, 94719 effective words/s
+2025-07-21 04:11:07,125 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10764 effective words) took 0.1s, 103498 effective words/s
+2025-07-21 04:11:07,284 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10742 effective words) took 0.1s, 95845 effective words/s
+2025-07-21 04:11:07,427 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10719 effective words) took 0.1s, 105513 effective words/s
+2025-07-21 04:11:07,595 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10682 effective words) took 0.1s, 83786 effective words/s
+2025-07-21 04:11:07,801 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10712 effective words) took 0.2s, 71189 effective words/s
+2025-07-21 04:11:08,002 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10726 effective words) took 0.1s, 81467 effective words/s
+2025-07-21 04:11:08,141 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10715 effective words) took 0.1s, 109600 effective words/s
+2025-07-21 04:11:08,280 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10689 effective words) took 0.1s, 112890 effective words/s
+2025-07-21 04:11:08,434 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10660 effective words) took 0.1s, 96360 effective words/s
+2025-07-21 04:11:08,622 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10685 effective words) took 0.1s, 74536 effective words/s
+2025-07-21 04:11:08,628 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1069102 effective words) took 20.8s, 51512 effective words/s', 'datetime': '2025-07-21T04:11:08.628799', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 04:11:08,632 - __main__ - INFO - Training completed in 20.96 seconds
+2025-07-21 04:11:08,640 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 04:11:08,649 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 04:11:51,363 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T04:11:51.362726', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 04:11:51,375 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 04:18:27,100 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 04:18:27,122 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 04:18:27,123 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 04:18:27,125 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 04:18:27,127 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 04:18:27,158 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T04:18:27.131622', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 04:18:27,159 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 04:18:27,163 - __main__ - INFO - Building vocabulary...
+2025-07-21 04:18:27,164 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 04:18:27,171 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 04:18:27,174 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 04:18:27,175 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 04:18:27,177 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T04:18:27.177402', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 04:18:27,179 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T04:18:27.179402', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 04:18:27,182 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 04:18:27,184 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 04:18:27,184 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T04:18:27.184396', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 04:18:27,190 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 04:18:27,192 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 04:18:27,195 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T04:18:27.195398', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 04:18:27,197 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 04:18:27,197 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 04:18:27,198 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T04:18:27.198398', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 04:18:27,231 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.0s, 528957 effective words/s
+2025-07-21 04:18:27,259 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.0s, 585347 effective words/s
+2025-07-21 04:18:27,290 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.0s, 602982 effective words/s
+2025-07-21 04:18:27,320 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.0s, 613031 effective words/s
+2025-07-21 04:18:27,350 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.0s, 593206 effective words/s
+2025-07-21 04:18:27,380 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.0s, 620887 effective words/s
+2025-07-21 04:18:27,431 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.0s, 594697 effective words/s
+2025-07-21 04:18:27,458 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.0s, 650424 effective words/s
+2025-07-21 04:18:27,484 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.0s, 645759 effective words/s
+2025-07-21 04:18:27,511 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.0s, 618429 effective words/s
+2025-07-21 04:18:27,537 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.0s, 615000 effective words/s
+2025-07-21 04:18:27,565 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.0s, 593290 effective words/s
+2025-07-21 04:18:27,595 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.0s, 602375 effective words/s
+2025-07-21 04:18:27,631 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.0s, 665520 effective words/s
+2025-07-21 04:18:27,657 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.0s, 661855 effective words/s
+2025-07-21 04:18:27,733 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.1s, 176601 effective words/s
+2025-07-21 04:18:27,890 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.1s, 87464 effective words/s
+2025-07-21 04:18:28,059 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.1s, 78688 effective words/s
+2025-07-21 04:18:28,211 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.1s, 93994 effective words/s
+2025-07-21 04:18:28,354 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 97265 effective words/s
+2025-07-21 04:18:28,526 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.1s, 80194 effective words/s
+2025-07-21 04:18:28,669 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.1s, 95655 effective words/s
+2025-07-21 04:18:28,852 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 80532 effective words/s
+2025-07-21 04:18:29,037 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 82611 effective words/s
+2025-07-21 04:18:29,204 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.1s, 88040 effective words/s
+2025-07-21 04:18:29,342 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.1s, 105699 effective words/s
+2025-07-21 04:18:29,499 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.1s, 96922 effective words/s
+2025-07-21 04:18:29,609 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.1s, 153460 effective words/s
+2025-07-21 04:18:29,691 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.1s, 140241 effective words/s
+2025-07-21 04:18:29,770 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 150617 effective words/s
+2025-07-21 04:18:29,862 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 126773 effective words/s
+2025-07-21 04:18:29,955 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 124327 effective words/s
+2025-07-21 04:18:30,060 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 112208 effective words/s
+2025-07-21 04:18:30,170 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.1s, 135360 effective words/s
+2025-07-21 04:18:30,258 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 137294 effective words/s
+2025-07-21 04:18:30,356 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 116593 effective words/s
+2025-07-21 04:18:30,461 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.1s, 110258 effective words/s
+2025-07-21 04:18:30,579 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 104259 effective words/s
+2025-07-21 04:18:30,665 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10691 effective words) took 0.1s, 140179 effective words/s
+2025-07-21 04:18:30,751 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10649 effective words) took 0.1s, 138894 effective words/s
+2025-07-21 04:18:30,838 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10669 effective words) took 0.1s, 135978 effective words/s
+2025-07-21 04:18:30,930 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10685 effective words) took 0.1s, 128418 effective words/s
+2025-07-21 04:18:31,024 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10697 effective words) took 0.1s, 127920 effective words/s
+2025-07-21 04:18:31,103 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10655 effective words) took 0.1s, 151972 effective words/s
+2025-07-21 04:18:31,183 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10667 effective words) took 0.1s, 143391 effective words/s
+2025-07-21 04:18:31,270 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10680 effective words) took 0.1s, 136624 effective words/s
+2025-07-21 04:18:31,393 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10671 effective words) took 0.1s, 133541 effective words/s
+2025-07-21 04:18:31,482 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10713 effective words) took 0.1s, 133008 effective words/s
+2025-07-21 04:18:31,578 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10704 effective words) took 0.1s, 127756 effective words/s
+2025-07-21 04:18:31,692 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10744 effective words) took 0.1s, 101437 effective words/s
+2025-07-21 04:18:31,804 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10668 effective words) took 0.1s, 104608 effective words/s
+2025-07-21 04:18:31,898 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10737 effective words) took 0.1s, 142581 effective words/s
+2025-07-21 04:18:32,062 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10721 effective words) took 0.1s, 92474 effective words/s
+2025-07-21 04:18:32,155 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10640 effective words) took 0.1s, 126053 effective words/s
+2025-07-21 04:18:32,262 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10653 effective words) took 0.1s, 124887 effective words/s
+2025-07-21 04:18:32,352 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10678 effective words) took 0.1s, 134034 effective words/s
+2025-07-21 04:18:32,435 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10658 effective words) took 0.1s, 143944 effective words/s
+2025-07-21 04:18:32,519 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10684 effective words) took 0.1s, 142522 effective words/s
+2025-07-21 04:18:32,602 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10737 effective words) took 0.1s, 142749 effective words/s
+2025-07-21 04:18:32,712 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10612 effective words) took 0.1s, 103815 effective words/s
+2025-07-21 04:18:32,802 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10720 effective words) took 0.1s, 131188 effective words/s
+2025-07-21 04:18:32,896 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10665 effective words) took 0.1s, 123728 effective words/s
+2025-07-21 04:18:32,983 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10674 effective words) took 0.1s, 137809 effective words/s
+2025-07-21 04:18:33,090 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10668 effective words) took 0.1s, 110923 effective words/s
+2025-07-21 04:18:33,241 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10688 effective words) took 0.1s, 98426 effective words/s
+2025-07-21 04:18:33,488 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10641 effective words) took 0.2s, 61865 effective words/s
+2025-07-21 04:18:33,807 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10698 effective words) took 0.2s, 47894 effective words/s
+2025-07-21 04:18:33,981 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10642 effective words) took 0.1s, 87370 effective words/s
+2025-07-21 04:18:34,101 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10726 effective words) took 0.1s, 125039 effective words/s
+2025-07-21 04:18:34,292 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10663 effective words) took 0.1s, 82866 effective words/s
+2025-07-21 04:18:34,488 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10657 effective words) took 0.1s, 73553 effective words/s
+2025-07-21 04:18:34,653 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10705 effective words) took 0.1s, 91691 effective words/s
+2025-07-21 04:18:34,876 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10746 effective words) took 0.2s, 61431 effective words/s
+2025-07-21 04:18:35,030 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10742 effective words) took 0.1s, 91731 effective words/s
+2025-07-21 04:18:35,181 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10686 effective words) took 0.1s, 96880 effective words/s
+2025-07-21 04:18:35,397 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10667 effective words) took 0.2s, 59873 effective words/s
+2025-07-21 04:18:35,569 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10655 effective words) took 0.1s, 88723 effective words/s
+2025-07-21 04:18:35,730 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10669 effective words) took 0.1s, 86835 effective words/s
+2025-07-21 04:18:35,926 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10720 effective words) took 0.1s, 73632 effective words/s
+2025-07-21 04:18:36,054 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10764 effective words) took 0.1s, 112620 effective words/s
+2025-07-21 04:18:36,221 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10720 effective words) took 0.1s, 83304 effective words/s
+2025-07-21 04:18:36,351 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10656 effective words) took 0.1s, 111401 effective words/s
+2025-07-21 04:18:36,499 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10678 effective words) took 0.1s, 96016 effective words/s
+2025-07-21 04:18:36,632 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10693 effective words) took 0.1s, 99586 effective words/s
+2025-07-21 04:18:36,751 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10704 effective words) took 0.1s, 126047 effective words/s
+2025-07-21 04:18:36,856 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10691 effective words) took 0.1s, 134124 effective words/s
+2025-07-21 04:18:36,997 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10700 effective words) took 0.1s, 96940 effective words/s
+2025-07-21 04:18:37,093 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10704 effective words) took 0.1s, 118123 effective words/s
+2025-07-21 04:18:37,237 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10700 effective words) took 0.1s, 95232 effective words/s
+2025-07-21 04:18:37,422 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10714 effective words) took 0.1s, 85190 effective words/s
+2025-07-21 04:18:37,641 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10680 effective words) took 0.2s, 68630 effective words/s
+2025-07-21 04:18:37,865 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10733 effective words) took 0.2s, 67003 effective words/s
+2025-07-21 04:18:38,085 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10710 effective words) took 0.2s, 64146 effective words/s
+2025-07-21 04:18:38,249 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10634 effective words) took 0.1s, 92664 effective words/s
+2025-07-21 04:18:38,393 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10692 effective words) took 0.1s, 102531 effective words/s
+2025-07-21 04:18:38,553 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10705 effective words) took 0.1s, 79860 effective words/s
+2025-07-21 04:18:38,695 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10705 effective words) took 0.1s, 96357 effective words/s
+2025-07-21 04:18:38,833 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10732 effective words) took 0.1s, 101190 effective words/s
+2025-07-21 04:18:38,972 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10701 effective words) took 0.1s, 100988 effective words/s
+2025-07-21 04:18:39,141 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10695 effective words) took 0.1s, 80861 effective words/s
+2025-07-21 04:18:39,148 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1069060 effective words) took 11.9s, 89484 effective words/s', 'datetime': '2025-07-21T04:18:39.148230', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 04:18:39,150 - __main__ - INFO - Training completed in 12.02 seconds
+2025-07-21 04:18:39,154 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 04:18:39,159 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 04:19:21,704 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T04:19:21.704285', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 04:19:21,719 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 09:24:03,351 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 09:24:03,540 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 09:24:03,550 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 09:24:03,557 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 09:24:03,563 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 09:24:03,592 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T09:24:03.568920', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 09:24:03,592 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 09:24:03,592 - __main__ - INFO - Building vocabulary...
+2025-07-21 09:24:03,593 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 09:24:03,593 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 09:24:03,595 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 09:24:03,595 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 09:24:03,597 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T09:24:03.597035', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:24:03,597 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T09:24:03.597035', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:24:03,601 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 09:24:03,601 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 09:24:03,601 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T09:24:03.601040', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:24:03,606 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 09:24:03,606 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 09:24:03,608 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T09:24:03.608034', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 09:24:03,608 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 09:24:03,608 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 09:24:03,611 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T09:24:03.611039', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:24:03,827 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.2s, 64463 effective words/s
+2025-07-21 09:24:04,002 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.1s, 123140 effective words/s
+2025-07-21 09:24:04,161 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.1s, 93105 effective words/s
+2025-07-21 09:24:04,275 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.1s, 150893 effective words/s
+2025-07-21 09:24:04,437 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.1s, 88157 effective words/s
+2025-07-21 09:24:04,593 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.1s, 108537 effective words/s
+2025-07-21 09:24:04,743 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.1s, 90633 effective words/s
+2025-07-21 09:24:04,897 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.1s, 91535 effective words/s
+2025-07-21 09:24:05,078 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.1s, 91709 effective words/s
+2025-07-21 09:24:05,230 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.1s, 94990 effective words/s
+2025-07-21 09:24:05,366 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.1s, 100861 effective words/s
+2025-07-21 09:24:05,554 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.1s, 78721 effective words/s
+2025-07-21 09:24:05,762 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.1s, 86800 effective words/s
+2025-07-21 09:24:05,898 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.1s, 109065 effective words/s
+2025-07-21 09:24:06,085 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.1s, 93397 effective words/s
+2025-07-21 09:24:06,244 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.1s, 87118 effective words/s
+2025-07-21 09:24:06,406 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.1s, 87244 effective words/s
+2025-07-21 09:24:06,553 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.1s, 112931 effective words/s
+2025-07-21 09:24:06,674 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.1s, 133783 effective words/s
+2025-07-21 09:24:06,847 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 81640 effective words/s
+2025-07-21 09:24:07,022 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.1s, 86437 effective words/s
+2025-07-21 09:24:07,169 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.1s, 95894 effective words/s
+2025-07-21 09:24:07,324 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 93141 effective words/s
+2025-07-21 09:24:07,465 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 109383 effective words/s
+2025-07-21 09:24:07,598 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.1s, 110113 effective words/s
+2025-07-21 09:24:07,775 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10749 effective words) took 0.1s, 85946 effective words/s
+2025-07-21 09:24:07,904 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10691 effective words) took 0.1s, 111883 effective words/s
+2025-07-21 09:24:08,084 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10712 effective words) took 0.1s, 77444 effective words/s
+2025-07-21 09:24:08,283 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10719 effective words) took 0.1s, 80449 effective words/s
+2025-07-21 09:24:08,427 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10733 effective words) took 0.1s, 99394 effective words/s
+2025-07-21 09:24:08,590 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10713 effective words) took 0.1s, 112776 effective words/s
+2025-07-21 09:24:08,743 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10711 effective words) took 0.1s, 90588 effective words/s
+2025-07-21 09:24:08,879 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10693 effective words) took 0.1s, 105219 effective words/s
+2025-07-21 09:24:09,035 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10697 effective words) took 0.1s, 88760 effective words/s
+2025-07-21 09:24:09,213 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10735 effective words) took 0.1s, 74496 effective words/s
+2025-07-21 09:24:09,384 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10698 effective words) took 0.1s, 91873 effective words/s
+2025-07-21 09:24:09,520 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10682 effective words) took 0.1s, 101553 effective words/s
+2025-07-21 09:24:09,655 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10670 effective words) took 0.1s, 105339 effective words/s
+2025-07-21 09:24:09,791 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10740 effective words) took 0.1s, 98101 effective words/s
+2025-07-21 09:24:09,971 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10729 effective words) took 0.1s, 74217 effective words/s
+2025-07-21 09:24:10,138 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10701 effective words) took 0.1s, 92601 effective words/s
+2025-07-21 09:24:10,307 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10633 effective words) took 0.1s, 76131 effective words/s
+2025-07-21 09:24:10,476 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10686 effective words) took 0.1s, 91132 effective words/s
+2025-07-21 09:24:10,634 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10689 effective words) took 0.1s, 91400 effective words/s
+2025-07-21 09:24:10,786 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10626 effective words) took 0.1s, 98333 effective words/s
+2025-07-21 09:24:10,942 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10728 effective words) took 0.1s, 88262 effective words/s
+2025-07-21 09:24:11,091 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10772 effective words) took 0.1s, 92470 effective words/s
+2025-07-21 09:24:11,228 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10706 effective words) took 0.1s, 100113 effective words/s
+2025-07-21 09:24:11,411 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10616 effective words) took 0.1s, 89100 effective words/s
+2025-07-21 09:24:11,563 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10671 effective words) took 0.1s, 96504 effective words/s
+2025-07-21 09:24:11,719 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10688 effective words) took 0.1s, 88076 effective words/s
+2025-07-21 09:24:11,853 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10638 effective words) took 0.1s, 103102 effective words/s
+2025-07-21 09:24:12,006 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10671 effective words) took 0.1s, 89048 effective words/s
+2025-07-21 09:24:12,187 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10663 effective words) took 0.1s, 89452 effective words/s
+2025-07-21 09:24:12,366 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10666 effective words) took 0.1s, 79200 effective words/s
+2025-07-21 09:24:12,537 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10687 effective words) took 0.1s, 77406 effective words/s
+2025-07-21 09:24:12,739 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10637 effective words) took 0.1s, 86303 effective words/s
+2025-07-21 09:24:12,928 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10677 effective words) took 0.2s, 71004 effective words/s
+2025-07-21 09:24:13,083 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10629 effective words) took 0.1s, 91247 effective words/s
+2025-07-21 09:24:13,253 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10712 effective words) took 0.1s, 90766 effective words/s
+2025-07-21 09:24:13,448 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10622 effective words) took 0.2s, 65497 effective words/s
+2025-07-21 09:24:13,606 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10676 effective words) took 0.1s, 91238 effective words/s
+2025-07-21 09:24:13,762 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10728 effective words) took 0.1s, 88011 effective words/s
+2025-07-21 09:24:13,918 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10690 effective words) took 0.1s, 94312 effective words/s
+2025-07-21 09:24:14,098 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10677 effective words) took 0.1s, 78554 effective words/s
+2025-07-21 09:24:14,235 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10722 effective words) took 0.1s, 114757 effective words/s
+2025-07-21 09:24:14,406 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10643 effective words) took 0.1s, 92742 effective words/s
+2025-07-21 09:24:14,575 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10666 effective words) took 0.1s, 89702 effective words/s
+2025-07-21 09:24:14,731 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10653 effective words) took 0.1s, 88568 effective words/s
+2025-07-21 09:24:14,938 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10666 effective words) took 0.2s, 62213 effective words/s
+2025-07-21 09:24:15,137 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10707 effective words) took 0.1s, 89464 effective words/s
+2025-07-21 09:24:15,320 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10656 effective words) took 0.1s, 92978 effective words/s
+2025-07-21 09:24:15,464 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10681 effective words) took 0.1s, 97872 effective words/s
+2025-07-21 09:24:15,652 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10660 effective words) took 0.1s, 92004 effective words/s
+2025-07-21 09:24:15,858 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10636 effective words) took 0.2s, 69546 effective words/s
+2025-07-21 09:24:16,026 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10735 effective words) took 0.1s, 86215 effective words/s
+2025-07-21 09:24:16,199 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10615 effective words) took 0.1s, 78964 effective words/s
+2025-07-21 09:24:16,408 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10728 effective words) took 0.1s, 74980 effective words/s
+2025-07-21 09:24:16,564 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10671 effective words) took 0.1s, 90152 effective words/s
+2025-07-21 09:24:16,741 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10680 effective words) took 0.1s, 93804 effective words/s
+2025-07-21 09:24:16,877 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10730 effective words) took 0.1s, 110922 effective words/s
+2025-07-21 09:24:17,011 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10701 effective words) took 0.1s, 112125 effective words/s
+2025-07-21 09:24:17,157 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10739 effective words) took 0.1s, 99681 effective words/s
+2025-07-21 09:24:17,296 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10721 effective words) took 0.1s, 105459 effective words/s
+2025-07-21 09:24:17,436 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10722 effective words) took 0.1s, 122792 effective words/s
+2025-07-21 09:24:17,585 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10741 effective words) took 0.1s, 95544 effective words/s
+2025-07-21 09:24:17,783 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10733 effective words) took 0.2s, 71337 effective words/s
+2025-07-21 09:24:17,959 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10669 effective words) took 0.1s, 83539 effective words/s
+2025-07-21 09:24:18,090 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10712 effective words) took 0.1s, 110691 effective words/s
+2025-07-21 09:24:18,237 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10716 effective words) took 0.1s, 96532 effective words/s
+2025-07-21 09:24:18,393 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10671 effective words) took 0.1s, 87493 effective words/s
+2025-07-21 09:24:18,529 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10735 effective words) took 0.1s, 116753 effective words/s
+2025-07-21 09:24:18,671 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10695 effective words) took 0.1s, 113579 effective words/s
+2025-07-21 09:24:18,845 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10681 effective words) took 0.1s, 99822 effective words/s
+2025-07-21 09:24:19,020 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10657 effective words) took 0.1s, 96889 effective words/s
+2025-07-21 09:24:19,149 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10636 effective words) took 0.1s, 112252 effective words/s
+2025-07-21 09:24:19,282 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10626 effective words) took 0.1s, 105770 effective words/s
+2025-07-21 09:24:19,422 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10626 effective words) took 0.1s, 102228 effective words/s
+2025-07-21 09:24:19,563 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10702 effective words) took 0.1s, 103757 effective words/s
+2025-07-21 09:24:19,685 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10652 effective words) took 0.1s, 118131 effective words/s
+2025-07-21 09:24:19,688 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1068925 effective words) took 16.1s, 66493 effective words/s', 'datetime': '2025-07-21T09:24:19.688725', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:24:19,688 - __main__ - INFO - Training completed in 16.13 seconds
+2025-07-21 09:24:19,692 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 09:24:19,692 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 09:24:53,212 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T09:24:53.212353', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 09:24:53,234 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 09:28:08,753 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 09:28:08,774 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 09:28:08,776 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 09:28:08,778 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 09:28:08,780 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 09:28:08,795 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T09:28:08.783072', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 09:28:08,795 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 09:28:08,795 - __main__ - INFO - Building vocabulary...
+2025-07-21 09:28:08,795 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 09:28:08,796 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 09:28:08,797 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 09:28:08,798 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 09:28:08,800 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T09:28:08.800599', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:28:08,801 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T09:28:08.801598', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:28:08,803 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 09:28:08,804 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 09:28:08,804 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T09:28:08.804815', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:28:08,809 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 09:28:08,809 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 09:28:08,810 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T09:28:08.810810', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 09:28:08,810 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 09:28:08,810 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 09:28:08,810 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T09:28:08.810810', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:28:08,834 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.0s, 599311 effective words/s
+2025-07-21 09:28:08,862 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.0s, 571908 effective words/s
+2025-07-21 09:28:08,889 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.0s, 591556 effective words/s
+2025-07-21 09:28:08,918 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.0s, 595486 effective words/s
+2025-07-21 09:28:08,945 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.0s, 617906 effective words/s
+2025-07-21 09:28:08,975 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.0s, 610666 effective words/s
+2025-07-21 09:28:09,006 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.0s, 587686 effective words/s
+2025-07-21 09:28:09,040 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.0s, 611619 effective words/s
+2025-07-21 09:28:09,066 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.0s, 603406 effective words/s
+2025-07-21 09:28:09,093 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.0s, 626327 effective words/s
+2025-07-21 09:28:09,125 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.0s, 616527 effective words/s
+2025-07-21 09:28:09,151 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.0s, 656135 effective words/s
+2025-07-21 09:28:09,177 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.0s, 601188 effective words/s
+2025-07-21 09:28:09,218 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.0s, 549496 effective words/s
+2025-07-21 09:28:09,251 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.0s, 529194 effective words/s
+2025-07-21 09:28:09,280 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.0s, 634656 effective words/s
+2025-07-21 09:28:09,349 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.1s, 181521 effective words/s
+2025-07-21 09:28:09,507 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.1s, 85924 effective words/s
+2025-07-21 09:28:09,703 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.1s, 84985 effective words/s
+2025-07-21 09:28:09,877 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 78361 effective words/s
+2025-07-21 09:28:10,036 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.1s, 87315 effective words/s
+2025-07-21 09:28:10,228 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.2s, 67277 effective words/s
+2025-07-21 09:28:10,431 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 76384 effective words/s
+2025-07-21 09:28:10,590 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 93928 effective words/s
+2025-07-21 09:28:10,783 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.1s, 87622 effective words/s
+2025-07-21 09:28:10,935 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.1s, 104423 effective words/s
+2025-07-21 09:28:11,061 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.1s, 124028 effective words/s
+2025-07-21 09:28:11,209 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.1s, 93293 effective words/s
+2025-07-21 09:28:11,347 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.1s, 108578 effective words/s
+2025-07-21 09:28:11,502 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 96050 effective words/s
+2025-07-21 09:28:11,684 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 73241 effective words/s
+2025-07-21 09:28:11,849 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 83915 effective words/s
+2025-07-21 09:28:11,999 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 99772 effective words/s
+2025-07-21 09:28:12,137 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.1s, 102022 effective words/s
+2025-07-21 09:28:12,266 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 119383 effective words/s
+2025-07-21 09:28:12,425 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 86628 effective words/s
+2025-07-21 09:28:12,561 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.1s, 112076 effective words/s
+2025-07-21 09:28:12,699 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 102105 effective words/s
+2025-07-21 09:28:12,913 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10673 effective words) took 0.1s, 85025 effective words/s
+2025-07-21 09:28:13,043 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10610 effective words) took 0.1s, 106816 effective words/s
+2025-07-21 09:28:13,198 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10696 effective words) took 0.1s, 94371 effective words/s
+2025-07-21 09:28:13,382 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10640 effective words) took 0.1s, 95350 effective words/s
+2025-07-21 09:28:13,536 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10732 effective words) took 0.1s, 89638 effective words/s
+2025-07-21 09:28:13,717 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10716 effective words) took 0.1s, 95043 effective words/s
+2025-07-21 09:28:13,897 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10724 effective words) took 0.1s, 73917 effective words/s
+2025-07-21 09:28:14,058 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10655 effective words) took 0.1s, 86360 effective words/s
+2025-07-21 09:28:14,202 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10708 effective words) took 0.1s, 98471 effective words/s
+2025-07-21 09:28:14,339 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10658 effective words) took 0.1s, 104294 effective words/s
+2025-07-21 09:28:14,496 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10668 effective words) took 0.1s, 86111 effective words/s
+2025-07-21 09:28:14,643 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10715 effective words) took 0.1s, 90711 effective words/s
+2025-07-21 09:28:14,776 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10667 effective words) took 0.1s, 116670 effective words/s
+2025-07-21 09:28:14,924 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10708 effective words) took 0.1s, 100255 effective words/s
+2025-07-21 09:28:15,058 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10729 effective words) took 0.1s, 123961 effective words/s
+2025-07-21 09:28:15,201 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10747 effective words) took 0.1s, 93947 effective words/s
+2025-07-21 09:28:15,346 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10642 effective words) took 0.1s, 100162 effective words/s
+2025-07-21 09:28:15,492 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10706 effective words) took 0.1s, 97655 effective words/s
+2025-07-21 09:28:15,642 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10683 effective words) took 0.1s, 97989 effective words/s
+2025-07-21 09:28:15,816 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10706 effective words) took 0.1s, 75120 effective words/s
+2025-07-21 09:28:15,982 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10724 effective words) took 0.1s, 81480 effective words/s
+2025-07-21 09:28:16,143 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10669 effective words) took 0.1s, 87690 effective words/s
+2025-07-21 09:28:16,328 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10693 effective words) took 0.1s, 90044 effective words/s
+2025-07-21 09:28:16,466 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10701 effective words) took 0.1s, 101706 effective words/s
+2025-07-21 09:28:16,621 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10654 effective words) took 0.1s, 89734 effective words/s
+2025-07-21 09:28:16,756 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10691 effective words) took 0.1s, 107847 effective words/s
+2025-07-21 09:28:16,920 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10723 effective words) took 0.1s, 81013 effective words/s
+2025-07-21 09:28:17,100 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10745 effective words) took 0.1s, 92666 effective words/s
+2025-07-21 09:28:17,240 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10651 effective words) took 0.1s, 96447 effective words/s
+2025-07-21 09:28:17,389 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10726 effective words) took 0.1s, 106529 effective words/s
+2025-07-21 09:28:17,556 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10703 effective words) took 0.1s, 102880 effective words/s
+2025-07-21 09:28:17,686 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10672 effective words) took 0.1s, 109439 effective words/s
+2025-07-21 09:28:17,834 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10685 effective words) took 0.1s, 107814 effective words/s
+2025-07-21 09:28:18,017 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10677 effective words) took 0.1s, 90892 effective words/s
+2025-07-21 09:28:18,195 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10656 effective words) took 0.1s, 90705 effective words/s
+2025-07-21 09:28:18,339 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10673 effective words) took 0.1s, 106648 effective words/s
+2025-07-21 09:28:18,503 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10687 effective words) took 0.1s, 80798 effective words/s
+2025-07-21 09:28:18,666 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10714 effective words) took 0.1s, 83592 effective words/s
+2025-07-21 09:28:18,838 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10705 effective words) took 0.1s, 82268 effective words/s
+2025-07-21 09:28:18,980 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10703 effective words) took 0.1s, 102004 effective words/s
+2025-07-21 09:28:19,138 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10699 effective words) took 0.1s, 87986 effective words/s
+2025-07-21 09:28:19,297 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10712 effective words) took 0.1s, 82432 effective words/s
+2025-07-21 09:28:19,460 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10759 effective words) took 0.1s, 86937 effective words/s
+2025-07-21 09:28:19,600 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10632 effective words) took 0.1s, 101237 effective words/s
+2025-07-21 09:28:19,804 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10664 effective words) took 0.1s, 78444 effective words/s
+2025-07-21 09:28:19,946 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10657 effective words) took 0.1s, 96823 effective words/s
+2025-07-21 09:28:20,100 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10726 effective words) took 0.1s, 89473 effective words/s
+2025-07-21 09:28:20,291 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10702 effective words) took 0.1s, 95675 effective words/s
+2025-07-21 09:28:20,427 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10703 effective words) took 0.1s, 101394 effective words/s
+2025-07-21 09:28:20,612 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10767 effective words) took 0.1s, 75537 effective words/s
+2025-07-21 09:28:20,757 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10659 effective words) took 0.1s, 95558 effective words/s
+2025-07-21 09:28:20,903 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10652 effective words) took 0.1s, 104394 effective words/s
+2025-07-21 09:28:21,062 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10705 effective words) took 0.1s, 107115 effective words/s
+2025-07-21 09:28:21,213 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10633 effective words) took 0.1s, 86805 effective words/s
+2025-07-21 09:28:21,372 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10658 effective words) took 0.1s, 90020 effective words/s
+2025-07-21 09:28:21,543 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10646 effective words) took 0.1s, 92617 effective words/s
+2025-07-21 09:28:21,740 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10679 effective words) took 0.1s, 84222 effective words/s
+2025-07-21 09:28:21,897 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10650 effective words) took 0.1s, 109743 effective words/s
+2025-07-21 09:28:22,044 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10684 effective words) took 0.1s, 104392 effective words/s
+2025-07-21 09:28:22,181 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10718 effective words) took 0.1s, 96996 effective words/s
+2025-07-21 09:28:22,352 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10636 effective words) took 0.1s, 94926 effective words/s
+2025-07-21 09:28:22,504 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10661 effective words) took 0.1s, 105040 effective words/s
+2025-07-21 09:28:22,506 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1068941 effective words) took 13.7s, 78049 effective words/s', 'datetime': '2025-07-21T09:28:22.506683', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:28:22,510 - __main__ - INFO - Training completed in 13.73 seconds
+2025-07-21 09:28:22,513 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 09:28:22,517 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 09:28:52,037 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T09:28:52.037600', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 09:28:52,046 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 09:29:44,198 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 09:29:44,217 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 09:29:44,218 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 09:29:44,219 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 09:29:44,219 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 09:29:44,230 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T09:29:44.220614', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 09:29:44,231 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 09:29:44,231 - __main__ - INFO - Building vocabulary...
+2025-07-21 09:29:44,231 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 09:29:44,231 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 09:29:44,233 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 09:29:44,233 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 09:29:44,235 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T09:29:44.235611', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:29:44,235 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T09:29:44.235611', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:29:44,238 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 09:29:44,238 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 09:29:44,239 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T09:29:44.239612', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:29:44,243 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 09:29:44,243 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 09:29:44,244 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T09:29:44.244611', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 09:29:44,244 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 09:29:44,245 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 09:29:44,245 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T09:29:44.245612', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:29:44,265 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.0s, 601869 effective words/s
+2025-07-21 09:29:44,285 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.0s, 611305 effective words/s
+2025-07-21 09:29:44,305 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.0s, 616648 effective words/s
+2025-07-21 09:29:44,327 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.0s, 610083 effective words/s
+2025-07-21 09:29:44,348 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.0s, 551470 effective words/s
+2025-07-21 09:29:44,376 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.0s, 601787 effective words/s
+2025-07-21 09:29:44,403 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.0s, 655201 effective words/s
+2025-07-21 09:29:44,438 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.0s, 609233 effective words/s
+2025-07-21 09:29:44,463 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.0s, 666249 effective words/s
+2025-07-21 09:29:44,484 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.0s, 622324 effective words/s
+2025-07-21 09:29:44,506 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.0s, 667051 effective words/s
+2025-07-21 09:29:44,526 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.0s, 619086 effective words/s
+2025-07-21 09:29:44,547 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.0s, 605942 effective words/s
+2025-07-21 09:29:44,573 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.0s, 600472 effective words/s
+2025-07-21 09:29:44,598 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.0s, 612065 effective words/s
+2025-07-21 09:29:44,617 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.0s, 654310 effective words/s
+2025-07-21 09:29:44,643 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.0s, 538216 effective words/s
+2025-07-21 09:29:44,668 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.0s, 619572 effective words/s
+2025-07-21 09:29:44,690 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.0s, 647595 effective words/s
+2025-07-21 09:29:44,714 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.0s, 660338 effective words/s
+2025-07-21 09:29:44,743 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.0s, 613292 effective words/s
+2025-07-21 09:29:44,771 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.0s, 676958 effective words/s
+2025-07-21 09:29:44,798 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.0s, 659876 effective words/s
+2025-07-21 09:29:44,822 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.0s, 605822 effective words/s
+2025-07-21 09:29:44,846 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.0s, 614035 effective words/s
+2025-07-21 09:29:44,876 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.0s, 533462 effective words/s
+2025-07-21 09:29:44,984 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.1s, 125880 effective words/s
+2025-07-21 09:29:45,080 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.1s, 121931 effective words/s
+2025-07-21 09:29:45,174 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.1s, 132463 effective words/s
+2025-07-21 09:29:45,279 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 133158 effective words/s
+2025-07-21 09:29:45,360 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 146116 effective words/s
+2025-07-21 09:29:45,446 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 147011 effective words/s
+2025-07-21 09:29:45,559 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 101570 effective words/s
+2025-07-21 09:29:45,651 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.1s, 151279 effective words/s
+2025-07-21 09:29:45,736 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 138721 effective words/s
+2025-07-21 09:29:45,840 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 113523 effective words/s
+2025-07-21 09:29:45,926 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.1s, 136541 effective words/s
+2025-07-21 09:29:46,019 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 134905 effective words/s
+2025-07-21 09:29:46,106 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10691 effective words) took 0.1s, 132974 effective words/s
+2025-07-21 09:29:46,224 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10649 effective words) took 0.1s, 97786 effective words/s
+2025-07-21 09:29:46,319 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10669 effective words) took 0.1s, 120132 effective words/s
+2025-07-21 09:29:46,413 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10685 effective words) took 0.1s, 139739 effective words/s
+2025-07-21 09:29:46,498 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10697 effective words) took 0.1s, 138884 effective words/s
+2025-07-21 09:29:46,627 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10655 effective words) took 0.1s, 88070 effective words/s
+2025-07-21 09:29:46,715 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10667 effective words) took 0.1s, 134017 effective words/s
+2025-07-21 09:29:46,820 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10680 effective words) took 0.1s, 113818 effective words/s
+2025-07-21 09:29:46,901 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10671 effective words) took 0.1s, 145285 effective words/s
+2025-07-21 09:29:46,987 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10713 effective words) took 0.1s, 140563 effective words/s
+2025-07-21 09:29:47,078 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10704 effective words) took 0.1s, 127803 effective words/s
+2025-07-21 09:29:47,180 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10744 effective words) took 0.1s, 123689 effective words/s
+2025-07-21 09:29:47,266 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10668 effective words) took 0.1s, 138602 effective words/s
+2025-07-21 09:29:47,369 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10737 effective words) took 0.1s, 114442 effective words/s
+2025-07-21 09:29:47,456 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10721 effective words) took 0.1s, 145950 effective words/s
+2025-07-21 09:29:47,539 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10640 effective words) took 0.1s, 141098 effective words/s
+2025-07-21 09:29:47,644 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10653 effective words) took 0.1s, 110912 effective words/s
+2025-07-21 09:29:47,748 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10678 effective words) took 0.1s, 121760 effective words/s
+2025-07-21 09:29:47,855 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10658 effective words) took 0.1s, 142999 effective words/s
+2025-07-21 09:29:47,941 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10684 effective words) took 0.1s, 137384 effective words/s
+2025-07-21 09:29:48,018 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10737 effective words) took 0.1s, 153394 effective words/s
+2025-07-21 09:29:48,100 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10612 effective words) took 0.1s, 151097 effective words/s
+2025-07-21 09:29:48,188 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10720 effective words) took 0.1s, 135387 effective words/s
+2025-07-21 09:29:48,269 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10665 effective words) took 0.1s, 149184 effective words/s
+2025-07-21 09:29:48,353 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10674 effective words) took 0.1s, 144817 effective words/s
+2025-07-21 09:29:48,438 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10668 effective words) took 0.1s, 140442 effective words/s
+2025-07-21 09:29:48,511 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10688 effective words) took 0.1s, 160685 effective words/s
+2025-07-21 09:29:48,575 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10641 effective words) took 0.1s, 194832 effective words/s
+2025-07-21 09:29:48,674 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10698 effective words) took 0.1s, 116218 effective words/s
+2025-07-21 09:29:48,816 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10642 effective words) took 0.1s, 113342 effective words/s
+2025-07-21 09:29:48,906 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10726 effective words) took 0.1s, 131129 effective words/s
+2025-07-21 09:29:48,987 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10663 effective words) took 0.1s, 146966 effective words/s
+2025-07-21 09:29:49,081 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10657 effective words) took 0.1s, 126503 effective words/s
+2025-07-21 09:29:49,164 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10705 effective words) took 0.1s, 140079 effective words/s
+2025-07-21 09:29:49,268 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10746 effective words) took 0.1s, 111334 effective words/s
+2025-07-21 09:29:49,367 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10742 effective words) took 0.1s, 123253 effective words/s
+2025-07-21 09:29:49,450 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10686 effective words) took 0.1s, 138159 effective words/s
+2025-07-21 09:29:49,531 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10667 effective words) took 0.1s, 146049 effective words/s
+2025-07-21 09:29:49,615 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10655 effective words) took 0.1s, 137783 effective words/s
+2025-07-21 09:29:49,720 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10669 effective words) took 0.1s, 111852 effective words/s
+2025-07-21 09:29:49,810 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10720 effective words) took 0.1s, 134285 effective words/s
+2025-07-21 09:29:49,895 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10764 effective words) took 0.1s, 141278 effective words/s
+2025-07-21 09:29:49,979 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10720 effective words) took 0.1s, 136843 effective words/s
+2025-07-21 09:29:50,061 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10656 effective words) took 0.1s, 146895 effective words/s
+2025-07-21 09:29:50,141 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10678 effective words) took 0.1s, 150141 effective words/s
+2025-07-21 09:29:50,232 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10693 effective words) took 0.1s, 136582 effective words/s
+2025-07-21 09:29:50,322 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10704 effective words) took 0.1s, 142741 effective words/s
+2025-07-21 09:29:50,399 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10691 effective words) took 0.1s, 156437 effective words/s
+2025-07-21 09:29:50,483 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10700 effective words) took 0.1s, 144841 effective words/s
+2025-07-21 09:29:50,570 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10704 effective words) took 0.1s, 134065 effective words/s
+2025-07-21 09:29:50,647 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10700 effective words) took 0.1s, 168485 effective words/s
+2025-07-21 09:29:50,732 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10714 effective words) took 0.1s, 141915 effective words/s
+2025-07-21 09:29:50,844 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10680 effective words) took 0.1s, 130414 effective words/s
+2025-07-21 09:29:50,926 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10733 effective words) took 0.1s, 148885 effective words/s
+2025-07-21 09:29:51,004 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10710 effective words) took 0.1s, 152251 effective words/s
+2025-07-21 09:29:51,085 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10634 effective words) took 0.1s, 146870 effective words/s
+2025-07-21 09:29:51,162 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10692 effective words) took 0.1s, 164137 effective words/s
+2025-07-21 09:29:51,258 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10705 effective words) took 0.1s, 120571 effective words/s
+2025-07-21 09:29:51,343 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10705 effective words) took 0.1s, 136031 effective words/s
+2025-07-21 09:29:51,430 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10732 effective words) took 0.1s, 149108 effective words/s
+2025-07-21 09:29:51,519 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10701 effective words) took 0.1s, 138628 effective words/s
+2025-07-21 09:29:51,607 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10695 effective words) took 0.1s, 166807 effective words/s
+2025-07-21 09:29:51,609 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1069060 effective words) took 7.4s, 145184 effective words/s', 'datetime': '2025-07-21T09:29:51.609377', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:29:51,609 - __main__ - INFO - Training completed in 7.39 seconds
+2025-07-21 09:29:51,609 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 09:29:51,609 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 09:30:05,490 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T09:30:05.490935', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 09:30:05,495 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 09:34:10,264 - __main__ - INFO - Loading data from C:\uni\nlp\iranian-backing-sentiment-nlp\data\processed\comments_heavy_stem_processed.csv
+2025-07-21 09:34:10,289 - __main__ - INFO - Loaded 1451 sentences
+2025-07-21 09:34:10,291 - __main__ - INFO - Total words: 16065, Unique words: 3331
+2025-07-21 09:34:10,295 - __main__ - INFO - Average sentence length: 11.07
+2025-07-21 09:34:10,298 - __main__ - INFO - Starting Word2Vec training...
+2025-07-21 09:34:10,309 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-07-21T09:34:10.298007', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-07-21 09:34:10,310 - __main__ - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-07-21 09:34:10,310 - __main__ - INFO - Building vocabulary...
+2025-07-21 09:34:10,310 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-07-21 09:34:10,310 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-07-21 09:34:10,313 - gensim.models.word2vec - INFO - collected 3331 word types from a corpus of 16065 raw words and 1451 sentences
+2025-07-21 09:34:10,313 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-07-21 09:34:10,316 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1312 unique words (39.39% of original 3331, drops 2019)', 'datetime': '2025-07-21T09:34:10.316525', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:34:10,316 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 14046 word corpus (87.43% of original 16065, drops 2019)', 'datetime': '2025-07-21T09:34:10.316525', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:34:10,319 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3331 items
+2025-07-21 09:34:10,319 - gensim.models.word2vec - INFO - sample=0.001 downsamples 71 most-common words
+2025-07-21 09:34:10,322 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 10689.44975047755 word corpus (76.1%% of prior 14046)', 'datetime': '2025-07-21T09:34:10.322522', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-07-21 09:34:10,328 - gensim.models.word2vec - INFO - estimated required memory for 1312 words and 200 dimensions: 2755200 bytes
+2025-07-21 09:34:10,328 - gensim.models.word2vec - INFO - resetting layer weights
+2025-07-21 09:34:10,330 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-07-21T09:34:10.330030', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-07-21 09:34:10,330 - __main__ - INFO - Vocabulary built with 1312 words
+2025-07-21 09:34:10,330 - __main__ - INFO - Training Word2Vec model...
+2025-07-21 09:34:10,330 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1312 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-21T09:34:10.330030', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:34:10,351 - gensim.models.word2vec - INFO - EPOCH 0: training on 16065 raw words (10644 effective words) took 0.0s, 610031 effective words/s
+2025-07-21 09:34:10,371 - gensim.models.word2vec - INFO - EPOCH 1: training on 16065 raw words (10766 effective words) took 0.0s, 659382 effective words/s
+2025-07-21 09:34:10,394 - gensim.models.word2vec - INFO - EPOCH 2: training on 16065 raw words (10720 effective words) took 0.0s, 558057 effective words/s
+2025-07-21 09:34:10,417 - gensim.models.word2vec - INFO - EPOCH 3: training on 16065 raw words (10682 effective words) took 0.0s, 672742 effective words/s
+2025-07-21 09:34:10,437 - gensim.models.word2vec - INFO - EPOCH 4: training on 16065 raw words (10664 effective words) took 0.0s, 624466 effective words/s
+2025-07-21 09:34:10,462 - gensim.models.word2vec - INFO - EPOCH 5: training on 16065 raw words (10728 effective words) took 0.0s, 664013 effective words/s
+2025-07-21 09:34:10,485 - gensim.models.word2vec - INFO - EPOCH 6: training on 16065 raw words (10697 effective words) took 0.0s, 649208 effective words/s
+2025-07-21 09:34:10,505 - gensim.models.word2vec - INFO - EPOCH 7: training on 16065 raw words (10684 effective words) took 0.0s, 665856 effective words/s
+2025-07-21 09:34:10,526 - gensim.models.word2vec - INFO - EPOCH 8: training on 16065 raw words (10629 effective words) took 0.0s, 604058 effective words/s
+2025-07-21 09:34:10,550 - gensim.models.word2vec - INFO - EPOCH 9: training on 16065 raw words (10682 effective words) took 0.0s, 661068 effective words/s
+2025-07-21 09:34:10,571 - gensim.models.word2vec - INFO - EPOCH 10: training on 16065 raw words (10655 effective words) took 0.0s, 597652 effective words/s
+2025-07-21 09:34:10,597 - gensim.models.word2vec - INFO - EPOCH 11: training on 16065 raw words (10737 effective words) took 0.0s, 585966 effective words/s
+2025-07-21 09:34:10,623 - gensim.models.word2vec - INFO - EPOCH 12: training on 16065 raw words (10653 effective words) took 0.0s, 580441 effective words/s
+2025-07-21 09:34:10,648 - gensim.models.word2vec - INFO - EPOCH 13: training on 16065 raw words (10680 effective words) took 0.0s, 567608 effective words/s
+2025-07-21 09:34:10,670 - gensim.models.word2vec - INFO - EPOCH 14: training on 16065 raw words (10664 effective words) took 0.0s, 589650 effective words/s
+2025-07-21 09:34:10,692 - gensim.models.word2vec - INFO - EPOCH 15: training on 16065 raw words (10763 effective words) took 0.0s, 589938 effective words/s
+2025-07-21 09:34:10,713 - gensim.models.word2vec - INFO - EPOCH 16: training on 16065 raw words (10700 effective words) took 0.0s, 602111 effective words/s
+2025-07-21 09:34:10,735 - gensim.models.word2vec - INFO - EPOCH 17: training on 16065 raw words (10723 effective words) took 0.0s, 608663 effective words/s
+2025-07-21 09:34:10,756 - gensim.models.word2vec - INFO - EPOCH 18: training on 16065 raw words (10678 effective words) took 0.0s, 586639 effective words/s
+2025-07-21 09:34:10,820 - gensim.models.word2vec - INFO - EPOCH 19: training on 16065 raw words (10650 effective words) took 0.1s, 173600 effective words/s
+2025-07-21 09:34:10,903 - gensim.models.word2vec - INFO - EPOCH 20: training on 16065 raw words (10735 effective words) took 0.1s, 144147 effective words/s
+2025-07-21 09:34:10,989 - gensim.models.word2vec - INFO - EPOCH 21: training on 16065 raw words (10691 effective words) took 0.1s, 147111 effective words/s
+2025-07-21 09:34:11,061 - gensim.models.word2vec - INFO - EPOCH 22: training on 16065 raw words (10734 effective words) took 0.1s, 167662 effective words/s
+2025-07-21 09:34:11,147 - gensim.models.word2vec - INFO - EPOCH 23: training on 16065 raw words (10701 effective words) took 0.1s, 140921 effective words/s
+2025-07-21 09:34:11,234 - gensim.models.word2vec - INFO - EPOCH 24: training on 16065 raw words (10720 effective words) took 0.1s, 137114 effective words/s
+2025-07-21 09:34:11,581 - gensim.models.word2vec - INFO - EPOCH 25: training on 16065 raw words (10703 effective words) took 0.2s, 65872 effective words/s
+2025-07-21 09:34:11,749 - gensim.models.word2vec - INFO - EPOCH 26: training on 16065 raw words (10655 effective words) took 0.1s, 100908 effective words/s
+2025-07-21 09:34:11,872 - gensim.models.word2vec - INFO - EPOCH 27: training on 16065 raw words (10642 effective words) took 0.1s, 128800 effective words/s
+2025-07-21 09:34:11,968 - gensim.models.word2vec - INFO - EPOCH 28: training on 16065 raw words (10761 effective words) took 0.1s, 123310 effective words/s
+2025-07-21 09:34:12,050 - gensim.models.word2vec - INFO - EPOCH 29: training on 16065 raw words (10688 effective words) took 0.1s, 156644 effective words/s
+2025-07-21 09:34:12,141 - gensim.models.word2vec - INFO - EPOCH 30: training on 16065 raw words (10704 effective words) took 0.1s, 137327 effective words/s
+2025-07-21 09:34:12,241 - gensim.models.word2vec - INFO - EPOCH 31: training on 16065 raw words (10704 effective words) took 0.1s, 115477 effective words/s
+2025-07-21 09:34:12,337 - gensim.models.word2vec - INFO - EPOCH 32: training on 16065 raw words (10677 effective words) took 0.1s, 125093 effective words/s
+2025-07-21 09:34:12,449 - gensim.models.word2vec - INFO - EPOCH 33: training on 16065 raw words (10695 effective words) took 0.1s, 102995 effective words/s
+2025-07-21 09:34:12,586 - gensim.models.word2vec - INFO - EPOCH 34: training on 16065 raw words (10674 effective words) took 0.1s, 89027 effective words/s
+2025-07-21 09:34:12,691 - gensim.models.word2vec - INFO - EPOCH 35: training on 16065 raw words (10632 effective words) took 0.1s, 139574 effective words/s
+2025-07-21 09:34:12,779 - gensim.models.word2vec - INFO - EPOCH 36: training on 16065 raw words (10654 effective words) took 0.1s, 135375 effective words/s
+2025-07-21 09:34:12,875 - gensim.models.word2vec - INFO - EPOCH 37: training on 16065 raw words (10735 effective words) took 0.1s, 138914 effective words/s
+2025-07-21 09:34:12,967 - gensim.models.word2vec - INFO - EPOCH 38: training on 16065 raw words (10691 effective words) took 0.1s, 126553 effective words/s
+2025-07-21 09:34:13,064 - gensim.models.word2vec - INFO - EPOCH 39: training on 16065 raw words (10649 effective words) took 0.1s, 136046 effective words/s
+2025-07-21 09:34:13,194 - gensim.models.word2vec - INFO - EPOCH 40: training on 16065 raw words (10669 effective words) took 0.1s, 98957 effective words/s
+2025-07-21 09:34:13,281 - gensim.models.word2vec - INFO - EPOCH 41: training on 16065 raw words (10685 effective words) took 0.1s, 137271 effective words/s
+2025-07-21 09:34:13,363 - gensim.models.word2vec - INFO - EPOCH 42: training on 16065 raw words (10697 effective words) took 0.1s, 152610 effective words/s
+2025-07-21 09:34:13,440 - gensim.models.word2vec - INFO - EPOCH 43: training on 16065 raw words (10655 effective words) took 0.1s, 153307 effective words/s
+2025-07-21 09:34:13,562 - gensim.models.word2vec - INFO - EPOCH 44: training on 16065 raw words (10667 effective words) took 0.1s, 128388 effective words/s
+2025-07-21 09:34:13,646 - gensim.models.word2vec - INFO - EPOCH 45: training on 16065 raw words (10680 effective words) took 0.1s, 141769 effective words/s
+2025-07-21 09:34:13,745 - gensim.models.word2vec - INFO - EPOCH 46: training on 16065 raw words (10671 effective words) took 0.1s, 117623 effective words/s
+2025-07-21 09:34:13,890 - gensim.models.word2vec - INFO - EPOCH 47: training on 16065 raw words (10713 effective words) took 0.1s, 96132 effective words/s
+2025-07-21 09:34:14,009 - gensim.models.word2vec - INFO - EPOCH 48: training on 16065 raw words (10704 effective words) took 0.1s, 130425 effective words/s
+2025-07-21 09:34:14,179 - gensim.models.word2vec - INFO - EPOCH 49: training on 16065 raw words (10744 effective words) took 0.1s, 95264 effective words/s
+2025-07-21 09:34:14,306 - gensim.models.word2vec - INFO - EPOCH 50: training on 16065 raw words (10668 effective words) took 0.1s, 120665 effective words/s
+2025-07-21 09:34:14,442 - gensim.models.word2vec - INFO - EPOCH 51: training on 16065 raw words (10737 effective words) took 0.1s, 109342 effective words/s
+2025-07-21 09:34:14,612 - gensim.models.word2vec - INFO - EPOCH 52: training on 16065 raw words (10721 effective words) took 0.1s, 79736 effective words/s
+2025-07-21 09:34:14,695 - gensim.models.word2vec - INFO - EPOCH 53: training on 16065 raw words (10640 effective words) took 0.1s, 146890 effective words/s
+2025-07-21 09:34:14,786 - gensim.models.word2vec - INFO - EPOCH 54: training on 16065 raw words (10653 effective words) took 0.1s, 128172 effective words/s
+2025-07-21 09:34:14,873 - gensim.models.word2vec - INFO - EPOCH 55: training on 16065 raw words (10678 effective words) took 0.1s, 136163 effective words/s
+2025-07-21 09:34:14,965 - gensim.models.word2vec - INFO - EPOCH 56: training on 16065 raw words (10658 effective words) took 0.1s, 127473 effective words/s
+2025-07-21 09:34:15,043 - gensim.models.word2vec - INFO - EPOCH 57: training on 16065 raw words (10684 effective words) took 0.1s, 166822 effective words/s
+2025-07-21 09:34:15,125 - gensim.models.word2vec - INFO - EPOCH 58: training on 16065 raw words (10737 effective words) took 0.1s, 140689 effective words/s
+2025-07-21 09:34:15,223 - gensim.models.word2vec - INFO - EPOCH 59: training on 16065 raw words (10612 effective words) took 0.1s, 125423 effective words/s
+2025-07-21 09:34:15,313 - gensim.models.word2vec - INFO - EPOCH 60: training on 16065 raw words (10720 effective words) took 0.1s, 133027 effective words/s
+2025-07-21 09:34:15,400 - gensim.models.word2vec - INFO - EPOCH 61: training on 16065 raw words (10665 effective words) took 0.1s, 135533 effective words/s
+2025-07-21 09:34:15,479 - gensim.models.word2vec - INFO - EPOCH 62: training on 16065 raw words (10674 effective words) took 0.1s, 148826 effective words/s
+2025-07-21 09:34:15,559 - gensim.models.word2vec - INFO - EPOCH 63: training on 16065 raw words (10668 effective words) took 0.1s, 149859 effective words/s
+2025-07-21 09:34:15,696 - gensim.models.word2vec - INFO - EPOCH 64: training on 16065 raw words (10688 effective words) took 0.1s, 120447 effective words/s
+2025-07-21 09:34:15,781 - gensim.models.word2vec - INFO - EPOCH 65: training on 16065 raw words (10641 effective words) took 0.1s, 139764 effective words/s
+2025-07-21 09:34:15,861 - gensim.models.word2vec - INFO - EPOCH 66: training on 16065 raw words (10698 effective words) took 0.1s, 149740 effective words/s
+2025-07-21 09:34:15,933 - gensim.models.word2vec - INFO - EPOCH 67: training on 16065 raw words (10642 effective words) took 0.1s, 179655 effective words/s
+2025-07-21 09:34:16,007 - gensim.models.word2vec - INFO - EPOCH 68: training on 16065 raw words (10726 effective words) took 0.1s, 162143 effective words/s
+2025-07-21 09:34:16,080 - gensim.models.word2vec - INFO - EPOCH 69: training on 16065 raw words (10663 effective words) took 0.1s, 164394 effective words/s
+2025-07-21 09:34:16,165 - gensim.models.word2vec - INFO - EPOCH 70: training on 16065 raw words (10657 effective words) took 0.1s, 152443 effective words/s
+2025-07-21 09:34:16,251 - gensim.models.word2vec - INFO - EPOCH 71: training on 16065 raw words (10705 effective words) took 0.1s, 136472 effective words/s
+2025-07-21 09:34:16,333 - gensim.models.word2vec - INFO - EPOCH 72: training on 16065 raw words (10746 effective words) took 0.1s, 144455 effective words/s
+2025-07-21 09:34:16,415 - gensim.models.word2vec - INFO - EPOCH 73: training on 16065 raw words (10742 effective words) took 0.1s, 144765 effective words/s
+2025-07-21 09:34:16,493 - gensim.models.word2vec - INFO - EPOCH 74: training on 16065 raw words (10686 effective words) took 0.1s, 152949 effective words/s
+2025-07-21 09:34:16,571 - gensim.models.word2vec - INFO - EPOCH 75: training on 16065 raw words (10667 effective words) took 0.1s, 151430 effective words/s
+2025-07-21 09:34:16,677 - gensim.models.word2vec - INFO - EPOCH 76: training on 16065 raw words (10655 effective words) took 0.1s, 109797 effective words/s
+2025-07-21 09:34:16,746 - gensim.models.word2vec - INFO - EPOCH 77: training on 16065 raw words (10669 effective words) took 0.1s, 178520 effective words/s
+2025-07-21 09:34:16,828 - gensim.models.word2vec - INFO - EPOCH 78: training on 16065 raw words (10720 effective words) took 0.1s, 141690 effective words/s
+2025-07-21 09:34:16,908 - gensim.models.word2vec - INFO - EPOCH 79: training on 16065 raw words (10764 effective words) took 0.1s, 146729 effective words/s
+2025-07-21 09:34:16,991 - gensim.models.word2vec - INFO - EPOCH 80: training on 16065 raw words (10720 effective words) took 0.1s, 146709 effective words/s
+2025-07-21 09:34:17,071 - gensim.models.word2vec - INFO - EPOCH 81: training on 16065 raw words (10656 effective words) took 0.1s, 148838 effective words/s
+2025-07-21 09:34:17,162 - gensim.models.word2vec - INFO - EPOCH 82: training on 16065 raw words (10678 effective words) took 0.1s, 130941 effective words/s
+2025-07-21 09:34:17,251 - gensim.models.word2vec - INFO - EPOCH 83: training on 16065 raw words (10693 effective words) took 0.1s, 135855 effective words/s
+2025-07-21 09:34:17,356 - gensim.models.word2vec - INFO - EPOCH 84: training on 16065 raw words (10704 effective words) took 0.1s, 145059 effective words/s
+2025-07-21 09:34:17,426 - gensim.models.word2vec - INFO - EPOCH 85: training on 16065 raw words (10691 effective words) took 0.1s, 171613 effective words/s
+2025-07-21 09:34:17,545 - gensim.models.word2vec - INFO - EPOCH 86: training on 16065 raw words (10700 effective words) took 0.1s, 143494 effective words/s
+2025-07-21 09:34:17,624 - gensim.models.word2vec - INFO - EPOCH 87: training on 16065 raw words (10704 effective words) took 0.1s, 150462 effective words/s
+2025-07-21 09:34:17,729 - gensim.models.word2vec - INFO - EPOCH 88: training on 16065 raw words (10700 effective words) took 0.1s, 111288 effective words/s
+2025-07-21 09:34:17,820 - gensim.models.word2vec - INFO - EPOCH 89: training on 16065 raw words (10714 effective words) took 0.1s, 128814 effective words/s
+2025-07-21 09:34:17,899 - gensim.models.word2vec - INFO - EPOCH 90: training on 16065 raw words (10680 effective words) took 0.1s, 150235 effective words/s
+2025-07-21 09:34:17,979 - gensim.models.word2vec - INFO - EPOCH 91: training on 16065 raw words (10733 effective words) took 0.1s, 152723 effective words/s
+2025-07-21 09:34:18,057 - gensim.models.word2vec - INFO - EPOCH 92: training on 16065 raw words (10710 effective words) took 0.1s, 164445 effective words/s
+2025-07-21 09:34:18,135 - gensim.models.word2vec - INFO - EPOCH 93: training on 16065 raw words (10634 effective words) took 0.1s, 145885 effective words/s
+2025-07-21 09:34:18,233 - gensim.models.word2vec - INFO - EPOCH 94: training on 16065 raw words (10692 effective words) took 0.1s, 133766 effective words/s
+2025-07-21 09:34:18,327 - gensim.models.word2vec - INFO - EPOCH 95: training on 16065 raw words (10705 effective words) took 0.1s, 138294 effective words/s
+2025-07-21 09:34:18,409 - gensim.models.word2vec - INFO - EPOCH 96: training on 16065 raw words (10705 effective words) took 0.1s, 145288 effective words/s
+2025-07-21 09:34:18,491 - gensim.models.word2vec - INFO - EPOCH 97: training on 16065 raw words (10732 effective words) took 0.1s, 143254 effective words/s
+2025-07-21 09:34:18,561 - gensim.models.word2vec - INFO - EPOCH 98: training on 16065 raw words (10701 effective words) took 0.1s, 177074 effective words/s
+2025-07-21 09:34:18,655 - gensim.models.word2vec - INFO - EPOCH 99: training on 16065 raw words (10695 effective words) took 0.1s, 130764 effective words/s
+2025-07-21 09:34:18,662 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1606500 raw words (1069060 effective words) took 8.3s, 128311 effective words/s', 'datetime': '2025-07-21T09:34:18.662503', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-07-21 09:34:18,662 - __main__ - INFO - Training completed in 8.36 seconds
+2025-07-21 09:34:18,663 - __main__ - INFO - Final vocabulary size: 1312
+2025-07-21 09:34:18,663 - __main__ - INFO - Evaluating Word2Vec model...
+2025-07-21 09:34:34,006 - gensim.utils - INFO - KeyedVectors lifecycle event {'fname_or_handle': 'C:\\uni\\nlp\\iranian-backing-sentiment-nlp\\models\\saved_models\\word2vec_vectors.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-21T09:34:34.006346', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-07-21 09:34:34,011 - gensim.utils - INFO - saved C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 09:34:34,019 - __main__ - INFO - Word2Vec model saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors.kv
+2025-07-21 09:34:34,023 - __main__ - INFO - Metadata saved to C:\uni\nlp\iranian-backing-sentiment-nlp\models\saved_models\word2vec_vectors_metadata.json
+2025-07-21 09:34:34,031 - __main__ - INFO - Word2Vec analysis report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\reports\word2vec_analysis_report.json
