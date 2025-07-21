@@ -1,0 +1,5 @@
+2025-07-21 13:11:17,026 - __main__ - INFO - Calculating comprehensive metrics for Sample Model...
+2025-07-21 13:11:17,119 - __main__ - INFO - Metrics calculation completed in 0.093 seconds
+2025-07-21 13:11:17,120 - __main__ - INFO - Accuracy: 0.8650
+2025-07-21 13:11:17,120 - __main__ - INFO - F1-Score (weighted): 0.8649
+2025-07-21 13:11:25,929 - __main__ - INFO - Metrics report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\metrics\sample_model_metrics_report.json

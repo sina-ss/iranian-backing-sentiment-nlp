@@ -1,0 +1,1076 @@
+{
+  "model_name": "Sample Model",
+  "analysis_timestamp": "2025-07-21T13:24:29.677957",
+  "error_statistics": {
+    "total_samples": 1000,
+    "total_errors": 99,
+    "error_rate": 0.099,
+    "analysis_time": 0.01614,
+    "timestamp": "2025-07-21T13:24:29.677957"
+  },
+  "error_analysis": {
+    "confusion_pairs": {
+      "positive→negative": 20,
+      "neutral→negative": 20,
+      "negative→neutral": 11,
+      "neutral→positive": 16,
+      "positive→neutral": 18,
+      "negative→positive": 14
+    },
+    "per_class_errors": {
+      "negative": {
+        "total_samples": 355,
+        "errors": 25,
+        "error_rate": 0.07042253521126761,
+        "correct_predictions": 330
+      },
+      "neutral": {
+        "total_samples": 326,
+        "errors": 36,
+        "error_rate": 0.11042944785276074,
+        "correct_predictions": 290
+      },
+      "positive": {
+        "total_samples": 319,
+        "errors": 38,
+        "error_rate": 0.11912225705329153,
+        "correct_predictions": 281
+      }
+    },
+    "error_examples": {
+      "positive→negative": [
+        {
+          "text": "متوسط است و قابل قبول",
+          "true_label": "positive",
+          "predicted_label": "negative",
+          "index": 27,
+          "confidence": 0.5520123746884337,
+          "all_probabilities": {
+            "negative": 0.002235801328708297,
+            "neutral": 0.5520123746884337,
+            "positive": 0.4457518239828581
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "positive",
+          "predicted_label": "negative",
+          "index": 29,
+          "confidence": 0.6284638613085731,
+          "all_probabilities": {
+            "negative": 0.12124944394858644,
+            "neutral": 0.2502866947428403,
+            "positive": 0.6284638613085731
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "positive",
+          "predicted_label": "negative",
+          "index": 34,
+          "confidence": 0.5510756258073032,
+          "all_probabilities": {
+            "negative": 0.14912989563841667,
+            "neutral": 0.5510756258073032,
+            "positive": 0.2997944785542801
+          }
+        },
+        {
+          "text": "متوسط است و قابل قبول",
+          "true_label": "positive",
+          "predicted_label": "negative",
+          "index": 42,
+          "confidence": 0.4660343634708286,
+          "all_probabilities": {
+            "negative": 0.4660343634708286,
+            "neutral": 0.3976354309014639,
+            "positive": 0.13633020562770745
+          }
+        },
+        {
+          "text": "برنامه خراب است و مشکل دارد",
+          "true_label": "positive",
+          "predicted_label": "negative",
+          "index": 56,
+          "confidence": 0.5037335090356345,
+          "all_probabilities": {
+            "negative": 0.013125096416708018,
+            "neutral": 0.4831413945476574,
+            "positive": 0.5037335090356345
+          }
+        }
+      ],
+      "neutral→negative": [
+        {
+          "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+          "true_label": "neutral",
+          "predicted_label": "negative",
+          "index": 35,
+          "confidence": 0.5217529485906854,
+          "all_probabilities": {
+            "negative": 0.5217529485906854,
+            "neutral": 0.1739110853113867,
+            "positive": 0.3043359660979278
+          }
+        },
+        {
+          "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+          "true_label": "neutral",
+          "predicted_label": "negative",
+          "index": 75,
+          "confidence": 0.45755895345300274,
+          "all_probabilities": {
+            "negative": 0.11008184345674946,
+            "neutral": 0.43235920309024795,
+            "positive": 0.45755895345300274
+          }
+        },
+        {
+          "text": "متوسط است و قابل قبول",
+          "true_label": "neutral",
+          "predicted_label": "negative",
+          "index": 82,
+          "confidence": 0.4513498180754608,
+          "all_probabilities": {
+            "negative": 0.4513498180754608,
+            "neutral": 0.3707111481182485,
+            "positive": 0.17793903380629053
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "neutral",
+          "predicted_label": "negative",
+          "index": 109,
+          "confidence": 0.5120417108634281,
+          "all_probabilities": {
+            "negative": 0.42069670458779646,
+            "neutral": 0.5120417108634281,
+            "positive": 0.06726158454877539
+          }
+        },
+        {
+          "text": "برنامه خراب است و مشکل دارد",
+          "true_label": "neutral",
+          "predicted_label": "negative",
+          "index": 111,
+          "confidence": 0.40902298403431847,
+          "all_probabilities": {
+            "negative": 0.1905497410139512,
+            "neutral": 0.40902298403431847,
+            "positive": 0.4004272749517302
+          }
+        }
+      ],
+      "negative→neutral": [
+        {
+          "text": "متوسط است و قابل قبول",
+          "true_label": "negative",
+          "predicted_label": "neutral",
+          "index": 47,
+          "confidence": 0.45228360961926556,
+          "all_probabilities": {
+            "negative": 0.3942163794244998,
+            "neutral": 0.45228360961926556,
+            "positive": 0.15350001095623464
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "negative",
+          "predicted_label": "neutral",
+          "index": 149,
+          "confidence": 0.6512709327815713,
+          "all_probabilities": {
+            "negative": 0.2133529560748864,
+            "neutral": 0.13537611114354225,
+            "positive": 0.6512709327815713
+          }
+        },
+        {
+          "text": "برنامه خراب است و مشکل دارد",
+          "true_label": "negative",
+          "predicted_label": "neutral",
+          "index": 231,
+          "confidence": 0.35332349367601895,
+          "all_probabilities": {
+            "negative": 0.30907387058831337,
+            "neutral": 0.3376026357356676,
+            "positive": 0.35332349367601895
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "negative",
+          "predicted_label": "neutral",
+          "index": 254,
+          "confidence": 0.48227893575818803,
+          "all_probabilities": {
+            "negative": 0.03545439113126357,
+            "neutral": 0.48226667311054844,
+            "positive": 0.48227893575818803
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "negative",
+          "predicted_label": "neutral",
+          "index": 354,
+          "confidence": 0.6589703914335053,
+          "all_probabilities": {
+            "negative": 0.6589703914335053,
+            "neutral": 0.017004329338239803,
+            "positive": 0.3240252792282548
+          }
+        }
+      ],
+      "neutral→positive": [
+        {
+          "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+          "true_label": "neutral",
+          "predicted_label": "positive",
+          "index": 65,
+          "confidence": 0.38839222458557193,
+          "all_probabilities": {
+            "negative": 0.38839222458557193,
+            "neutral": 0.2680631365087529,
+            "positive": 0.3435446389056751
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "neutral",
+          "predicted_label": "positive",
+          "index": 79,
+          "confidence": 0.9709618339700223,
+          "all_probabilities": {
+            "negative": 0.0005358045927393801,
+            "neutral": 0.02850236143723833,
+            "positive": 0.9709618339700223
+          }
+        },
+        {
+          "text": "برنامه خراب است و مشکل دارد",
+          "true_label": "neutral",
+          "predicted_label": "positive",
+          "index": 411,
+          "confidence": 0.556264047437715,
+          "all_probabilities": {
+            "negative": 0.556264047437715,
+            "neutral": 0.07385035132046378,
+            "positive": 0.3698856012418212
+          }
+        },
+        {
+          "text": "بسیار خوب و راحت استفاده می‌شود",
+          "true_label": "neutral",
+          "predicted_label": "positive",
+          "index": 433,
+          "confidence": 0.3800157987316705,
+          "all_probabilities": {
+            "negative": 0.37478772188118,
+            "neutral": 0.3800157987316705,
+            "positive": 0.24519647938714945
+          }
+        },
+        {
+          "text": "برنامه خراب است و مشکل دارد",
+          "true_label": "neutral",
+          "predicted_label": "positive",
+          "index": 446,
+          "confidence": 0.44093176415937907,
+          "all_probabilities": {
+            "negative": 0.44093176415937907,
+            "neutral": 0.39905264952538366,
+            "positive": 0.1600155863152373
+          }
+        }
+      ],
+      "positive→neutral": [
+        {
+          "text": "بسیار خوب و راحت استفاده می‌شود",
+          "true_label": "positive",
+          "predicted_label": "neutral",
+          "index": 93,
+          "confidence": 0.45714732729424307,
+          "all_probabilities": {
+            "negative": 0.45714732729424307,
+            "neutral": 0.12734463797470408,
+            "positive": 0.4155080347310528
+          }
+        },
+        {
+          "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+          "true_label": "positive",
+          "predicted_label": "neutral",
+          "index": 135,
+          "confidence": 0.39591384629662807,
+          "all_probabilities": {
+            "negative": 0.2158804172749057,
+            "neutral": 0.39591384629662807,
+            "positive": 0.38820573642846623
+          }
+        },
+        {
+          "text": "متوسط است و قابل قبول",
+          "true_label": "positive",
+          "predicted_label": "neutral",
+          "index": 137,
+          "confidence": 0.566601957473612,
+          "all_probabilities": {
+            "negative": 0.06056382008857586,
+            "neutral": 0.37283422243781217,
+            "positive": 0.566601957473612
+          }
+        },
+        {
+          "text": "متوسط است و قابل قبول",
+          "true_label": "positive",
+          "predicted_label": "neutral",
+          "index": 252,
+          "confidence": 0.6972196261588307,
+          "all_probabilities": {
+            "negative": 0.24000292260080344,
+            "neutral": 0.6972196261588307,
+            "positive": 0.0627774512403658
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "positive",
+          "predicted_label": "neutral",
+          "index": 289,
+          "confidence": 0.4904009627775384,
+          "all_probabilities": {
+            "negative": 0.4904009627775384,
+            "neutral": 0.06829481583903169,
+            "positive": 0.44130422138343
+          }
+        }
+      ],
+      "negative→positive": [
+        {
+          "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+          "true_label": "negative",
+          "predicted_label": "positive",
+          "index": 210,
+          "confidence": 0.5560842525022953,
+          "all_probabilities": {
+            "negative": 0.12141482691993763,
+            "neutral": 0.5560842525022953,
+            "positive": 0.322500920577767
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "negative",
+          "predicted_label": "positive",
+          "index": 219,
+          "confidence": 0.4335364046404314,
+          "all_probabilities": {
+            "negative": 0.14044747907910202,
+            "neutral": 0.4335364046404314,
+            "positive": 0.42601611628046654
+          }
+        },
+        {
+          "text": "برنامه خراب است و مشکل دارد",
+          "true_label": "negative",
+          "predicted_label": "positive",
+          "index": 306,
+          "confidence": 0.555705595395598,
+          "all_probabilities": {
+            "negative": 0.028979183290658562,
+            "neutral": 0.4153152213137433,
+            "positive": 0.555705595395598
+          }
+        },
+        {
+          "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+          "true_label": "negative",
+          "predicted_label": "positive",
+          "index": 340,
+          "confidence": 0.3569205702908093,
+          "all_probabilities": {
+            "negative": 0.31170003481267505,
+            "neutral": 0.33137939489651547,
+            "positive": 0.3569205702908093
+          }
+        },
+        {
+          "text": "کند است و مشکل زیادی دارد",
+          "true_label": "negative",
+          "predicted_label": "positive",
+          "index": 389,
+          "confidence": 0.6236307681469564,
+          "all_probabilities": {
+            "negative": 0.25682778877923496,
+            "neutral": 0.11954144307380858,
+            "positive": 0.6236307681469564
+          }
+        }
+      ]
+    },
+    "error_distribution": {
+      "by_text_length": {
+        "Very Short (0-50)": {
+          "total_samples": 1000,
+          "errors": 99,
+          "error_rate": 0.099
+        }
+      },
+      "by_word_count": {
+        "Very Few (1-5)": {
+          "total_samples": 200,
+          "errors": 25,
+          "error_rate": 0.125
+        },
+        "Few (6-10)": {
+          "total_samples": 800,
+          "errors": 74,
+          "error_rate": 0.0925
+        }
+      },
+      "by_sentiment_words": {
+        "has_positive_words": {
+          "with_words": {
+            "total_samples": 400,
+            "errors": 35,
+            "error_rate": 0.0875
+          },
+          "without_words": {
+            "total_samples": 600,
+            "errors": 64,
+            "error_rate": 0.10666666666666667
+          }
+        },
+        "has_negative_words": {
+          "with_words": {
+            "total_samples": 600,
+            "errors": 59,
+            "error_rate": 0.09833333333333333
+          },
+          "without_words": {
+            "total_samples": 400,
+            "errors": 40,
+            "error_rate": 0.1
+          }
+        }
+      }
+    }
+  },
+  "error_patterns": {
+    "common_words_in_errors": {
+      "positive→negative": {
+        "است": 17,
+        "کند": 8,
+        "مشکل": 7,
+        "دارد": 7,
+        "متوسط": 6,
+        "قابل": 6,
+        "قبول": 6,
+        "زیادی": 4,
+        "اپلیکیشن": 4,
+        "عالی": 4
+      },
+      "neutral→negative": {
+        "است": 15,
+        "کند": 7,
+        "مشکل": 6,
+        "دارد": 6,
+        "متوسط": 5,
+        "قابل": 5,
+        "قبول": 5,
+        "بسیار": 5,
+        "خوب": 5,
+        "راحت": 5
+      },
+      "negative→neutral": {
+        "است": 11,
+        "مشکل": 6,
+        "دارد": 6,
+        "متوسط": 4,
+        "قابل": 4,
+        "قبول": 4,
+        "کند": 4,
+        "زیادی": 3,
+        "برنامه": 3,
+        "خراب": 3
+      },
+      "neutral→positive": {
+        "است": 13,
+        "مشکل": 8,
+        "دارد": 8,
+        "برنامه": 7,
+        "خراب": 7,
+        "کند": 5,
+        "اپلیکیشن": 4,
+        "عالی": 4,
+        "سریع": 4,
+        "کار": 4
+      },
+      "positive→neutral": {
+        "است": 16,
+        "متوسط": 7,
+        "قابل": 7,
+        "قبول": 7,
+        "مشکل": 7,
+        "دارد": 7,
+        "کند": 6,
+        "زیادی": 4,
+        "برنامه": 3,
+        "خراب": 3
+      },
+      "negative→positive": {
+        "است": 12,
+        "کند": 8,
+        "اپلیکیشن": 5,
+        "عالی": 5,
+        "سریع": 5,
+        "کار": 5,
+        "مشکل": 5,
+        "دارد": 5,
+        "زیادی": 3,
+        "برنامه": 2
+      }
+    },
+    "length_analysis": {
+      "error_length_stats": {
+        "mean": 27.343434343434343,
+        "median": 27.0,
+        "std": 5.005374114236317
+      },
+      "correct_length_stats": {
+        "mean": 27.850166481687015,
+        "median": 27.0,
+        "std": 4.811285806877212
+      }
+    },
+    "lexical_patterns": {
+      "emoji_usage": {
+        "errors_with_emoji": 0,
+        "errors_total": 99,
+        "errors_emoji_rate": 0.0,
+        "correct_with_emoji": 0,
+        "correct_total": 901,
+        "correct_emoji_rate": 0.0
+      },
+      "punctuation_patterns": {
+        "error_punctuation_density": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "correct_punctuation_density": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "capitalization_patterns": {},
+      "special_characters": {}
+    },
+    "error_clusters": {}
+  },
+  "confidence_analysis": {
+    "high_confidence_errors": [
+      {
+        "text": "کند است و مشکل زیادی دارد",
+        "true_label": "neutral",
+        "predicted_label": "positive",
+        "confidence": 0.9709618339700223,
+        "all_probabilities": {
+          "negative": 0.0005358045927393801,
+          "neutral": 0.02850236143723833,
+          "positive": 0.9709618339700223
+        }
+      },
+      {
+        "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+        "true_label": "positive",
+        "predicted_label": "negative",
+        "confidence": 0.8620458694364759,
+        "all_probabilities": {
+          "negative": 0.02424452277076435,
+          "neutral": 0.8620458694364759,
+          "positive": 0.11370960779275964
+        }
+      },
+      {
+        "text": "متوسط است و قابل قبول",
+        "true_label": "neutral",
+        "predicted_label": "negative",
+        "confidence": 0.8130912747674155,
+        "all_probabilities": {
+          "negative": 0.13080044838760102,
+          "neutral": 0.05610827684498348,
+          "positive": 0.8130912747674155
+        }
+      }
+    ],
+    "low_confidence_correct": [
+      {
+        "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+        "true_label": "positive",
+        "predicted_label": "positive",
+        "confidence": 0.5912333394812581,
+        "all_probabilities": {
+          "negative": 0.1853081542504989,
+          "neutral": 0.5912333394812581,
+          "positive": 0.22345850626824304
+        }
+      },
+      {
+        "text": "برنامه خراب است و مشکل دارد",
+        "true_label": "negative",
+        "predicted_label": "negative",
+        "confidence": 0.39535482546543416,
+        "all_probabilities": {
+          "negative": 0.27783289595465727,
+          "neutral": 0.3268122785799086,
+          "positive": 0.39535482546543416
+        }
+      },
+      {
+        "text": "متوسط است و قابل قبول",
+        "true_label": "positive",
+        "predicted_label": "positive",
+        "confidence": 0.40649397190403147,
+        "all_probabilities": {
+          "negative": 0.19760287240158156,
+          "neutral": 0.40649397190403147,
+          "positive": 0.39590315569438694
+        }
+      },
+      {
+        "text": "بسیار خوب و راحت استفاده می‌شود",
+        "true_label": "positive",
+        "predicted_label": "positive",
+        "confidence": 0.5563568308226238,
+        "all_probabilities": {
+          "negative": 0.2031003299374052,
+          "neutral": 0.5563568308226238,
+          "positive": 0.24054283923997097
+        }
+      },
+      {
+        "text": "کند است و مشکل زیادی دارد",
+        "true_label": "negative",
+        "predicted_label": "negative",
+        "confidence": 0.5093477540402064,
+        "all_probabilities": {
+          "negative": 0.2329619500500681,
+          "neutral": 0.5093477540402064,
+          "positive": 0.2576902959097254
+        }
+      },
+      {
+        "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+        "true_label": "negative",
+        "predicted_label": "negative",
+        "confidence": 0.3494404870734089,
+        "all_probabilities": {
+          "negative": 0.3494404870734089,
+          "neutral": 0.3381418041423677,
+          "positive": 0.31241770878422337
+        }
+      },
+      {
+        "text": "برنامه خراب است و مشکل دارد",
+        "true_label": "positive",
+        "predicted_label": "positive",
+        "confidence": 0.39103419337733913,
+        "all_probabilities": {
+          "negative": 0.24938932870604044,
+          "neutral": 0.35957647791662034,
+          "positive": 0.39103419337733913
+        }
+      },
+      {
+        "text": "متوسط است و قابل قبول",
+        "true_label": "neutral",
+        "predicted_label": "neutral",
+        "confidence": 0.5430944822211345,
+        "all_probabilities": {
+          "negative": 0.5430944822211345,
+          "neutral": 0.4423081398315766,
+          "positive": 0.01459737794728884
+        }
+      },
+      {
+        "text": "بسیار خوب و راحت استفاده می‌شود",
+        "true_label": "positive",
+        "predicted_label": "positive",
+        "confidence": 0.4596124837793827,
+        "all_probabilities": {
+          "negative": 0.41990504259032957,
+          "neutral": 0.12048247363028768,
+          "positive": 0.4596124837793827
+        }
+      },
+      {
+        "text": "کند است و مشکل زیادی دارد",
+        "true_label": "positive",
+        "predicted_label": "positive",
+        "confidence": 0.4213539031702285,
+        "all_probabilities": {
+          "negative": 0.4213539031702285,
+          "neutral": 0.2776929734923747,
+          "positive": 0.30095312333739677
+        }
+      }
+    ],
+    "confidence_distribution": {
+      "Very Low (0-0.5)": {
+        "total_samples": 495,
+        "errors": 46,
+        "accuracy": 0.907070707070707
+      },
+      "Low (0.5-0.7)": {
+        "total_samples": 423,
+        "errors": 46,
+        "accuracy": 0.8912529550827423
+      },
+      "Medium (0.7-0.8)": {
+        "total_samples": 53,
+        "errors": 4,
+        "accuracy": 0.9245283018867925
+      },
+      "High (0.8-0.9)": {
+        "total_samples": 20,
+        "errors": 2,
+        "accuracy": 0.9
+      },
+      "Very High (0.9-1.0)": {
+        "total_samples": 9,
+        "errors": 1,
+        "accuracy": 0.8888888888888888
+      }
+    },
+    "calibration_analysis": {
+      "bin_data": [
+        {
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "avg_confidence": 0.3758445969971037,
+          "accuracy": 0.37037037037037035,
+          "count": 135,
+          "calibration_error": 0.005474226626733358
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "avg_confidence": 0.4513797629529418,
+          "accuracy": 0.34444444444444444,
+          "count": 360,
+          "calibration_error": 0.10693531850849736
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "avg_confidence": 0.5431857834847574,
+          "accuracy": 0.33444816053511706,
+          "count": 299,
+          "calibration_error": 0.20873762294964038
+        },
+        {
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "avg_confidence": 0.6498128228359262,
+          "accuracy": 0.33064516129032256,
+          "count": 124,
+          "calibration_error": 0.31916766154560366
+        },
+        {
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "avg_confidence": 0.7345889805858039,
+          "accuracy": 0.3018867924528302,
+          "count": 53,
+          "calibration_error": 0.43270218813297373
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "avg_confidence": 0.8424517065001818,
+          "accuracy": 0.4,
+          "count": 20,
+          "calibration_error": 0.44245170650018173
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "avg_confidence": 0.9449431507710643,
+          "accuracy": 0.4444444444444444,
+          "count": 9,
+          "calibration_error": 0.5004987063266199
+        }
+      ],
+      "expected_calibration_error": 0.1775118130092562,
+      "maximum_calibration_error": 0.5004987063266199,
+      "total_samples": 1000
+    }
+  },
+  "worst_predictions": [
+    {
+      "index": 79,
+      "text": "کند است و مشکل زیادی دارد",
+      "true_label": "neutral",
+      "predicted_label": "positive",
+      "confidence": 0.9709618339700223,
+      "all_probabilities": {
+        "negative": 0.0005358045927393801,
+        "neutral": 0.02850236143723833,
+        "positive": 0.9709618339700223
+      }
+    },
+    {
+      "index": 245,
+      "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+      "true_label": "positive",
+      "predicted_label": "negative",
+      "confidence": 0.8620458694364759,
+      "all_probabilities": {
+        "negative": 0.02424452277076435,
+        "neutral": 0.8620458694364759,
+        "positive": 0.11370960779275964
+      }
+    },
+    {
+      "index": 852,
+      "text": "متوسط است و قابل قبول",
+      "true_label": "neutral",
+      "predicted_label": "negative",
+      "confidence": 0.8130912747674155,
+      "all_probabilities": {
+        "negative": 0.13080044838760102,
+        "neutral": 0.05610827684498348,
+        "positive": 0.8130912747674155
+      }
+    },
+    {
+      "index": 611,
+      "text": "برنامه خراب است و مشکل دارد",
+      "true_label": "neutral",
+      "predicted_label": "positive",
+      "confidence": 0.7982199106183333,
+      "all_probabilities": {
+        "negative": 0.07660124023383719,
+        "neutral": 0.7982199106183333,
+        "positive": 0.12517884914782948
+      }
+    },
+    {
+      "index": 667,
+      "text": "متوسط است و قابل قبول",
+      "true_label": "positive",
+      "predicted_label": "negative",
+      "confidence": 0.7772722305014349,
+      "all_probabilities": {
+        "negative": 0.7772722305014349,
+        "neutral": 0.02831293112801814,
+        "positive": 0.19441483837054693
+      }
+    },
+    {
+      "index": 498,
+      "text": "بسیار خوب و راحت استفاده می‌شود",
+      "true_label": "neutral",
+      "predicted_label": "negative",
+      "confidence": 0.734657110162629,
+      "all_probabilities": {
+        "negative": 0.15114159427950574,
+        "neutral": 0.11420129555786539,
+        "positive": 0.734657110162629
+      }
+    },
+    {
+      "index": 972,
+      "text": "متوسط است و قابل قبول",
+      "true_label": "positive",
+      "predicted_label": "neutral",
+      "confidence": 0.7117218805676254,
+      "all_probabilities": {
+        "negative": 0.20020665179859456,
+        "neutral": 0.08807146763378003,
+        "positive": 0.7117218805676254
+      }
+    },
+    {
+      "index": 771,
+      "text": "برنامه خراب است و مشکل دارد",
+      "true_label": "negative",
+      "predicted_label": "positive",
+      "confidence": 0.6985010927207403,
+      "all_probabilities": {
+        "negative": 0.07409061788300697,
+        "neutral": 0.22740828939625257,
+        "positive": 0.6985010927207403
+      }
+    },
+    {
+      "index": 252,
+      "text": "متوسط است و قابل قبول",
+      "true_label": "positive",
+      "predicted_label": "neutral",
+      "confidence": 0.6972196261588307,
+      "all_probabilities": {
+        "negative": 0.24000292260080344,
+        "neutral": 0.6972196261588307,
+        "positive": 0.0627774512403658
+      }
+    },
+    {
+      "index": 887,
+      "text": "متوسط است و قابل قبول",
+      "true_label": "neutral",
+      "predicted_label": "negative",
+      "confidence": 0.6940249834779929,
+      "all_probabilities": {
+        "negative": 0.06132199786238033,
+        "neutral": 0.6940249834779929,
+        "positive": 0.2446530186596269
+      }
+    }
+  ],
+  "confused_predictions": [
+    {
+      "index": 144,
+      "text": "کند است و مشکل زیادی دارد",
+      "true_label": "negative",
+      "predicted_label": "negative",
+      "is_error": false,
+      "confusion_score": 0.6635655168775849,
+      "confidence": 0.33643448312241503,
+      "all_probabilities": {
+        "negative": 0.33643448312241503,
+        "neutral": 0.3332275026279807,
+        "positive": 0.33033801424960435
+      }
+    },
+    {
+      "index": 272,
+      "text": "متوسط است و قابل قبول",
+      "true_label": "negative",
+      "predicted_label": "negative",
+      "is_error": false,
+      "confusion_score": 0.6604847663427897,
+      "confidence": 0.3395152336572103,
+      "all_probabilities": {
+        "negative": 0.33712515183469266,
+        "neutral": 0.32335961450809697,
+        "positive": 0.3395152336572103
+      }
+    },
+    {
+      "index": 828,
+      "text": "بسیار خوب و راحت استفاده می‌شود",
+      "true_label": "neutral",
+      "predicted_label": "neutral",
+      "is_error": false,
+      "confusion_score": 0.6595508149191316,
+      "confidence": 0.3404491850808684,
+      "all_probabilities": {
+        "negative": 0.3217454591474018,
+        "neutral": 0.3404491850808684,
+        "positive": 0.3378053557717298
+      }
+    },
+    {
+      "index": 636,
+      "text": "برنامه خراب است و مشکل دارد",
+      "true_label": "negative",
+      "predicted_label": "negative",
+      "is_error": false,
+      "confusion_score": 0.6591694352186004,
+      "confidence": 0.3408305647813996,
+      "all_probabilities": {
+        "negative": 0.3408305647813996,
+        "neutral": 0.33517866189970874,
+        "positive": 0.3239907733188917
+      }
+    },
+    {
+      "index": 86,
+      "text": "برنامه خراب است و مشکل دارد",
+      "true_label": "positive",
+      "predicted_label": "positive",
+      "is_error": false,
+      "confusion_score": 0.6590488714735487,
+      "confidence": 0.3409511285264512,
+      "all_probabilities": {
+        "negative": 0.33545398857946473,
+        "neutral": 0.3409511285264512,
+        "positive": 0.32359488289408406
+      }
+    },
+    {
+      "index": 896,
+      "text": "برنامه خراب است و مشکل دارد",
+      "true_label": "negative",
+      "predicted_label": "negative",
+      "is_error": false,
+      "confusion_score": 0.6565315130974336,
+      "confidence": 0.3434684869025664,
+      "all_probabilities": {
+        "negative": 0.3417933480811479,
+        "neutral": 0.31473816501628565,
+        "positive": 0.3434684869025664
+      }
+    },
+    {
+      "index": 743,
+      "text": "بسیار خوب و راحت استفاده می‌شود",
+      "true_label": "negative",
+      "predicted_label": "negative",
+      "is_error": false,
+      "confusion_score": 0.6538861810459056,
+      "confidence": 0.3461138189540945,
+      "all_probabilities": {
+        "negative": 0.33748522950332677,
+        "neutral": 0.3164009515425787,
+        "positive": 0.3461138189540945
+      }
+    },
+    {
+      "index": 248,
+      "text": "بسیار خوب و راحت استفاده می‌شود",
+      "true_label": "neutral",
+      "predicted_label": "neutral",
+      "is_error": false,
+      "confusion_score": 0.652670594676253,
+      "confidence": 0.34732940532374706,
+      "all_probabilities": {
+        "negative": 0.34351818385087374,
+        "neutral": 0.3091524108253792,
+        "positive": 0.34732940532374706
+      }
+    },
+    {
+      "index": 161,
+      "text": "برنامه خراب است و مشکل دارد",
+      "true_label": "positive",
+      "predicted_label": "positive",
+      "is_error": false,
+      "confusion_score": 0.6518174664747618,
+      "confidence": 0.34818253352523826,
+      "all_probabilities": {
+        "negative": 0.34818253352523826,
+        "neutral": 0.3330718166407718,
+        "positive": 0.31874564983399
+      }
+    },
+    {
+      "index": 170,
+      "text": "اپلیکیشن عالی است و سریع کار می‌کند",
+      "true_label": "neutral",
+      "predicted_label": "neutral",
+      "is_error": false,
+      "confusion_score": 0.6509658190284024,
+      "confidence": 0.3490341809715976,
+      "all_probabilities": {
+        "negative": 0.3351185765503893,
+        "neutral": 0.3490341809715976,
+        "positive": 0.315847242478013
+      }
+    }
+  ]
+}

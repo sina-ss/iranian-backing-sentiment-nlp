@@ -1054,6 +1054,25 @@ class PersianSentimentErrorAnalyzer:
         report_path = Path(report_path)
         report_path.parent.mkdir(parents=True, exist_ok=True)
 
+        # Helper function to convert tuple keys to strings for JSON serialization
+        def convert_tuple_keys(data):
+            if isinstance(data, dict):
+                new_dict = {}
+                for key, value in data.items():
+                    # Convert tuple keys to string representation
+                    if isinstance(key, tuple):
+                        # Convert tuple to arrow notation
+                        new_key = f"{key[0]}→{key[1]}"
+                    else:
+                        new_key = key
+                    new_dict[new_key] = convert_tuple_keys(
+                        value)  # Recursively handle nested dicts
+                return new_dict
+            elif isinstance(data, list):
+                return [convert_tuple_keys(item) for item in data]
+            else:
+                return data
+
         # Compile comprehensive report
         report = {
             'model_name': self.model_name,
@@ -1068,6 +1087,9 @@ class PersianSentimentErrorAnalyzer:
         if include_examples:
             report['worst_predictions'] = self.get_worst_predictions(10)
             report['confused_predictions'] = self.get_confused_predictions(10)
+
+        # Convert tuple keys to strings for JSON compatibility
+        report = convert_tuple_keys(report)
 
         # Save report
         with open(report_path, 'w', encoding='utf-8') as f:

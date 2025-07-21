@@ -1,0 +1,7 @@
+2025-07-21 13:21:50,426 - __main__ - INFO - Starting error analysis for Sample Model...
+2025-07-21 13:21:50,475 - __main__ - INFO - Error analysis completed in 0.049 seconds
+2025-07-21 13:21:50,475 - __main__ - INFO - Total errors: 99 (9.90%)
+2025-07-21 13:24:29,661 - __main__ - INFO - Starting error analysis for Sample Model...
+2025-07-21 13:24:29,677 - __main__ - INFO - Error analysis completed in 0.016 seconds
+2025-07-21 13:24:29,677 - __main__ - INFO - Total errors: 99 (9.90%)
+2025-07-21 13:24:36,081 - __main__ - INFO - Error analysis report saved to C:\uni\nlp\iranian-backing-sentiment-nlp\results\error_analysis\sample_model_error_report.json
