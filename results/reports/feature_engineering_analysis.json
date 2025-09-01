@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-09-01T17:02:53.648593",
+  "dataset_info": {
+    "total_samples": 1688,
+    "sentiment_distribution": {
+      "negative": 1060,
+      "positive": 486,
+      "neutral": 142
+    }
+  },
+  "feature_analysis": {
+    "tfidf": {
+      "original_dimensions": 2008,
+      "selected_dimensions": 1000,
+      "sparsity": 0.9922835317497781,
+      "quality_score": 0.009591697715222836
+    },
+    "word2vec": {
+      "original_dimensions": 200,
+      "reduced_dimensions": 100,
+      "sparsity": 0.0,
+      "quality_score": 0.8103014906014405,
+      "explained_variance": 0.9999999999999994
+    },
+    "bert": {
+      "original_dimensions": 768,
+      "reduced_dimensions": 100,
+      "sparsity": 0.0,
+      "quality_score": 0.04991058260202408,
+      "explained_variance": 0.8369688391685486
+    }
+  },
+  "recommendations": {
+    "best_overall": "Word2Vec",
+    "best_for_speed": "TF-IDF",
+    "best_for_interpretability": "TF-IDF",
+    "best_for_semantics": "BERT"
+  }
+}

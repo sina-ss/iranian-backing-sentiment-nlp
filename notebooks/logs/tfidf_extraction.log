@@ -1,0 +1,824 @@
+2025-09-01 16:47:43,105 - src.features.tfidf_extractor - INFO - Starting TF-IDF fitting and transformation...
+2025-09-01 16:47:43,106 - src.features.tfidf_extractor - INFO - Created TF-IDF vectorizer with config: {'max_features': 10000, 'min_df': 2, 'max_df': 0.8, 'ngram_range': (1, 2), 'use_idf': True, 'smooth_idf': True}
+2025-09-01 16:47:43,150 - src.features.tfidf_extractor - INFO - TF-IDF extraction completed in 0.04 seconds
+2025-09-01 16:47:43,152 - src.features.tfidf_extractor - INFO - Feature matrix shape: (1688, 2008)
+2025-09-01 16:47:43,154 - src.features.tfidf_extractor - INFO - Vocabulary size: 2008
+2025-09-01 16:47:43,156 - src.features.tfidf_extractor - INFO - Matrix sparsity: 99.23%
+2025-09-01 16:47:45,741 - src.features.tfidf_extractor - INFO - Starting TF-IDF fitting and transformation...
+2025-09-01 16:47:45,743 - src.features.tfidf_extractor - INFO - Created TF-IDF vectorizer with config: {'max_features': 10000, 'min_df': 2, 'max_df': 0.8, 'ngram_range': (1, 2), 'use_idf': True, 'smooth_idf': True}
+2025-09-01 16:47:45,791 - src.features.tfidf_extractor - INFO - TF-IDF extraction completed in 0.05 seconds
+2025-09-01 16:47:45,793 - src.features.tfidf_extractor - INFO - Feature matrix shape: (1688, 2008)
+2025-09-01 16:47:45,794 - src.features.tfidf_extractor - INFO - Vocabulary size: 2008
+2025-09-01 16:47:45,796 - src.features.tfidf_extractor - INFO - Matrix sparsity: 99.23%
+2025-09-01 16:47:45,997 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,008 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,010 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,011 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,013 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,014 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,016 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,019 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,021 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,030 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,037 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,041 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,045 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,047 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,050 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,053 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,055 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,057 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,059 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,061 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,064 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,085 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,092 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,128 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,133 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,137 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,141 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,145 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,149 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,161 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,165 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,168 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,172 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,176 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,179 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,182 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,230 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,268 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,274 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,278 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,288 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,291 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,295 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,297 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,300 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,304 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,306 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,318 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,520 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,522 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,524 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,526 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,528 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,531 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,533 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,535 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,538 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,541 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,544 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,552 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,555 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,566 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,569 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,574 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,578 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,582 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,586 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,593 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,598 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,604 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,614 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,619 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,626 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,632 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,639 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,644 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,651 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,665 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,669 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,674 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,692 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,702 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,713 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,723 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,732 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,740 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,751 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,759 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,765 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,773 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,802 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,813 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,819 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,824 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,829 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,835 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,841 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,844 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,858 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,867 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,872 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,877 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,881 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,886 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,891 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,898 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,906 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,913 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,920 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,927 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,934 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,949 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,961 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,969 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,976 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,981 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,986 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:46,992 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,000 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,007 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,014 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,021 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,042 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,053 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,059 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,066 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,072 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,075 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,080 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,086 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,099 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,111 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,118 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,123 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,129 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,136 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,143 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,149 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,156 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,162 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,177 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,188 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,195 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,201 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,206 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,211 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,218 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,224 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,228 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,234 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,239 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:47:47,258 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:49:26,383 - src.features.word2vec_trainer - INFO - Starting Word2Vec training...
+2025-09-01 16:49:26,383 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-09-01T16:49:26.383533', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-09-01 16:49:26,384 - src.features.word2vec_trainer - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-09-01 16:49:26,385 - src.features.word2vec_trainer - INFO - Building vocabulary...
+2025-09-01 16:49:26,385 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-09-01 16:49:26,386 - gensim.models.word2vec - WARNING - Each 'sentences' item should be a list of words (usually unicode strings). First item here is instead plain <class 'str'>.
+2025-09-01 16:49:26,386 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-09-01 16:49:26,414 - gensim.models.word2vec - INFO - collected 180 word types from a corpus of 168587 raw words and 1688 sentences
+2025-09-01 16:49:26,416 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-09-01 16:49:26,419 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 132 unique words (73.33% of original 180, drops 48)', 'datetime': '2025-09-01T16:49:26.419838', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-09-01 16:49:26,422 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 168539 word corpus (99.97% of original 168587, drops 48)', 'datetime': '2025-09-01T16:49:26.422093', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-09-01 16:49:26,425 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 180 items
+2025-09-01 16:49:26,427 - gensim.models.word2vec - INFO - sample=0.001 downsamples 30 most-common words
+2025-09-01 16:49:26,429 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 32730.975971774118 word corpus (19.4%% of prior 168539)', 'datetime': '2025-09-01T16:49:26.429282', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-09-01 16:49:26,433 - gensim.models.word2vec - INFO - estimated required memory for 132 words and 200 dimensions: 277200 bytes
+2025-09-01 16:49:26,435 - gensim.models.word2vec - INFO - resetting layer weights
+2025-09-01 16:49:26,439 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-09-01T16:49:26.439281', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-09-01 16:49:26,440 - src.features.word2vec_trainer - INFO - Vocabulary built with 132 words
+2025-09-01 16:49:26,442 - src.features.word2vec_trainer - INFO - Training Word2Vec model...
+2025-09-01 16:49:26,444 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 132 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-09-01T16:49:26.444811', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-09-01 16:49:26,711 - gensim.models.word2vec - INFO - EPOCH 0: training on 168587 raw words (32616 effective words) took 0.3s, 127340 effective words/s
+2025-09-01 16:49:26,918 - gensim.models.word2vec - INFO - EPOCH 1: training on 168587 raw words (32847 effective words) took 0.2s, 180335 effective words/s
+2025-09-01 16:49:27,094 - gensim.models.word2vec - INFO - EPOCH 2: training on 168587 raw words (32729 effective words) took 0.2s, 197713 effective words/s
+2025-09-01 16:49:27,302 - gensim.models.word2vec - INFO - EPOCH 3: training on 168587 raw words (32731 effective words) took 0.2s, 165808 effective words/s
+2025-09-01 16:49:27,567 - gensim.models.word2vec - INFO - EPOCH 4: training on 168587 raw words (32776 effective words) took 0.2s, 142898 effective words/s
+2025-09-01 16:49:27,750 - gensim.models.word2vec - INFO - EPOCH 5: training on 168587 raw words (32744 effective words) took 0.2s, 186987 effective words/s
+2025-09-01 16:49:27,985 - gensim.models.word2vec - INFO - EPOCH 6: training on 168587 raw words (32652 effective words) took 0.2s, 148675 effective words/s
+2025-09-01 16:49:28,252 - gensim.models.word2vec - INFO - EPOCH 7: training on 168587 raw words (32521 effective words) took 0.3s, 129230 effective words/s
+2025-09-01 16:49:28,477 - gensim.models.word2vec - INFO - EPOCH 8: training on 168587 raw words (32575 effective words) took 0.2s, 152463 effective words/s
+2025-09-01 16:49:28,717 - gensim.models.word2vec - INFO - EPOCH 9: training on 168587 raw words (32589 effective words) took 0.2s, 143839 effective words/s
+2025-09-01 16:49:28,878 - gensim.models.word2vec - INFO - EPOCH 10: training on 168587 raw words (32797 effective words) took 0.2s, 216921 effective words/s
+2025-09-01 16:49:29,028 - gensim.models.word2vec - INFO - EPOCH 11: training on 168587 raw words (32868 effective words) took 0.1s, 229384 effective words/s
+2025-09-01 16:49:29,192 - gensim.models.word2vec - INFO - EPOCH 12: training on 168587 raw words (32599 effective words) took 0.2s, 207704 effective words/s
+2025-09-01 16:49:29,372 - gensim.models.word2vec - INFO - EPOCH 13: training on 168587 raw words (32752 effective words) took 0.2s, 196410 effective words/s
+2025-09-01 16:49:29,537 - gensim.models.word2vec - INFO - EPOCH 14: training on 168587 raw words (33041 effective words) took 0.2s, 206293 effective words/s
+2025-09-01 16:49:29,788 - gensim.models.word2vec - INFO - EPOCH 15: training on 168587 raw words (32776 effective words) took 0.2s, 137278 effective words/s
+2025-09-01 16:49:30,039 - gensim.models.word2vec - INFO - EPOCH 16: training on 168587 raw words (32727 effective words) took 0.2s, 137897 effective words/s
+2025-09-01 16:49:30,287 - gensim.models.word2vec - INFO - EPOCH 17: training on 168587 raw words (32747 effective words) took 0.2s, 140470 effective words/s
+2025-09-01 16:49:30,588 - gensim.models.word2vec - INFO - EPOCH 18: training on 168587 raw words (32664 effective words) took 0.3s, 114256 effective words/s
+2025-09-01 16:49:30,838 - gensim.models.word2vec - INFO - EPOCH 19: training on 168587 raw words (32553 effective words) took 0.2s, 139580 effective words/s
+2025-09-01 16:49:31,040 - gensim.models.word2vec - INFO - EPOCH 20: training on 168587 raw words (32637 effective words) took 0.2s, 171398 effective words/s
+2025-09-01 16:49:31,243 - gensim.models.word2vec - INFO - EPOCH 21: training on 168587 raw words (32904 effective words) took 0.2s, 173165 effective words/s
+2025-09-01 16:49:31,480 - gensim.models.word2vec - INFO - EPOCH 22: training on 168587 raw words (32877 effective words) took 0.2s, 144671 effective words/s
+2025-09-01 16:49:31,702 - gensim.models.word2vec - INFO - EPOCH 23: training on 168587 raw words (32692 effective words) took 0.2s, 155179 effective words/s
+2025-09-01 16:49:31,924 - gensim.models.word2vec - INFO - EPOCH 24: training on 168587 raw words (32582 effective words) took 0.2s, 153256 effective words/s
+2025-09-01 16:49:32,102 - gensim.models.word2vec - INFO - EPOCH 25: training on 168587 raw words (33142 effective words) took 0.2s, 199368 effective words/s
+2025-09-01 16:49:32,267 - gensim.models.word2vec - INFO - EPOCH 26: training on 168587 raw words (32766 effective words) took 0.2s, 208517 effective words/s
+2025-09-01 16:49:32,447 - gensim.models.word2vec - INFO - EPOCH 27: training on 168587 raw words (32533 effective words) took 0.2s, 192782 effective words/s
+2025-09-01 16:49:32,638 - gensim.models.word2vec - INFO - EPOCH 28: training on 168587 raw words (32572 effective words) took 0.2s, 178813 effective words/s
+2025-09-01 16:49:32,868 - gensim.models.word2vec - INFO - EPOCH 29: training on 168587 raw words (32809 effective words) took 0.2s, 148188 effective words/s
+2025-09-01 16:49:33,128 - gensim.models.word2vec - INFO - EPOCH 30: training on 168587 raw words (32810 effective words) took 0.2s, 133123 effective words/s
+2025-09-01 16:49:33,354 - gensim.models.word2vec - INFO - EPOCH 31: training on 168587 raw words (32714 effective words) took 0.2s, 153401 effective words/s
+2025-09-01 16:49:33,552 - gensim.models.word2vec - INFO - EPOCH 32: training on 168587 raw words (32800 effective words) took 0.2s, 175387 effective words/s
+2025-09-01 16:49:33,788 - gensim.models.word2vec - INFO - EPOCH 33: training on 168587 raw words (32557 effective words) took 0.2s, 145911 effective words/s
+2025-09-01 16:49:34,006 - gensim.models.word2vec - INFO - EPOCH 34: training on 168587 raw words (32437 effective words) took 0.2s, 159917 effective words/s
+2025-09-01 16:49:34,216 - gensim.models.word2vec - INFO - EPOCH 35: training on 168587 raw words (32622 effective words) took 0.2s, 163265 effective words/s
+2025-09-01 16:49:34,440 - gensim.models.word2vec - INFO - EPOCH 36: training on 168587 raw words (32764 effective words) took 0.2s, 154853 effective words/s
+2025-09-01 16:49:34,667 - gensim.models.word2vec - INFO - EPOCH 37: training on 168587 raw words (32682 effective words) took 0.2s, 152860 effective words/s
+2025-09-01 16:49:34,846 - gensim.models.word2vec - INFO - EPOCH 38: training on 168587 raw words (32666 effective words) took 0.2s, 194893 effective words/s
+2025-09-01 16:49:35,015 - gensim.models.word2vec - INFO - EPOCH 39: training on 168587 raw words (32711 effective words) took 0.2s, 207506 effective words/s
+2025-09-01 16:49:35,190 - gensim.models.word2vec - INFO - EPOCH 40: training on 168587 raw words (32675 effective words) took 0.2s, 198300 effective words/s
+2025-09-01 16:49:35,404 - gensim.models.word2vec - INFO - EPOCH 41: training on 168587 raw words (32845 effective words) took 0.2s, 159831 effective words/s
+2025-09-01 16:49:35,626 - gensim.models.word2vec - INFO - EPOCH 42: training on 168587 raw words (32719 effective words) took 0.2s, 154924 effective words/s
+2025-09-01 16:49:35,822 - gensim.models.word2vec - INFO - EPOCH 43: training on 168587 raw words (32399 effective words) took 0.2s, 172675 effective words/s
+2025-09-01 16:49:36,022 - gensim.models.word2vec - INFO - EPOCH 44: training on 168587 raw words (32665 effective words) took 0.2s, 172177 effective words/s
+2025-09-01 16:49:36,230 - gensim.models.word2vec - INFO - EPOCH 45: training on 168587 raw words (32661 effective words) took 0.2s, 166896 effective words/s
+2025-09-01 16:49:36,432 - gensim.models.word2vec - INFO - EPOCH 46: training on 168587 raw words (32754 effective words) took 0.2s, 171391 effective words/s
+2025-09-01 16:49:36,636 - gensim.models.word2vec - INFO - EPOCH 47: training on 168587 raw words (32462 effective words) took 0.2s, 167534 effective words/s
+2025-09-01 16:49:36,838 - gensim.models.word2vec - INFO - EPOCH 48: training on 168587 raw words (32608 effective words) took 0.2s, 170936 effective words/s
+2025-09-01 16:49:37,059 - gensim.models.word2vec - INFO - EPOCH 49: training on 168587 raw words (32705 effective words) took 0.2s, 155675 effective words/s
+2025-09-01 16:49:37,346 - gensim.models.word2vec - INFO - EPOCH 50: training on 168587 raw words (32635 effective words) took 0.3s, 118472 effective words/s
+2025-09-01 16:49:37,577 - gensim.models.word2vec - INFO - EPOCH 51: training on 168587 raw words (33105 effective words) took 0.2s, 153072 effective words/s
+2025-09-01 16:49:37,808 - gensim.models.word2vec - INFO - EPOCH 52: training on 168587 raw words (32590 effective words) took 0.2s, 150174 effective words/s
+2025-09-01 16:49:38,028 - gensim.models.word2vec - INFO - EPOCH 53: training on 168587 raw words (32791 effective words) took 0.2s, 162838 effective words/s
+2025-09-01 16:49:38,249 - gensim.models.word2vec - INFO - EPOCH 54: training on 168587 raw words (32889 effective words) took 0.2s, 156586 effective words/s
+2025-09-01 16:49:38,465 - gensim.models.word2vec - INFO - EPOCH 55: training on 168587 raw words (32746 effective words) took 0.2s, 160443 effective words/s
+2025-09-01 16:49:38,682 - gensim.models.word2vec - INFO - EPOCH 56: training on 168587 raw words (32529 effective words) took 0.2s, 158078 effective words/s
+2025-09-01 16:49:38,879 - gensim.models.word2vec - INFO - EPOCH 57: training on 168587 raw words (32865 effective words) took 0.2s, 178037 effective words/s
+2025-09-01 16:49:39,060 - gensim.models.word2vec - INFO - EPOCH 58: training on 168587 raw words (32616 effective words) took 0.2s, 189653 effective words/s
+2025-09-01 16:49:39,227 - gensim.models.word2vec - INFO - EPOCH 59: training on 168587 raw words (32802 effective words) took 0.2s, 206703 effective words/s
+2025-09-01 16:49:39,428 - gensim.models.word2vec - INFO - EPOCH 60: training on 168587 raw words (32864 effective words) took 0.2s, 171902 effective words/s
+2025-09-01 16:49:39,656 - gensim.models.word2vec - INFO - EPOCH 61: training on 168587 raw words (32676 effective words) took 0.2s, 150897 effective words/s
+2025-09-01 16:49:39,867 - gensim.models.word2vec - INFO - EPOCH 62: training on 168587 raw words (32739 effective words) took 0.2s, 165361 effective words/s
+2025-09-01 16:49:40,073 - gensim.models.word2vec - INFO - EPOCH 63: training on 168587 raw words (32746 effective words) took 0.2s, 169759 effective words/s
+2025-09-01 16:49:40,277 - gensim.models.word2vec - INFO - EPOCH 64: training on 168587 raw words (32359 effective words) took 0.2s, 166319 effective words/s
+2025-09-01 16:49:40,447 - gensim.models.word2vec - INFO - EPOCH 65: training on 168587 raw words (32713 effective words) took 0.2s, 204713 effective words/s
+2025-09-01 16:49:40,626 - gensim.models.word2vec - INFO - EPOCH 66: training on 168587 raw words (32902 effective words) took 0.2s, 193856 effective words/s
+2025-09-01 16:49:40,883 - gensim.models.word2vec - INFO - EPOCH 67: training on 168587 raw words (32719 effective words) took 0.2s, 132608 effective words/s
+2025-09-01 16:49:41,097 - gensim.models.word2vec - INFO - EPOCH 68: training on 168587 raw words (32878 effective words) took 0.2s, 160438 effective words/s
+2025-09-01 16:49:41,301 - gensim.models.word2vec - INFO - EPOCH 69: training on 168587 raw words (32742 effective words) took 0.2s, 170007 effective words/s
+2025-09-01 16:49:41,483 - gensim.models.word2vec - INFO - EPOCH 70: training on 168587 raw words (32609 effective words) took 0.2s, 190377 effective words/s
+2025-09-01 16:49:41,651 - gensim.models.word2vec - INFO - EPOCH 71: training on 168587 raw words (32615 effective words) took 0.2s, 203315 effective words/s
+2025-09-01 16:49:41,834 - gensim.models.word2vec - INFO - EPOCH 72: training on 168587 raw words (32490 effective words) took 0.2s, 186582 effective words/s
+2025-09-01 16:49:42,024 - gensim.models.word2vec - INFO - EPOCH 73: training on 168587 raw words (32872 effective words) took 0.2s, 182714 effective words/s
+2025-09-01 16:49:42,231 - gensim.models.word2vec - INFO - EPOCH 74: training on 168587 raw words (32682 effective words) took 0.2s, 164409 effective words/s
+2025-09-01 16:49:42,455 - gensim.models.word2vec - INFO - EPOCH 75: training on 168587 raw words (32796 effective words) took 0.2s, 153126 effective words/s
+2025-09-01 16:49:42,666 - gensim.models.word2vec - INFO - EPOCH 76: training on 168587 raw words (33040 effective words) took 0.2s, 166491 effective words/s
+2025-09-01 16:49:42,867 - gensim.models.word2vec - INFO - EPOCH 77: training on 168587 raw words (32470 effective words) took 0.2s, 171745 effective words/s
+2025-09-01 16:49:43,041 - gensim.models.word2vec - INFO - EPOCH 78: training on 168587 raw words (32674 effective words) took 0.2s, 197737 effective words/s
+2025-09-01 16:49:43,210 - gensim.models.word2vec - INFO - EPOCH 79: training on 168587 raw words (32560 effective words) took 0.2s, 203426 effective words/s
+2025-09-01 16:49:43,401 - gensim.models.word2vec - INFO - EPOCH 80: training on 168587 raw words (32785 effective words) took 0.2s, 180742 effective words/s
+2025-09-01 16:49:43,600 - gensim.models.word2vec - INFO - EPOCH 81: training on 168587 raw words (32813 effective words) took 0.2s, 173969 effective words/s
+2025-09-01 16:49:43,802 - gensim.models.word2vec - INFO - EPOCH 82: training on 168587 raw words (32722 effective words) took 0.2s, 170646 effective words/s
+2025-09-01 16:49:43,981 - gensim.models.word2vec - INFO - EPOCH 83: training on 168587 raw words (32849 effective words) took 0.2s, 193946 effective words/s
+2025-09-01 16:49:44,166 - gensim.models.word2vec - INFO - EPOCH 84: training on 168587 raw words (32559 effective words) took 0.2s, 183309 effective words/s
+2025-09-01 16:49:44,365 - gensim.models.word2vec - INFO - EPOCH 85: training on 168587 raw words (32880 effective words) took 0.2s, 175179 effective words/s
+2025-09-01 16:49:44,576 - gensim.models.word2vec - INFO - EPOCH 86: training on 168587 raw words (32781 effective words) took 0.2s, 163539 effective words/s
+2025-09-01 16:49:44,703 - gensim.models.word2vec - INFO - EPOCH 87: training on 168587 raw words (32888 effective words) took 0.1s, 283954 effective words/s
+2025-09-01 16:49:44,815 - gensim.models.word2vec - INFO - EPOCH 88: training on 168587 raw words (32703 effective words) took 0.1s, 305686 effective words/s
+2025-09-01 16:49:44,943 - gensim.models.word2vec - INFO - EPOCH 89: training on 168587 raw words (32833 effective words) took 0.1s, 267521 effective words/s
+2025-09-01 16:49:45,068 - gensim.models.word2vec - INFO - EPOCH 90: training on 168587 raw words (32386 effective words) took 0.1s, 271449 effective words/s
+2025-09-01 16:49:45,200 - gensim.models.word2vec - INFO - EPOCH 91: training on 168587 raw words (32449 effective words) took 0.1s, 255555 effective words/s
+2025-09-01 16:49:45,339 - gensim.models.word2vec - INFO - EPOCH 92: training on 168587 raw words (32625 effective words) took 0.1s, 245923 effective words/s
+2025-09-01 16:49:45,502 - gensim.models.word2vec - INFO - EPOCH 93: training on 168587 raw words (32554 effective words) took 0.2s, 206815 effective words/s
+2025-09-01 16:49:45,664 - gensim.models.word2vec - INFO - EPOCH 94: training on 168587 raw words (32901 effective words) took 0.2s, 213285 effective words/s
+2025-09-01 16:49:45,818 - gensim.models.word2vec - INFO - EPOCH 95: training on 168587 raw words (32685 effective words) took 0.1s, 221472 effective words/s
+2025-09-01 16:49:45,956 - gensim.models.word2vec - INFO - EPOCH 96: training on 168587 raw words (32595 effective words) took 0.1s, 246870 effective words/s
+2025-09-01 16:49:46,100 - gensim.models.word2vec - INFO - EPOCH 97: training on 168587 raw words (32428 effective words) took 0.1s, 233237 effective words/s
+2025-09-01 16:49:46,239 - gensim.models.word2vec - INFO - EPOCH 98: training on 168587 raw words (32687 effective words) took 0.1s, 242528 effective words/s
+2025-09-01 16:49:46,395 - gensim.models.word2vec - INFO - EPOCH 99: training on 168587 raw words (32792 effective words) took 0.2s, 216929 effective words/s
+2025-09-01 16:49:46,397 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 16858700 raw words (3270703 effective words) took 20.0s, 163940 effective words/s', 'datetime': '2025-09-01T16:49:46.397571', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-09-01 16:49:46,399 - src.features.word2vec_trainer - INFO - Training completed in 20.02 seconds
+2025-09-01 16:49:46,401 - src.features.word2vec_trainer - INFO - Final vocabulary size: 132
+2025-09-01 16:51:49,586 - src.features.tfidf_extractor - INFO - Starting TF-IDF fitting and transformation...
+2025-09-01 16:51:49,590 - src.features.tfidf_extractor - INFO - Created TF-IDF vectorizer with config: {'max_features': 10000, 'min_df': 2, 'max_df': 0.8, 'ngram_range': (1, 2), 'use_idf': True, 'smooth_idf': True}
+2025-09-01 16:51:49,779 - src.features.tfidf_extractor - INFO - TF-IDF extraction completed in 0.18 seconds
+2025-09-01 16:51:49,784 - src.features.tfidf_extractor - INFO - Feature matrix shape: (1688, 2008)
+2025-09-01 16:51:49,788 - src.features.tfidf_extractor - INFO - Vocabulary size: 2008
+2025-09-01 16:51:49,792 - src.features.tfidf_extractor - INFO - Matrix sparsity: 99.23%
+2025-09-01 16:51:50,494 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,499 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,508 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,512 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,523 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,529 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,536 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,544 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,553 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,571 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,584 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,595 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,603 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,609 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,625 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,633 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,640 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,648 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,677 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,686 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,695 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,739 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,746 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,819 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,826 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,841 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,847 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,854 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,860 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,885 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,898 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,907 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,916 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,923 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,938 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:50,951 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,081 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,169 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,182 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,193 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,252 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,261 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,267 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,277 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,284 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,292 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,303 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:51,335 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,265 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,270 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,275 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,281 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,286 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,295 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,302 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,308 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,315 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,323 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,330 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,347 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,352 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,373 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,379 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,386 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,392 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,398 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,403 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,409 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,416 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,427 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,435 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,441 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,446 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,452 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,456 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,461 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,466 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,494 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,499 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,505 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,520 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,533 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,541 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,550 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,558 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,566 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,574 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,582 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,599 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,607 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,625 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,633 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,640 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,647 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,654 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,661 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,667 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,673 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,697 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,711 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,717 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,721 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,725 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,730 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,735 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,741 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,750 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,758 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,767 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,773 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,779 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,790 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,798 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,803 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,807 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,811 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,816 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,820 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,826 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,832 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,837 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,844 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,860 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,868 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,873 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,880 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,886 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,893 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,903 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,911 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,927 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,959 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,966 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,974 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,982 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:52,990 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,001 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,007 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,013 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,019 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,030 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,040 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,047 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,054 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,060 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,066 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,072 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,077 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,082 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,088 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,093 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,121 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:51:53,508 - src.features.word2vec_trainer - INFO - Starting Word2Vec training...
+2025-09-01 16:51:53,513 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2025-09-01T16:51:53.513765', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-09-01 16:51:53,517 - src.features.word2vec_trainer - INFO - Created Word2Vec model with config: {'vector_size': 200, 'window': 5, 'min_count': 2, 'workers': 4, 'epochs': 100, 'sg': 1}
+2025-09-01 16:51:53,520 - src.features.word2vec_trainer - INFO - Building vocabulary...
+2025-09-01 16:51:53,524 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-09-01 16:51:53,527 - gensim.models.word2vec - WARNING - Each 'sentences' item should be a list of words (usually unicode strings). First item here is instead plain <class 'str'>.
+2025-09-01 16:51:53,530 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-09-01 16:51:53,608 - gensim.models.word2vec - INFO - collected 180 word types from a corpus of 168587 raw words and 1688 sentences
+2025-09-01 16:51:53,613 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-09-01 16:51:53,619 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 132 unique words (73.33% of original 180, drops 48)', 'datetime': '2025-09-01T16:51:53.619341', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-09-01 16:51:53,623 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 168539 word corpus (99.97% of original 168587, drops 48)', 'datetime': '2025-09-01T16:51:53.623382', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-09-01 16:51:53,631 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 180 items
+2025-09-01 16:51:53,639 - gensim.models.word2vec - INFO - sample=0.001 downsamples 30 most-common words
+2025-09-01 16:51:53,642 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 32730.975971774118 word corpus (19.4%% of prior 168539)', 'datetime': '2025-09-01T16:51:53.642302', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-09-01 16:51:53,650 - gensim.models.word2vec - INFO - estimated required memory for 132 words and 200 dimensions: 277200 bytes
+2025-09-01 16:51:53,654 - gensim.models.word2vec - INFO - resetting layer weights
+2025-09-01 16:51:53,658 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-09-01T16:51:53.658298', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-09-01 16:51:53,664 - src.features.word2vec_trainer - INFO - Vocabulary built with 132 words
+2025-09-01 16:51:53,668 - src.features.word2vec_trainer - INFO - Training Word2Vec model...
+2025-09-01 16:51:53,673 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 132 vocabulary and 200 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-09-01T16:51:53.673041', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-09-01 16:51:54,001 - gensim.models.word2vec - INFO - EPOCH 0: training on 168587 raw words (32744 effective words) took 0.3s, 116201 effective words/s
+2025-09-01 16:51:54,273 - gensim.models.word2vec - INFO - EPOCH 1: training on 168587 raw words (32643 effective words) took 0.3s, 126482 effective words/s
+2025-09-01 16:51:54,528 - gensim.models.word2vec - INFO - EPOCH 2: training on 168587 raw words (32658 effective words) took 0.2s, 141309 effective words/s
+2025-09-01 16:51:54,838 - gensim.models.word2vec - INFO - EPOCH 3: training on 168587 raw words (32640 effective words) took 0.3s, 109439 effective words/s
+2025-09-01 16:51:55,235 - gensim.models.word2vec - INFO - EPOCH 4: training on 168587 raw words (32679 effective words) took 0.4s, 85549 effective words/s
+2025-09-01 16:51:55,819 - gensim.models.word2vec - INFO - EPOCH 5: training on 168587 raw words (33027 effective words) took 0.5s, 65476 effective words/s
+2025-09-01 16:51:56,249 - gensim.models.word2vec - INFO - EPOCH 6: training on 168587 raw words (32873 effective words) took 0.4s, 80891 effective words/s
+2025-09-01 16:51:56,760 - gensim.models.word2vec - INFO - EPOCH 7: training on 168587 raw words (32614 effective words) took 0.4s, 88101 effective words/s
+2025-09-01 16:51:57,241 - gensim.models.word2vec - INFO - EPOCH 8: training on 168587 raw words (32549 effective words) took 0.5s, 71055 effective words/s
+2025-09-01 16:51:57,801 - gensim.models.word2vec - INFO - EPOCH 9: training on 168587 raw words (33049 effective words) took 0.5s, 62106 effective words/s
+2025-09-01 16:51:58,074 - gensim.models.word2vec - INFO - EPOCH 10: training on 168587 raw words (33012 effective words) took 0.3s, 130676 effective words/s
+2025-09-01 16:51:58,540 - gensim.models.word2vec - INFO - EPOCH 11: training on 168587 raw words (33068 effective words) took 0.4s, 74109 effective words/s
+2025-09-01 16:51:59,041 - gensim.models.word2vec - INFO - EPOCH 12: training on 168587 raw words (32528 effective words) took 0.5s, 69868 effective words/s
+2025-09-01 16:51:59,469 - gensim.models.word2vec - INFO - EPOCH 13: training on 168587 raw words (32600 effective words) took 0.4s, 86069 effective words/s
+2025-09-01 16:51:59,831 - gensim.models.word2vec - INFO - EPOCH 14: training on 168587 raw words (32522 effective words) took 0.3s, 94182 effective words/s
+2025-09-01 16:52:00,084 - gensim.models.word2vec - INFO - EPOCH 15: training on 168587 raw words (32781 effective words) took 0.2s, 137829 effective words/s
+2025-09-01 16:52:00,440 - gensim.models.word2vec - INFO - EPOCH 16: training on 168587 raw words (32649 effective words) took 0.3s, 95750 effective words/s
+2025-09-01 16:52:00,728 - gensim.models.word2vec - INFO - EPOCH 17: training on 168587 raw words (32772 effective words) took 0.3s, 119660 effective words/s
+2025-09-01 16:52:01,106 - gensim.models.word2vec - INFO - EPOCH 18: training on 168587 raw words (32900 effective words) took 0.4s, 90921 effective words/s
+2025-09-01 16:52:01,426 - gensim.models.word2vec - INFO - EPOCH 19: training on 168587 raw words (32495 effective words) took 0.3s, 110017 effective words/s
+2025-09-01 16:52:01,908 - gensim.models.word2vec - INFO - EPOCH 20: training on 168587 raw words (32728 effective words) took 0.4s, 76601 effective words/s
+2025-09-01 16:52:02,235 - gensim.models.word2vec - INFO - EPOCH 21: training on 168587 raw words (32852 effective words) took 0.3s, 114971 effective words/s
+2025-09-01 16:52:02,540 - gensim.models.word2vec - INFO - EPOCH 22: training on 168587 raw words (32638 effective words) took 0.3s, 114053 effective words/s
+2025-09-01 16:52:02,761 - gensim.models.word2vec - INFO - EPOCH 23: training on 168587 raw words (32782 effective words) took 0.2s, 158554 effective words/s
+2025-09-01 16:52:03,039 - gensim.models.word2vec - INFO - EPOCH 24: training on 168587 raw words (32824 effective words) took 0.3s, 123403 effective words/s
+2025-09-01 16:52:03,296 - gensim.models.word2vec - INFO - EPOCH 25: training on 168587 raw words (32847 effective words) took 0.2s, 134667 effective words/s
+2025-09-01 16:52:03,557 - gensim.models.word2vec - INFO - EPOCH 26: training on 168587 raw words (32837 effective words) took 0.2s, 131644 effective words/s
+2025-09-01 16:52:03,772 - gensim.models.word2vec - INFO - EPOCH 27: training on 168587 raw words (32570 effective words) took 0.2s, 162588 effective words/s
+2025-09-01 16:52:04,000 - gensim.models.word2vec - INFO - EPOCH 28: training on 168587 raw words (32779 effective words) took 0.2s, 151585 effective words/s
+2025-09-01 16:52:04,282 - gensim.models.word2vec - INFO - EPOCH 29: training on 168587 raw words (32717 effective words) took 0.3s, 122143 effective words/s
+2025-09-01 16:52:04,562 - gensim.models.word2vec - INFO - EPOCH 30: training on 168587 raw words (32785 effective words) took 0.3s, 123655 effective words/s
+2025-09-01 16:52:04,791 - gensim.models.word2vec - INFO - EPOCH 31: training on 168587 raw words (32710 effective words) took 0.2s, 151583 effective words/s
+2025-09-01 16:52:05,027 - gensim.models.word2vec - INFO - EPOCH 32: training on 168587 raw words (32818 effective words) took 0.2s, 146895 effective words/s
+2025-09-01 16:52:05,292 - gensim.models.word2vec - INFO - EPOCH 33: training on 168587 raw words (32852 effective words) took 0.3s, 131183 effective words/s
+2025-09-01 16:52:05,562 - gensim.models.word2vec - INFO - EPOCH 34: training on 168587 raw words (32791 effective words) took 0.3s, 128374 effective words/s
+2025-09-01 16:52:05,786 - gensim.models.word2vec - INFO - EPOCH 35: training on 168587 raw words (32699 effective words) took 0.2s, 159944 effective words/s
+2025-09-01 16:52:06,016 - gensim.models.word2vec - INFO - EPOCH 36: training on 168587 raw words (32830 effective words) took 0.2s, 150528 effective words/s
+2025-09-01 16:52:06,271 - gensim.models.word2vec - INFO - EPOCH 37: training on 168587 raw words (32704 effective words) took 0.2s, 133115 effective words/s
+2025-09-01 16:52:06,540 - gensim.models.word2vec - INFO - EPOCH 38: training on 168587 raw words (32955 effective words) took 0.3s, 128262 effective words/s
+2025-09-01 16:52:06,759 - gensim.models.word2vec - INFO - EPOCH 39: training on 168587 raw words (32773 effective words) took 0.2s, 161359 effective words/s
+2025-09-01 16:52:07,035 - gensim.models.word2vec - INFO - EPOCH 40: training on 168587 raw words (32825 effective words) took 0.3s, 127266 effective words/s
+2025-09-01 16:52:07,270 - gensim.models.word2vec - INFO - EPOCH 41: training on 168587 raw words (32721 effective words) took 0.2s, 150282 effective words/s
+2025-09-01 16:52:07,532 - gensim.models.word2vec - INFO - EPOCH 42: training on 168587 raw words (32946 effective words) took 0.2s, 133662 effective words/s
+2025-09-01 16:52:07,770 - gensim.models.word2vec - INFO - EPOCH 43: training on 168587 raw words (32640 effective words) took 0.2s, 142975 effective words/s
+2025-09-01 16:52:08,049 - gensim.models.word2vec - INFO - EPOCH 44: training on 168587 raw words (32669 effective words) took 0.3s, 123143 effective words/s
+2025-09-01 16:52:08,280 - gensim.models.word2vec - INFO - EPOCH 45: training on 168587 raw words (32633 effective words) took 0.2s, 149464 effective words/s
+2025-09-01 16:52:08,556 - gensim.models.word2vec - INFO - EPOCH 46: training on 168587 raw words (32661 effective words) took 0.3s, 124209 effective words/s
+2025-09-01 16:52:08,807 - gensim.models.word2vec - INFO - EPOCH 47: training on 168587 raw words (32945 effective words) took 0.2s, 138115 effective words/s
+2025-09-01 16:52:09,078 - gensim.models.word2vec - INFO - EPOCH 48: training on 168587 raw words (32638 effective words) took 0.3s, 126438 effective words/s
+2025-09-01 16:52:09,345 - gensim.models.word2vec - INFO - EPOCH 49: training on 168587 raw words (32479 effective words) took 0.3s, 129006 effective words/s
+2025-09-01 16:52:09,591 - gensim.models.word2vec - INFO - EPOCH 50: training on 168587 raw words (32770 effective words) took 0.2s, 140545 effective words/s
+2025-09-01 16:52:09,860 - gensim.models.word2vec - INFO - EPOCH 51: training on 168587 raw words (32916 effective words) took 0.2s, 143669 effective words/s
+2025-09-01 16:52:10,103 - gensim.models.word2vec - INFO - EPOCH 52: training on 168587 raw words (32646 effective words) took 0.2s, 141661 effective words/s
+2025-09-01 16:52:10,364 - gensim.models.word2vec - INFO - EPOCH 53: training on 168587 raw words (32498 effective words) took 0.2s, 130588 effective words/s
+2025-09-01 16:52:10,629 - gensim.models.word2vec - INFO - EPOCH 54: training on 168587 raw words (32894 effective words) took 0.3s, 130458 effective words/s
+2025-09-01 16:52:10,837 - gensim.models.word2vec - INFO - EPOCH 55: training on 168587 raw words (32660 effective words) took 0.2s, 165894 effective words/s
+2025-09-01 16:52:11,024 - gensim.models.word2vec - INFO - EPOCH 56: training on 168587 raw words (32705 effective words) took 0.2s, 183979 effective words/s
+2025-09-01 16:52:11,216 - gensim.models.word2vec - INFO - EPOCH 57: training on 168587 raw words (32802 effective words) took 0.2s, 183498 effective words/s
+2025-09-01 16:52:11,444 - gensim.models.word2vec - INFO - EPOCH 58: training on 168587 raw words (32530 effective words) took 0.2s, 150075 effective words/s
+2025-09-01 16:52:11,694 - gensim.models.word2vec - INFO - EPOCH 59: training on 168587 raw words (32829 effective words) took 0.2s, 137890 effective words/s
+2025-09-01 16:52:11,910 - gensim.models.word2vec - INFO - EPOCH 60: training on 168587 raw words (32766 effective words) took 0.2s, 161086 effective words/s
+2025-09-01 16:52:12,158 - gensim.models.word2vec - INFO - EPOCH 61: training on 168587 raw words (33124 effective words) took 0.2s, 140347 effective words/s
+2025-09-01 16:52:12,430 - gensim.models.word2vec - INFO - EPOCH 62: training on 168587 raw words (32719 effective words) took 0.3s, 127074 effective words/s
+2025-09-01 16:52:12,630 - gensim.models.word2vec - INFO - EPOCH 63: training on 168587 raw words (33058 effective words) took 0.2s, 177887 effective words/s
+2025-09-01 16:52:12,926 - gensim.models.word2vec - INFO - EPOCH 64: training on 168587 raw words (32720 effective words) took 0.3s, 114106 effective words/s
+2025-09-01 16:52:13,184 - gensim.models.word2vec - INFO - EPOCH 65: training on 168587 raw words (32624 effective words) took 0.2s, 133327 effective words/s
+2025-09-01 16:52:13,433 - gensim.models.word2vec - INFO - EPOCH 66: training on 168587 raw words (32879 effective words) took 0.2s, 138880 effective words/s
+2025-09-01 16:52:13,678 - gensim.models.word2vec - INFO - EPOCH 67: training on 168587 raw words (32687 effective words) took 0.2s, 146766 effective words/s
+2025-09-01 16:52:13,896 - gensim.models.word2vec - INFO - EPOCH 68: training on 168587 raw words (32807 effective words) took 0.2s, 158767 effective words/s
+2025-09-01 16:52:14,156 - gensim.models.word2vec - INFO - EPOCH 69: training on 168587 raw words (32796 effective words) took 0.2s, 133742 effective words/s
+2025-09-01 16:52:14,415 - gensim.models.word2vec - INFO - EPOCH 70: training on 168587 raw words (32912 effective words) took 0.2s, 133150 effective words/s
+2025-09-01 16:52:14,664 - gensim.models.word2vec - INFO - EPOCH 71: training on 168587 raw words (32856 effective words) took 0.2s, 137821 effective words/s
+2025-09-01 16:52:14,855 - gensim.models.word2vec - INFO - EPOCH 72: training on 168587 raw words (32563 effective words) took 0.2s, 183413 effective words/s
+2025-09-01 16:52:15,029 - gensim.models.word2vec - INFO - EPOCH 73: training on 168587 raw words (32827 effective words) took 0.2s, 196750 effective words/s
+2025-09-01 16:52:15,242 - gensim.models.word2vec - INFO - EPOCH 74: training on 168587 raw words (32725 effective words) took 0.2s, 162982 effective words/s
+2025-09-01 16:52:15,464 - gensim.models.word2vec - INFO - EPOCH 75: training on 168587 raw words (32401 effective words) took 0.2s, 152444 effective words/s
+2025-09-01 16:52:15,701 - gensim.models.word2vec - INFO - EPOCH 76: training on 168587 raw words (32692 effective words) took 0.2s, 145457 effective words/s
+2025-09-01 16:52:15,877 - gensim.models.word2vec - INFO - EPOCH 77: training on 168587 raw words (32564 effective words) took 0.2s, 196420 effective words/s
+2025-09-01 16:52:16,040 - gensim.models.word2vec - INFO - EPOCH 78: training on 168587 raw words (32748 effective words) took 0.2s, 210661 effective words/s
+2025-09-01 16:52:16,239 - gensim.models.word2vec - INFO - EPOCH 79: training on 168587 raw words (32783 effective words) took 0.2s, 172441 effective words/s
+2025-09-01 16:52:16,476 - gensim.models.word2vec - INFO - EPOCH 80: training on 168587 raw words (32608 effective words) took 0.2s, 143482 effective words/s
+2025-09-01 16:52:16,723 - gensim.models.word2vec - INFO - EPOCH 81: training on 168587 raw words (32868 effective words) took 0.2s, 141313 effective words/s
+2025-09-01 16:52:16,960 - gensim.models.word2vec - INFO - EPOCH 82: training on 168587 raw words (32726 effective words) took 0.2s, 143886 effective words/s
+2025-09-01 16:52:17,191 - gensim.models.word2vec - INFO - EPOCH 83: training on 168587 raw words (32665 effective words) took 0.2s, 151110 effective words/s
+2025-09-01 16:52:17,472 - gensim.models.word2vec - INFO - EPOCH 84: training on 168587 raw words (32649 effective words) took 0.3s, 122774 effective words/s
+2025-09-01 16:52:17,736 - gensim.models.word2vec - INFO - EPOCH 85: training on 168587 raw words (32600 effective words) took 0.2s, 134359 effective words/s
+2025-09-01 16:52:17,964 - gensim.models.word2vec - INFO - EPOCH 86: training on 168587 raw words (32653 effective words) took 0.2s, 152332 effective words/s
+2025-09-01 16:52:18,135 - gensim.models.word2vec - INFO - EPOCH 87: training on 168587 raw words (32697 effective words) took 0.2s, 200394 effective words/s
+2025-09-01 16:52:18,355 - gensim.models.word2vec - INFO - EPOCH 88: training on 168587 raw words (32752 effective words) took 0.2s, 156962 effective words/s
+2025-09-01 16:52:18,563 - gensim.models.word2vec - INFO - EPOCH 89: training on 168587 raw words (32565 effective words) took 0.2s, 164018 effective words/s
+2025-09-01 16:52:18,831 - gensim.models.word2vec - INFO - EPOCH 90: training on 168587 raw words (32723 effective words) took 0.3s, 129160 effective words/s
+2025-09-01 16:52:19,077 - gensim.models.word2vec - INFO - EPOCH 91: training on 168587 raw words (32731 effective words) took 0.2s, 140395 effective words/s
+2025-09-01 16:52:19,293 - gensim.models.word2vec - INFO - EPOCH 92: training on 168587 raw words (32434 effective words) took 0.2s, 159674 effective words/s
+2025-09-01 16:52:19,526 - gensim.models.word2vec - INFO - EPOCH 93: training on 168587 raw words (32579 effective words) took 0.2s, 147964 effective words/s
+2025-09-01 16:52:19,789 - gensim.models.word2vec - INFO - EPOCH 94: training on 168587 raw words (32831 effective words) took 0.3s, 130162 effective words/s
+2025-09-01 16:52:20,025 - gensim.models.word2vec - INFO - EPOCH 95: training on 168587 raw words (32599 effective words) took 0.2s, 146374 effective words/s
+2025-09-01 16:52:20,229 - gensim.models.word2vec - INFO - EPOCH 96: training on 168587 raw words (32961 effective words) took 0.2s, 171363 effective words/s
+2025-09-01 16:52:20,496 - gensim.models.word2vec - INFO - EPOCH 97: training on 168587 raw words (32700 effective words) took 0.3s, 129209 effective words/s
+2025-09-01 16:52:20,728 - gensim.models.word2vec - INFO - EPOCH 98: training on 168587 raw words (32744 effective words) took 0.2s, 152483 effective words/s
+2025-09-01 16:52:20,957 - gensim.models.word2vec - INFO - EPOCH 99: training on 168587 raw words (33194 effective words) took 0.2s, 155054 effective words/s
+2025-09-01 16:52:20,960 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 16858700 raw words (3274231 effective words) took 27.3s, 120006 effective words/s', 'datetime': '2025-09-01T16:52:20.960405', 'gensim': '4.3.3', 'python': '3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-09-01 16:52:20,963 - src.features.word2vec_trainer - INFO - Training completed in 27.46 seconds
+2025-09-01 16:52:20,965 - src.features.word2vec_trainer - INFO - Final vocabulary size: 132
+2025-09-01 16:52:35,118 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,122 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,131 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,134 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,137 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,139 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,142 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,148 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,151 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,158 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,165 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,188 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,191 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,195 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,200 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,219 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,283 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,290 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,294 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,400 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,404 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,408 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,412 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,417 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,420 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,425 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,440 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,444 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,450 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,453 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,465 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,471 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,476 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,480 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,489 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,496 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,503 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,510 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,517 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,527 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,534 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,549 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,555 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,567 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,573 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,581 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,589 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,595 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,601 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,615 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,665 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,673 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,678 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,683 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,707 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,722 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:52:35,736 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:53:51,767 - src.features.bert_embeddings - INFO - Using device: cpu
+2025-09-01 16:53:51,769 - src.features.bert_embeddings - INFO - Loading BERT model: HooshvareLab/bert-base-parsbert-uncased
+2025-09-01 16:54:04,431 - src.features.bert_embeddings - INFO - Model loaded successfully
+2025-09-01 16:54:04,432 - src.features.bert_embeddings - INFO - Hidden size: 768, Layers: 12
+2025-09-01 16:54:04,463 - src.features.bert_embeddings - INFO - Vocabulary size: 100000
+2025-09-01 16:54:04,465 - src.features.bert_embeddings - INFO - Extracting BERT embeddings for 1688 documents
+2025-09-01 16:54:04,467 - src.features.bert_embeddings - INFO - Batch size: 8, Pooling: cls, Layer: -1
+2025-09-01 16:54:04,489 - src.features.bert_embeddings - INFO - Processing batch 1/211
+2025-09-01 16:54:29,175 - src.features.bert_embeddings - INFO - Processing batch 11/211
+2025-09-01 16:54:45,700 - src.features.bert_embeddings - INFO - Processing batch 21/211
+2025-09-01 16:54:59,503 - src.features.bert_embeddings - INFO - Processing batch 31/211
+2025-09-01 16:55:12,392 - src.features.bert_embeddings - INFO - Processing batch 41/211
+2025-09-01 16:55:25,840 - src.features.bert_embeddings - INFO - Processing batch 51/211
+2025-09-01 16:55:53,978 - src.features.bert_embeddings - INFO - Processing batch 61/211
+2025-09-01 16:56:09,610 - src.features.bert_embeddings - INFO - Processing batch 71/211
+2025-09-01 16:56:27,090 - src.features.bert_embeddings - INFO - Processing batch 81/211
+2025-09-01 16:56:45,003 - src.features.bert_embeddings - INFO - Processing batch 91/211
+2025-09-01 16:56:58,240 - src.features.bert_embeddings - INFO - Processing batch 101/211
+2025-09-01 16:57:11,678 - src.features.bert_embeddings - INFO - Processing batch 111/211
+2025-09-01 16:57:26,119 - src.features.bert_embeddings - INFO - Processing batch 121/211
+2025-09-01 16:57:41,620 - src.features.bert_embeddings - INFO - Processing batch 131/211
+2025-09-01 16:57:55,488 - src.features.bert_embeddings - INFO - Processing batch 141/211
+2025-09-01 16:58:10,109 - src.features.bert_embeddings - INFO - Processing batch 151/211
+2025-09-01 16:58:24,724 - src.features.bert_embeddings - INFO - Processing batch 161/211
+2025-09-01 16:58:40,154 - src.features.bert_embeddings - INFO - Processing batch 171/211
+2025-09-01 16:58:52,690 - src.features.bert_embeddings - INFO - Processing batch 181/211
+2025-09-01 16:59:05,346 - src.features.bert_embeddings - INFO - Processing batch 191/211
+2025-09-01 16:59:19,298 - src.features.bert_embeddings - INFO - Processing batch 201/211
+2025-09-01 16:59:31,811 - src.features.bert_embeddings - INFO - Processing batch 211/211
+2025-09-01 16:59:33,103 - src.features.bert_embeddings - INFO - Embedding extraction completed in 328.64 seconds
+2025-09-01 16:59:33,106 - src.features.bert_embeddings - INFO - Embeddings shape: (1688, 768)
+2025-09-01 16:59:53,651 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,652 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,654 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,656 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,657 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,659 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,662 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,663 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,665 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,667 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,683 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,709 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,712 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,716 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,767 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,770 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,772 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,774 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,778 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,781 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,786 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,788 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,791 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,794 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,803 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,807 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,810 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,814 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,822 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,826 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,832 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,835 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,838 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,842 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,845 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,854 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,890 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,896 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,901 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,906 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,956 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:53,982 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 16:59:54,001 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,631 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,633 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,635 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,638 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,655 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,658 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,660 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,662 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,664 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,666 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,668 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,670 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,672 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,679 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,680 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,694 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,696 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,727 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,731 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,734 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,737 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,739 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,741 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,748 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,760 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,898 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,901 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,904 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,906 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,910 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,913 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,916 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,919 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,922 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,925 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,937 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,941 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,948 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,951 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,959 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,963 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,966 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,972 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,976 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,981 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:00,995 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,001 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,006 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,010 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,014 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,017 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,021 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,024 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,029 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,039 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,048 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,056 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,060 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,063 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,066 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,070 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,073 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,082 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,087 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,096 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,100 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,105 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,115 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,120 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,124 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,129 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,132 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,136 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,150 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:01,160 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,902 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,904 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,907 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,909 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,925 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,929 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,931 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,933 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,935 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,938 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,943 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,945 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,957 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,959 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,964 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,972 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,975 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:11,980 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,061 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,064 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,067 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,069 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,073 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,076 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,079 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,085 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,088 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,092 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,095 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,102 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,106 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,110 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,115 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,120 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,125 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,136 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,140 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,144 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,150 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,154 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,159 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,170 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,183 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,187 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,192 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,196 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,200 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,205 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,209 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
+2025-09-01 17:00:12,215 - matplotlib.font_manager - WARNING - findfont: Font family 'Arial Unicode MS' not found.
