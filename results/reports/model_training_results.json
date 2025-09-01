@@ -1,0 +1,174 @@
+{
+  "model_performance": {
+    "Logistic Regression": {
+      "model_name": "Logistic Regression",
+      "overall_metrics": {
+        "accuracy": 0.8431952662721893,
+        "macro_precision": 0.7201213015326613,
+        "macro_recall": 0.6313365394719486,
+        "macro_f1": 0.6511542513730698,
+        "weighted_f1": 0.8230969036861594
+      },
+      "per_class_metrics": {
+        "negative": {
+          "precision": 0.8326530612244898,
+          "recall": 0.9622641509433962,
+          "f1": 0.8927789934354485,
+          "support": 212
+        },
+        "neutral": {
+          "precision": 0.4,
+          "recall": 0.13793103448275862,
+          "f1": 0.20512820512820512,
+          "support": 29
+        },
+        "positive": {
+          "precision": 0.927710843373494,
+          "recall": 0.7938144329896907,
+          "f1": 0.8555555555555555,
+          "support": 97
+        }
+      }
+    },
+    "CNN": {
+      "model_name": "CNN",
+      "overall_metrics": {
+        "accuracy": 0.8461538461538461,
+        "macro_precision": 0.702902180113249,
+        "macro_recall": 0.6540153867823917,
+        "macro_f1": 0.6645884470626738,
+        "weighted_f1": 0.8304874612566919
+      },
+      "per_class_metrics": {
+        "negative": {
+          "precision": 0.868421052631579,
+          "recall": 0.9339622641509434,
+          "f1": 0.9,
+          "support": 212
+        },
+        "neutral": {
+          "precision": 0.38461538461538464,
+          "recall": 0.1724137931034483,
+          "f1": 0.23809523809523808,
+          "support": 29
+        },
+        "positive": {
+          "precision": 0.8556701030927835,
+          "recall": 0.8556701030927835,
+          "f1": 0.8556701030927835,
+          "support": 97
+        }
+      }
+    },
+    "LSTM": {
+      "model_name": "LSTM",
+      "overall_metrics": {
+        "accuracy": 0.8165680473372781,
+        "macro_precision": 0.6445974057758198,
+        "macro_recall": 0.6190496951485355,
+        "macro_f1": 0.6246450721765556,
+        "weighted_f1": 0.8019176649583267
+      },
+      "per_class_metrics": {
+        "negative": {
+          "precision": 0.8546255506607929,
+          "recall": 0.9150943396226415,
+          "f1": 0.8838268792710706,
+          "support": 212
+        },
+        "neutral": {
+          "precision": 0.26666666666666666,
+          "recall": 0.13793103448275862,
+          "f1": 0.18181818181818182,
+          "support": 29
+        },
+        "positive": {
+          "precision": 0.8125,
+          "recall": 0.8041237113402062,
+          "f1": 0.8082901554404145,
+          "support": 97
+        }
+      }
+    },
+    "BERT": {
+      "model_name": "BERT",
+      "overall_metrics": {
+        "accuracy": 0.8757396449704142,
+        "macro_precision": 0.7844999203694857,
+        "macro_recall": 0.8247612723496256,
+        "macro_f1": 0.7929457160396387,
+        "weighted_f1": 0.8843352029752369
+      },
+      "per_class_metrics": {
+        "negative": {
+          "precision": 0.9326923076923077,
+          "recall": 0.9150943396226415,
+          "f1": 0.9238095238095239,
+          "support": 212
+        },
+        "neutral": {
+          "precision": 0.45652173913043476,
+          "recall": 0.7241379310344828,
+          "f1": 0.56,
+          "support": 29
+        },
+        "positive": {
+          "precision": 0.9642857142857143,
+          "recall": 0.8350515463917526,
+          "f1": 0.8950276243093923,
+          "support": 97
+        }
+      }
+    }
+  },
+  "best_model": "BERT",
+  "data_info": {
+    "train_samples": 1350,
+    "test_samples": 338,
+    "label_distribution": {
+      "negative": 1060,
+      "positive": 486,
+      "neutral": 142
+    }
+  },
+  "training_config": {
+    "logistic_regression": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "random_state": 42,
+      "solver": "liblinear"
+    },
+    "neural_network": {
+      "lstm": {
+        "embedding_dim": 200,
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "dropout": 0.3,
+        "bidirectional": true,
+        "vocab_size": 1312,
+        "max_length": 100
+      },
+      "cnn": {
+        "embedding_dim": 200,
+        "num_filters": 100,
+        "filter_sizes": [
+          3,
+          4,
+          5
+        ],
+        "dropout": 0.3,
+        "vocab_size": 1312,
+        "max_length": 100
+      }
+    },
+    "bert_finetuning": {
+      "learning_rate": 2e-05,
+      "batch_size": 16,
+      "num_epochs": 3,
+      "warmup_steps": 500,
+      "weight_decay": 0.01,
+      "adam_epsilon": 1e-08
+    }
+  },
+  "timestamp": "2025-09-01T19:47:39.001912"
+}
